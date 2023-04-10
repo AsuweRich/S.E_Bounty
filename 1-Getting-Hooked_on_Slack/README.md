@@ -7,9 +7,9 @@
 Read or watch:
 [Getting started with slack](https://intranet.alxswe.com/rltoken/3u2PKVumidEjiWqIOo2DQQ)
 * Click here to view [Objectives and Requirements](https://github.com/AsuweRich/S.E_Bounty/tree/main/1-Getting-Hooked_on_Slack)
+* And [here](https://github.com/AsuweRich/S.E_Bounty/blob/main/1-Getting-Hooked_on_Slack/Getting_hooked_on_slack3.JPG)
 
 ## Task
 Click [here](https://github.com/AsuweRich/S.E_Bounty/blob/main/1-Getting-Hooked_on_Slack/Getting_hooked_on_slack4.JPG)
-And [here](https://github.com/AsuweRich/S.E_Bounty/blob/main/1-Getting-Hooked_on_Slack/Getting_hooked_on_slack3.JPG)
 
 [@jasper](https://intranet.alxswe.com/rltoken/3sPvH5FODTwar88eE6yajw)
