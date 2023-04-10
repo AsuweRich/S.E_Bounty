@@ -10,3 +10,5 @@ Read or watch:
 
 ## Task
 Click [here](https://github.com/AsuweRich/S.E_Bounty/blob/main/1-Getting-Hooked_on_Slack/Getting_hooked_on_slack4.JPG)
+
+[@jasper](https://intranet.alxswe.com/rltoken/3sPvH5FODTwar88eE6yajw)
