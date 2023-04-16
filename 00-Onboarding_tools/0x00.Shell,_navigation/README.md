@@ -71,7 +71,7 @@ mandatory
 Access your sandbox and:
 
 -   Change your working directory to `/root`
--   Then, create an empty file so_cool`
+-   Then, create an empty file `so_cool`
 
 **Advices**
 
