@@ -83,19 +83,42 @@ $ git push origin main
 Tasks
 -----
 
-### 0. Create me!
+### 0. Create and setup your Git and GitHub account
 
 mandatory
 
-Access your sandbox and:
+**Step 0 - Create an account on GitHub [if you do not have one already]**
 
--   Change your working directory to `/root`
--   Then, create an empty file `so_cool`
+You will need a GitHub account for all your projects at ALX. If you do not already have a github.com account, you can create an account for free [here](https://intranet.alxswe.com/rltoken/hQPhGkQBxYfTYTYDKtrZvw)
 
-**Advices**
 
--   Don’t forget to validate your current working directory
--   Don’t forget to display the list of files of your current directory to validate the creation of the new file
+**Step 1 - Create a Personal Access Token on Github**
+
+To have access to your repositories and authenticate yourself, you need to create a Personal Access Token on Github.
+
+You can follow [this tutorial](https://intranet.alxswe.com/rltoken/1sEAC5BvAQ1G5VabbAl2iA) to create a token.
+
+Once it’s created, you should have a token that looks like this:
+![image](https://user-images.githubusercontent.com/106776383/232298307-a189c3c9-568f-4ca3-921a-e0713c4e0d77.png)
+
+
+**Step 2 - Update your profile on the Intranet**
+
+Update your Intranet profile by adding your Github username here
+
+If it’s not done the Checker won’t be able to correct your work
+![image](https://user-images.githubusercontent.com/106776383/232298807-489247d9-534f-4751-8979-b87cb0aca5f0.png)
+
+
+**Step 3 - Create your first repository**
+
+Using the graphic interface on the [github website](https://intranet.alxswe.com/rltoken/hQPhGkQBxYfTYTYDKtrZvw), create your first repository.
+
+Name: `alx-pre_course`
+Description: `I'm now a ALX Student, this is my first repository as a full-stack engineer`
+Public repo
+No `README`, `.gitignore`, or license
+![image](https://user-images.githubusercontent.com/106776383/232299331-e32eeb81-95ec-49e7-bd1f-347109edf28a.png)
 
 
 
