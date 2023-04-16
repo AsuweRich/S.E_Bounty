@@ -3,7 +3,8 @@
 
 -   By Julien Barbier
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg)
+![image](https://user-images.githubusercontent.com/106776383/232293533-035a5b0a-0f3c-4761-9c59-1115633e134f.png)
+
 
 Resources
 ---------
@@ -127,95 +128,48 @@ Access your sandbox and:
 
 
 
-### 4\. Hello, puts
+### 4. Not anymore
 
 mandatory
 
 Access your sandbox and:
 
 -   Change your working directory to `/root`
--   Then, move the file `not_here` to `/tmp/right_school`
+-   Then, delete the `file ready_to_be_removed`
 
 **Advices**
 
 -   Don’t forget to validate your current working directory
--   Don’t forget to display the list of files of your current directory to validate the move of the file
+-   Don’t forget to display the list of files of your current directory to validate the removal of the file
 
 
 
-### 5\. Hello, printf
+### 5. Organization is key!
 
 mandatory
 
 Access your sandbox and:
 
 -   Change your working directory to `/root`
--   Then, create an empty file so_cool`
+-   Then, create a directory `school_is_amazing`
 
 **Advices**
 
 -   Don’t forget to validate your current working directory
--   Don’t forget to display the list of files of your current directory to validate the creation of the new file
+-   Don’t forget to display the list of directories of your current directory to validate the creation of the directory
 
 
-### 6\. Size is not grandeur, and territory does not make a nation
+### 6. No need
 
 mandatory
 
 Access your sandbox and:
 
 -   Change your working directory to `/root`
--   Then, create an empty file so_cool`
+-   Then, remove the directory `empty_directory`
 
 **Advices**
 
 -   Don’t forget to validate your current working directory
--   Don’t forget to display the list of files of your current directory to validate the creation of the new file
+-   Don’t forget to display the list of directories of your current directory to validate the removal of the directory
 
-
- 
-### 7\. Intel
-
-#advanced
-
-Access your sandbox and:
-
--   Change your working directory to `/root`
--   Then, create an empty file so_cool`
-
-**Advices**
-
--   Don’t forget to validate your current working directory
--   Don’t forget to display the list of files of your current directory to validate the creation of the new file
-
-
-### 8\. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
-
-#advanced
-
-Write a C program that prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error.
-
--   You are not allowed to use any functions listed in the NAME section of the man (3) `printf` or man (3) `puts`
--   Your program should return 1
--   Your program should compile without any warnings when using the `-Wall` `gcc` option
-
-```
-julien@ubuntu:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c
-julien@ubuntu:~/c/0x00$ ./quote
-and that piece of art is useful" - Dora Korpar, 2015-10-19
-julien@ubuntu:~/c/0x00$ echo $?
-1
-julien@ubuntu:~/c/0x00$ ./quote 2> q
-julien@ubuntu:~/c/0x00$ cat q
-and that piece of art is useful" - Dora Korpar, 2015-10-19
-julien@ubuntu:~/c/0x00$ grep printf < 101-quote.c
-julien@ubuntu:~/c/0x00$ grep put < 101-quote.c
-julien@ubuntu:~/c/0x00$
-
-```
-
-**Repo:**
-
--   GitHub repository: `alx-low_level_programming`
--   Directory: `0x00-hello_world`
--   File: `101-quote.c`
