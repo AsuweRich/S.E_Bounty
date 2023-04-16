@@ -1,9 +1,7 @@
 0x00. Git
 ======================
 
--   By Julien Barbier
-
-![image](https://user-images.githubusercontent.com/106776383/232293533-035a5b0a-0f3c-4761-9c59-1115633e134f.png)
+-   By Guillaume
 
 
 Resources
@@ -194,7 +192,7 @@ You pushed your first file in your **first repository** of the **first task** of
 
 You can now check your repository on GitHub to see if everything is good.
 
----
+
 **Repo:**
 
 -  GitHub repository: `alx-pre_course`
@@ -283,50 +281,26 @@ Ouf, hot fix is done!
 -  Directory: `0x01-git`
 -  File: `bash/alx, bash/school, bash/98`
 
+---
 
-
-### 4. Not anymore
-
-mandatory
-
-Access your sandbox and:
-
--   Change your working directory to `/root`
--   Then, delete the `file ready_to_be_removed`
-
-**Advices**
-
--   Don’t forget to validate your current working directory
--   Don’t forget to display the list of files of your current directory to validate the removal of the file
-
-
-
-### 5. Organization is key!
+### 4. Collaboration: be up to date
 
 mandatory
 
-Access your sandbox and:
+Of course, you can also work on the same branch as your co-workers and it’s best if you keep up to date with their changes.
 
--   Change your working directory to `/root`
--   Then, create a directory `school_is_amazing`
+For this task – **and only for this task** – please update your file `README.md` in the main branch from GitHub.com. It’s the **only time** you are allowed to update and commit from GitHub interface.
 
-**Advices**
+After you have done that, in your terminal:
 
--   Don’t forget to validate your current working directory
--   Don’t forget to display the list of directories of your current directory to validate the creation of the directory
+-  Get all changes of the main branch locally (i.e. your `README.md` file will be updated)
+-  Create a new file `up_to_date` at the root of your directory and in it, write the git command line used
+-  Add `up_to_date` to git, commit (message: “How to be up to date in git”), and push to the origin
 
 
-### 6. No need
+**Repo:**
 
-mandatory
-
-Access your sandbox and:
-
--   Change your working directory to `/root`
--   Then, remove the directory `empty_directory`
-
-**Advices**
-
--   Don’t forget to validate your current working directory
--   Don’t forget to display the list of directories of your current directory to validate the removal of the directory
+-  GitHub repository: `alx-pre_course`
+-  Directory: `0x01-git`
+-  File: `README.md, up_to_date`
 
