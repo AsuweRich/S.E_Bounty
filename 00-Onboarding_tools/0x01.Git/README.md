@@ -115,12 +115,33 @@ If it’s not done the Checker won’t be able to correct your work
 Using the graphic interface on the [github website](https://intranet.alxswe.com/rltoken/hQPhGkQBxYfTYTYDKtrZvw), create your first repository.
 
 Name: `alx-pre_course`
+
 Description: `I'm now a ALX Student, this is my first repository as a full-stack engineer`
 Public repo
+
 No `README`, `.gitignore`, or license
 ![image](https://user-images.githubusercontent.com/106776383/232299331-e32eeb81-95ec-49e7-bd1f-347109edf28a.png)
 
 
+**Step 4 - Open the sandbox**
+
+On the intranet, just under the task, click on the button ![image](https://user-images.githubusercontent.com/106776383/232299994-42db8672-56de-4575-b62d-c81bcdcc018f.png)
+ and run to start the machine.
+ 
+ Once the container is started, click on ![image](https://user-images.githubusercontent.com/106776383/232300238-6b99289d-1dc3-41e7-aa6b-0b2609a20a77.png)
+ to open a shell where you can start work from.
+
+
+**Step 5 - Clone your repository**
+
+On the webterm of the sandbox, do the following:
+
+-   Clone your repository
+```
+root@896cf839cf9a:/# git clone https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_USERNAME}/alx-pre_course.git                  
+Cloning into 'alx-pre_course'...
+warning: You appear to have cloned an empty repository. 
+```
 
 ### 1. More of me
 
