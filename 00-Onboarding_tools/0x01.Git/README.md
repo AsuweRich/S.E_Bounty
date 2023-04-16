@@ -107,6 +107,7 @@ Once it’s created, you should have a token that looks like this:
 Update your Intranet profile by adding your Github username here
 
 If it’s not done the Checker won’t be able to correct your work
+
 ![image](https://user-images.githubusercontent.com/106776383/232298807-489247d9-534f-4751-8979-b87cb0aca5f0.png)
 
 
@@ -120,6 +121,7 @@ Description: `I'm now a ALX Student, this is my first repository as a full-stack
 Public repo
 
 No `README`, `.gitignore`, or license
+
 ![image](https://user-images.githubusercontent.com/106776383/232299331-e32eeb81-95ec-49e7-bd1f-347109edf28a.png)
 
 
@@ -142,6 +144,62 @@ root@896cf839cf9a:/# git clone https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_US
 Cloning into 'alx-pre_course'...
 warning: You appear to have cloned an empty repository. 
 ```
+
+**Replace {YOUR_PERSONAL_TOKEN} with your token from step 1**
+
+**Replace {YOUR_USERNAME} with your username from step 0 and 1**
+
+**Pro-Tip**: On windows, use CTRL + A + V to paste in the web terminal
+
+
+**Step 6 - Create the README.md and push the modifications**
+
+-  Navigate to this new directory. [Tips](https://intranet.alxswe.com/rltoken/_hv6gkuqwPeF_nefdPygcw)
+```
+root@896cf839cf9a:/# cd alx-pre_course/
+root@896cf839cf9a:/alx-pre_course#
+```
+- Create the file `README.md` with the content `My first readme`. [Tips](https://intranet.alxswe.com/rltoken/_x9a9Mn-U1JDek2ST3ko8g)
+```
+root@896cf839cf9a:/alx-pre_course# echo 'My first readme' > README.md                                                          
+root@896cf839cf9a:/alx-pre_course# cat README.md   
+My first readme                                                                                      
+```
+
+-  Update your git identity
+```
+root@896cf839cf9a:/alx-pre_course# git config --global user.email "you@example.com"
+root@896cf839cf9a:/alx-pre_course# git config --global user.name "Your Name"
+```
+
+-  Add this new file to git, commit the change with this message “My first commit” and push to the remote server / origin  
+```
+root@896cf839cf9a:/alx-pre_course# git add .
+root@896cf839cf9a:/alx-pre_course# git commit -m 'My first commit'
+[master (root-commit) 98eef93] My first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+root@896cf839cf9a:/alx-pre_course# git push                                                                                   
+Enumerating objects: 3, done.                                                                                                  
+Counting objects: 100% (3/3), done.                                                                                             
+Writing objects: 100% (3/3), 212 bytes | 212.00 KiB/s, done.                                                                    
+Total 3 (delta 0), reused 0 (delta 0)                                                                                           
+To https://github.com/{YOUR_USERNAME}/alx-pre_course.git                                                                         
+ * [new branch]      master -> master      
+ ```
+ 
+ Good job!
+
+You pushed your first file in your **first repository** of the **first task** of your **first ALX School project**.
+
+You can now check your repository on GitHub to see if everything is good.
+
+---
+**Repo:**
+
+-  GitHub repository: `alx-pre_course`
+-  File: `README.md`
+
 
 ### 1. More of me
 
