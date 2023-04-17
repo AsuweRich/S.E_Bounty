@@ -111,6 +111,7 @@ What is the command to paste?
 
 Write the answer into the file `/root/0x02_emacs/pasting`.
 
+---
 
 ### 5. Searching
 
