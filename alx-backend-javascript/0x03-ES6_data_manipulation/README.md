@@ -4,39 +4,24 @@ x03. ES6 data manipulation
 JavaScriptES6
 
 -   By Johann Kerbrat, Engineering Manager at Uber Works
--   Weight: 1
--   Ongoing project - started 
 
-    Jun 20, 2022
-
-    , must end by 
-
-    Jun 22, 2022
-
-     - you're done with 0% of tasks.
--   Checker will be released at 
-
-    Jun 20, 2022 4:00 PM
-
--   An auto review will be launched at the deadline
-
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/6ab7bec4727cb5c91257.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220620T125050Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=fa80e89da64ef6fedac8eda25ae2449e2134dc427a2e0ff7bc409519f722f3ee)
+![image](https://user-images.githubusercontent.com/106776383/234062761-0cefed45-eac5-4f61-a7e0-35589a3033e6.png)
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [Array](https://alx-intranet.hbtn.io/rltoken/bcXqK1IaIHtrZ45sv0RxsQ "Array")
--   [Typed Array](https://alx-intranet.hbtn.io/rltoken/BQ5bjKk8Q2YrpwVl0gZpXQ "Typed Array")
--   [Set Data Structure](https://alx-intranet.hbtn.io/rltoken/Ch8vq39y9QnlTMr8CymgEg "Set Data Structure")
--   [Map Data Structure](https://alx-intranet.hbtn.io/rltoken/W29MV3f8Ii4HmeJSALNIpw "Map Data Structure")
--   [WeakMap](https://alx-intranet.hbtn.io/rltoken/pSetFVFeIR660GPE0flPdg "WeakMap")
+-   [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array "Array")
+-   [Typed Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays "Typed Array")
+-   [Set Data Structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set "Set Data Structure")
+-   [Map Data Structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map "Map Data Structure")
+-   [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap "WeakMap")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/vFyWo9TJ_4ypOC6uPi2low "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   How to use map, filter and reduce on arrays
 -   Typed arrays
@@ -91,14 +76,88 @@ Configuration files
 ### `package.json`
 
 Click to show/hide file contents
+```
+{
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "dev": "npx babel-node",
+    "test": "jest",
+    "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.6.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "jest": "^24.9.0"
+  }
+}
+```
 
 ### `babel.config.js`
 
 Click to show/hide file contents
+```
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+};
+```
 
 ### `.eslintrc.js`
 
 Click to show/hide file contents
+```
+module.exports = {
+  env: {
+    browser: false,
+    es6: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:jest/all',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['jest'],
+  rules: {
+    'max-classes-per-file': 'off',
+    'no-underscore-dangle': 'off',
+    'no-console': 'off',
+    'no-shadow': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  },
+  overrides:[
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
+};
+```
 
 ### and...
 
