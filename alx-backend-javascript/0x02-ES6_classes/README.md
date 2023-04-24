@@ -5,20 +5,20 @@ OOPJavaScriptES6
 
 -   By Johann Kerbrat, Engineering Manager at Uber Works
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/817248fb77fb5c2cef3f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220619%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220619T232813Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c219ffe33b9a4e14dc1d4d106f0698cdda69327bbde744fea0bd386e293f26d4)
+![image](https://user-images.githubusercontent.com/106776383/234061562-ed6bc9f6-b38c-4edf-9358-708a319a1265.png)
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [Classes](https://alx-intranet.hbtn.io/rltoken/ke2dSL31JbpAUBW0qWE9WA "Classes")
--   [Metaprogramming](https://alx-intranet.hbtn.io/rltoken/6OgF5QGbYclp_cwATfq-0g "Metaprogramming")
+-   [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes "Classes")
+-   [Metaprogramming](https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/#symbolspecies "Metaprogramming")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/HZvBl09eHoGwvN8jqlYO-g "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   How to define a Class
 -   How to add methods to a class
@@ -74,14 +74,86 @@ Configuration files
 ### `package.json`
 
 Click to show/hide file contents
+```
+{
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "dev": "npx babel-node",
+    "test": "jest",
+    "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.6.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "jest": "^24.9.0"
+  }
+}
+```
 
 ### `babel.config.js`
 
 Click to show/hide file contents
+```
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+};
+```
 
 ### `.eslintrc.js`
 
 Click to show/hide file contents
+```
+module.exports = {
+  env: {
+    browser: false,
+    es6: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:jest/all',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['jest'],
+  rules: {
+    'no-console': 'off',
+    'no-shadow': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  },
+  overrides:[
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
+};
+```
 
 ### and...
 
