@@ -4,9 +4,12 @@
 ![Pep8 style](https://img.shields.io/badge/PEP8-style%20guide-purple?style=round-square)
 ![Latest commit](https://img.shields.io/github/last-commit/AsuweRich/S.E_Bounty/main?style=round-square)
 
+
+# FOUNDATIONS!
+
 ## Concepts
 
-0 **LOW-LEVEL PROGRAMMING & ALGORITHM**
+**LOW-LEVEL PROGRAMMING & ALGORITHM**
 
 1 **Low-level programming & Algorithm - Hatching out**
   -   212 [0x00. C - Hello, World](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-low_level_programming/0x00-hello_world)
