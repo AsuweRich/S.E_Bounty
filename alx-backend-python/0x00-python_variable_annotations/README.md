@@ -10,7 +10,8 @@ PythonBack-end
 
 *For this project, we expect you to look at this concept:*
 
--   [Advanced Python](https://alx-intranet.hbtn.io/concepts/554)
+![image](https://user-images.githubusercontent.com/106776383/234818670-d4034cd8-308c-40cc-95f2-41a347d9724a.png)
+---
 
 ![](https://i.redd.it/y9y25tefi5401.png)
 
@@ -19,8 +20,8 @@ Resources
 
 **Read or watch**:
 
--   [Python 3 typing documentation](https://alx-intranet.hbtn.io/rltoken/5j0OtdWh36_HVAHKJX2gaA "Python 3 typing documentation")
--   [MyPy cheat sheet](https://alx-intranet.hbtn.io/rltoken/Eud-nrUG7x3iT6JD2Sas-g "MyPy cheat sheet")
+-   [Python 3 typing documentation](https://docs.python.org/3/library/typing.html "Python 3 typing documentation")
+-   [MyPy cheat sheet](https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html "MyPy cheat sheet")
 
 Learning Objectives
 -------------------
