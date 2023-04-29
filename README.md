@@ -151,10 +151,19 @@
 **More!**
   -   262 [RSA Factoring Challenge](https://github.com/AsuweRich/S.E_Bounty/tree/main/RSA-Factoring-Challenge)
   -   324 [Command line for the win](https://github.com/AsuweRich/S.E_Bounty/tree/main/command_line_for_the_win)
-  -   372 [0x00. Fix my code]()
+  -   372 [0x00. Fix my code](https://github.com/AsuweRich/S.E_Bounty/tree/main/Fix_My_Code_Challenge/0x00-challenge)
   -   264 [Attack is the best defense](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/attack_is_the_best_defense)
-  -   375 [0x01. Fix my code]()
+  -   375 [0x01. Fix my code](https://github.com/AsuweRich/S.E_Bounty/tree/main/Fix_My_Code_Challenge/0x01-challenge)
 
 
-Portfolio Project
+**PORTFOLIO PROJECT**
+  -   361 Research & Project approval (Part 1)
+  -   571 Research & Project approval (Part 2)
+  -   572 Research & Project approval (Part 3)
+  -   312 Build your portfolio project (Week 1): Making Progress
+  -   564 Build your portfolio project (Week 2): MVP Complete
+  -   565 Build your portfolio project (Week 3): Project Landing Page
+  -   573 Build your portfolio project (Week 3): Presentation
+  -   567 Cleanup your Portfolio Project
+  -   566 Portfolio Project Blog post
 
