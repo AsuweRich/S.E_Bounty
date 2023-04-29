@@ -6,7 +6,7 @@
 
 ## Concepts
 
-0 **Low-Level Programming & Algorithm**
+0 ***Low-Level Programming & Algorithm**
 
 1 **Low-level programming & Algorithm - Hatching out**
   -   212 [0x00. C - Hello, World](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-low_level_programming/0x00-hello_world)
@@ -47,13 +47,50 @@
   -   234 [0x15. C - File I/O](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-low_level_programming/0x15-file_io)
   -   235 [0x16. C - Simple Shell](https://github.com/AsuweRich/S.E_Bounty/tree/main/simple_shell)
 
-```
-0 Higher-level programming
-1 Higher-level programming - Python
+---
+
+0 **Higher-level programming**
+
+1 **Higher-level programming - Python**
+  -   231 [0x00. Python - Hello, World](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x00-python-hello_world)
+  -   233 [0x01. Python - if/else, loops, functions](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x01-python-if_else_loops_functions)
+  -   239 [0x02. Python - import & modules](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x02-python-import_modules)
+  -   241 [0x03. Python - Data Structures: Lists, Tuples](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x03-python-data_structures)
+  -   243 [0x04. Python - More Data Structures: Set, Dictionary](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x04-python-more_data_structures)
+  -   245 [0x05. Python - Exceptions](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x05-python-exceptions)
+  -   247 [0x06. Python - Classes and Objects](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x06-python-classes)
+  -   250 [0x08. Python - More Classes and Objects](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x08-python-more_classes)
+  -   246 [0x07. Python - Test-driven development](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x07-python-test_driven_development)
+  -   252 [0x09. Python - Everything is object](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x09-python-everything_is_object)
+  -   254 [0x0A. Python - Inheritance](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x0A-python-inheritance)
+  -   260 [0x0B. Python - Input/Output](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x0B-python-input_output)
+  -   331 [0x0C. Python - Almost a circle](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x0C-python-almost_a_circle)
+  -   283 [0x0F. Python - Object-relational mapping](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x0F-python-object_relational_mapping)
+  -   299 [0x10. Python - Network #0](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x10-python-network_0)
+  -   300 [0x11. Python - Network #1](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x11-python-network_1)
+
+
 2 Higher-level programming - Javascript
+  -   303 [0x12. JavaScript - Warm up](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x12-javascript-warm_up)
+  -   304 [0x13. JavaScript - Objects, Scopes and Closures](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x13-javascript_objects_scopes_closures)
+  -   333 [0x14. JavaScript - Web scraping](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x14-javascript-web_scraping)
+  -   305 [0x15. JavaScript - Web jQuery](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x15-javascript-web_jquery)
+
+
 3 Higher-level programming - Databases
+  -   272 [0x0D. SQL - Introduction]()
+  -   274 [0x0E. SQL - More queries]()
+
+
 4 Higher-level programming - AirBnB clone
-```
+  -   263 [0x00. AirBnB clone - The console]()
+  -   268 [0x01. AirBnB clone - Web static]()
+  -   289 [0x02. AirBnB clone - MySQL]()
+  -   288 [0x03. AirBnB clone - Deploy static]()
+  -   290 [0x04. AirBnB clone - Web framework]()
+  -   301 [0x05. AirBnB clone - RESTful API]()
+  -   309 [0x06. AirBnB clone - Web dynamic]()
+
 ```
 0 System engineering & DevOps
 1 System engineering & DevOps - Bash
