@@ -6,7 +6,7 @@
 
 ## Concepts
 
-0 ***Low-Level Programming & Algorithm**
+0 **LOW-LEVEL PROGRAMMING & ALGORITHM**
 
 1 **Low-level programming & Algorithm - Hatching out**
   -   212 [0x00. C - Hello, World](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-low_level_programming/0x00-hello_world)
@@ -49,7 +49,7 @@
 
 ---
 
-0 ***Higher-level programming**
+0 **HIGHER-LEVEL PROGRAMMING**
 
 1 **Higher-level programming - Python**
   -   231 [0x00. Python - Hello, World](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x00-python-hello_world)
@@ -92,7 +92,7 @@
   -   309 [0x06. AirBnB clone - Web dynamic](https://github.com/AsuweRich/S.E_Bounty/tree/main/AirBnB_clone_v4)
 
 
-0 ***System engineering & DevOps**
+0 **SYSTEM ENGINEERING & DEVOPS**
 
 1 **System engineering & DevOps - Bash**
   -   205 [0x00. Shell, basics](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x00-shell_basics)
@@ -103,17 +103,17 @@
   -   255 [0x05. Processes and signals](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x05-processes_and_signals)
 
 
-2 System engineering & DevOps - Scripting
+2 **System engineering & DevOps - Scripting**
   -   78 [0x06. Regular expression](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x06-regular_expressions)
   -   269 [0x15. API](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x15-api)
   -   314 [0x16. API advanced](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x16-api_advanced)
 
 
-3 System engineering & DevOps - Networking
+3 **System engineering & DevOps - Networking**
   -   259 [0x07. Networking basics #0](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x07-networking_basics)
   -   285 [0x08. Networking basics #1](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x08-networking_basics_2)
 
-4 System engineering & DevOps - Web stack
+4 **System engineering & DevOps - Web stack**
   -   302 [0x09. Web infrastructure design](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x09-web_infrastructure_design)
   -   266 [0x0C. Web server](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0C-web_server)
   -   275 [0x0F. Load balancer](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0F-load_balancer)
@@ -123,26 +123,38 @@
   -   281 [0x18. Webstack monitoring](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x18-webstack_monitoring)
   -   311 [0x1A. Application server](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x1A-application_server)
 
-5 System engineering & DevOps - Security
+5 **System engineering & DevOps - Security**
   -   244 [0x0B. SSH](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0B-ssh)
   -   284 [0x13. Firewall](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x13-firewall)
 
-6 System engineering & DevOps - On call
+6 **System engineering & DevOps - On call**
   -   294 [0x19. Postmortem](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x19-postmortem)
 
-7 System engineering & DevOps - CI/CD
+7 **System engineering & DevOps - CI/CD**
   -   292 [0x0A. Configuration management](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0A-configuration_management)
 
-8 System engineering & DevOps - Web stack debugging
+8 **System engineering & DevOps - Web stack Debugging**
   -   265 [0x0D. Web stack debugging #0](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0D-web_stack_debugging_0)
   -   271 [0x0E. Web stack debugging #1](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0E-web_stack_debugging_1)
   -   287 [0x12. Web stack debugging #2](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x12-web_stack_debugging_2)
   -   293 [0x17. Web stack debugging #3](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x17-web_stack_debugging_3)
   -   313 [0x1B. Web stack debugging #4](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x1B-web_stack_debugging_4)
 
-```
-Technical Writing and Networking
-Technical Writing and Networking - Social media
-More!
+
+**TECHNICAL WRITING AND NETWORKING**
+
+**Technical Writing and Networking - Social Media**
+  -   429 Professional Relationships
+  -   638 Professional Social Presence
+
+
+**More!**
+  -   262 [RSA Factoring Challenge](https://github.com/AsuweRich/S.E_Bounty/tree/main/RSA-Factoring-Challenge)
+  -   324 [Command line for the win](https://github.com/AsuweRich/S.E_Bounty/tree/main/command_line_for_the_win)
+  -   372 [0x00. Fix my code]()
+  -   264 [Attack is the best defense](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/attack_is_the_best_defense)
+  -   375 [0x01. Fix my code]()
+
+
 Portfolio Project
-```
+
