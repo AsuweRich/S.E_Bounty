@@ -6,20 +6,20 @@ JavaScriptTypeScript
 -   By Johann Kerbrat, Engineering Manager at Uber Works
 -   Weight: 1
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/baea85b5e9a9fb5c36ec.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220622%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220622T092938Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b0dc61d63714a5b11570ceda3740c63a6dfa6484a71edf21d0427d98cb5f3409)
+![image](https://user-images.githubusercontent.com/106776383/235299685-46c218a3-d5ca-4343-8702-3e96b81ac53b.png)
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [TypeScript in 5 minutes](https://alx-intranet.hbtn.io/rltoken/waTSa9Mguj912pel9On57w "TypeScript in 5 minutes")
--   [TypeScript documentation](https://alx-intranet.hbtn.io/rltoken/iPO8DlHCGzc1jnojLoP9HA "TypeScript documentation")
+-   [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html "TypeScript in 5 minutes")
+-   [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/basic-types.html "TypeScript documentation")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/PM-5MDItTT0M8Aaa2QIEyQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   Basic types in Typescript
 -   Interfaces, Classes, and functions
@@ -49,18 +49,118 @@ Please use these files for the following tasks
 ### `package.json`
 
 Click to show/hide file contents
+```
+{
+  "name": "typescript_dependencies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "webpack-dev-server --open",
+    "build": "webpack",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/preset-typescript": "^7.7.2",
+    "@types/jest": "^24.0.23",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "fork-ts-checker-webpack-plugin": "^1.5.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "source-map": "^0.7.3",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
+```
 
 ### `.eslintrc.js`
 
 Click to show/hide file contents
+```
+module.exports =  {
+  parser:  '@typescript-eslint/parser',
+  extends:  [
+    'plugin:@typescript-eslint/recommended',  // Uses the recommended rules from @typescript-eslint/eslint-plugin
+  ],
+  parserOptions:  {
+    ecmaVersion:  2018,
+    sourceType:  'module',
+  },
+  rules:  {
+  },
+};
+```
 
 ### `tsconfig.json`
 
 Click to show/hide file contents
+```
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node"
+  }
+}
+```
 
 ### `webpack.config.js`
 
 Click to show/hide file contents
+```
+const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+
+module.exports = {
+  entry: "./js/main.ts",
+  devtool: "inline-source-map",
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        options: {
+          transpileOnly: true
+        }
+      }
+    ]
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"]
+  },
+  devServer: {
+    contentBase: "./dist"
+  },
+  plugins: [
+    new ForkTsCheckerWebpackPlugin(),
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: "Development"
+    })
+  ],
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist")
+  }
+};
+```
 
 Tasks
 -----
@@ -373,7 +473,7 @@ Write an ambient file within `task_3/js`, named `crud.js` containing the type
 
 In `main.ts`
 
--   At the top of the file create a [triple slash directive](https://alx-intranet.hbtn.io/rltoken/91U8IZgcc9cmk216FFy0-Q "triple slash directive") that includes all the dependencies from `crud.js`
+-   At the top of the file create a [triple slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html "triple slash directive") that includes all the dependencies from `crud.js`
 -   Import the `rowID` type and `rowElement` from `interface.ts`
 -   Import everything from `crud.js` as `CRUD`
 
