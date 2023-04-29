@@ -36,7 +36,7 @@
   -   229 [0x12. C - Singly linked lists](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-low_level_programming/0x12-singly_linked_lists)
   -   230 [0x13. C - More singly linked lists](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-low_level_programming/0x13-more_singly_linked_lists)
   -   240 [0x17. C - Doubly linked lists](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-low_level_programming/0x17-doubly_linked_lists)
-  -   249 [0x19. C - Stacks, Queues - LIFO, FIFO]()
+  -   249 [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/AsuweRich/S.E_Bounty/tree/main/monty)
   -   253 [0x1A. C - Hash tables](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-low_level_programming/0x1A-hash_tables)
   -   248 [0x1B. C - Sorting algorithms & Big O]()
   -   270 [0x1D. C - Binary trees](https://github.com/AsuweRich/S.E_Bounty/tree/main/binary_trees)
