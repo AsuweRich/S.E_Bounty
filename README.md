@@ -78,18 +78,18 @@
 
 
 3 Higher-level programming - Databases
-  -   272 [0x0D. SQL - Introduction]()
-  -   274 [0x0E. SQL - More queries]()
+  -   272 [0x0D. SQL - Introduction](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x0D-SQL_introduction)
+  -   274 [0x0E. SQL - More queries](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-higher_level_programming/0x0E-SQL_more_queries)
 
 
 4 Higher-level programming - AirBnB clone
-  -   263 [0x00. AirBnB clone - The console]()
-  -   268 [0x01. AirBnB clone - Web static]()
-  -   289 [0x02. AirBnB clone - MySQL]()
-  -   288 [0x03. AirBnB clone - Deploy static]()
-  -   290 [0x04. AirBnB clone - Web framework]()
-  -   301 [0x05. AirBnB clone - RESTful API]()
-  -   309 [0x06. AirBnB clone - Web dynamic]()
+  -   263 [0x00. AirBnB clone - The console](https://github.com/AsuweRich/S.E_Bounty/tree/main/AirBnB_clone)
+  -   268 [0x01. AirBnB clone - Web static](https://github.com/AsuweRich/S.E_Bounty/tree/main/AirBnB_clone/web_static)
+  -   289 [0x02. AirBnB clone - MySQL](https://github.com/AsuweRich/S.E_Bounty/tree/main/AirBnB_clone_v2)
+  -   288 [0x03. AirBnB clone - Deploy static](https://github.com/AsuweRich/S.E_Bounty/tree/main/AirBnB_clone_v2)
+  -   290 [0x04. AirBnB clone - Web framework](https://github.com/AsuweRich/S.E_Bounty/tree/main/AirBnB_clone_v2/web_flask)
+  -   301 [0x05. AirBnB clone - RESTful API](https://github.com/AsuweRich/S.E_Bounty/tree/main/AirBnB_clone_v3)
+  -   309 [0x06. AirBnB clone - Web dynamic](https://github.com/AsuweRich/S.E_Bounty/tree/main/AirBnB_clone_v4)
 
 ```
 0 System engineering & DevOps
