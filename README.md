@@ -95,50 +95,50 @@
 0 ***System engineering & DevOps**
 
 1 **System engineering & DevOps - Bash**
-  -   205 [0x00. Shell, basics]()
-  -   207 [0x01. Shell, permissions]()
-  -   208 [0x02. Shell, I/O Redirections and filters]()
-  -   209 [0x03. Shell, init files, variables and expansions]()
-  -   251 [0x04. Loops, conditions and parsing]()
-  -   255 [0x05. Processes and signals]()
+  -   205 [0x00. Shell, basics](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x00-shell_basics)
+  -   207 [0x01. Shell, permissions](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x01-shell_permissions)
+  -   208 [0x02. Shell, I/O Redirections and filters](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x02-shell_redirections)
+  -   209 [0x03. Shell, init files, variables and expansions](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x03-shell_variables_expansions)
+  -   251 [0x04. Loops, conditions and parsing](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x04-loops_conditions_and_parsing)
+  -   255 [0x05. Processes and signals](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x05-processes_and_signals)
 
 
 2 System engineering & DevOps - Scripting
-  -   78 [0x06. Regular expression]()
-  -   269 [0x15. API]()
-  -   314 [0x16. API advanced]()
+  -   78 [0x06. Regular expression](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x06-regular_expressions)
+  -   269 [0x15. API](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x15-api)
+  -   314 [0x16. API advanced](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x16-api_advanced)
 
 
 3 System engineering & DevOps - Networking
-  -   259 [0x07. Networking basics #0]
-  -   285 [0x08. Networking basics #1]
+  -   259 [0x07. Networking basics #0](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x07-networking_basics)
+  -   285 [0x08. Networking basics #1](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x08-networking_basics_2)
 
 4 System engineering & DevOps - Web stack
-  -   302 [0x09. Web infrastructure design](
-  -   266 [0x0C. Web server]()
-  -   275 [0x0F. Load balancer]()
-  -   276 [0x10. HTTPS SSL]()
-  -   298 [0x11. What happens when you type google.com in your browser and press Enter]()
-  -   280 [0x14. MySQL]()
-  -   281 [0x18. Webstack monitoring]()
-  -   311 [0x1A. Application server]()
+  -   302 [0x09. Web infrastructure design](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x09-web_infrastructure_design)
+  -   266 [0x0C. Web server](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0C-web_server)
+  -   275 [0x0F. Load balancer](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0F-load_balancer)
+  -   276 [0x10. HTTPS SSL](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x10-https_ssl)
+  -   298 [0x11. What happens when you type google.com in your browser and press Enter](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x11-what_happen_when_you_type_google_com_in_your_browser_and_press_enter)
+  -   280 [0x14. MySQL](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x14-mysql)
+  -   281 [0x18. Webstack monitoring](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x18-webstack_monitoring)
+  -   311 [0x1A. Application server](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x1A-application_server)
 
 5 System engineering & DevOps - Security
-  -   244 [0x0B. SSH]()
-  -   284 [0x13. Firewall]()
+  -   244 [0x0B. SSH](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0B-ssh)
+  -   284 [0x13. Firewall](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x13-firewall)
 
 6 System engineering & DevOps - On call
-  -   294 [0x19. Postmortem]()
+  -   294 [0x19. Postmortem](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x19-postmortem)
 
 7 System engineering & DevOps - CI/CD
-  -   292 [0x0A. Configuration management]()
+  -   292 [0x0A. Configuration management](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0A-configuration_management)
 
 8 System engineering & DevOps - Web stack debugging
-  -   265 [0x0D. Web stack debugging #0]()
-  -   271 [0x0E. Web stack debugging #1]()
-  -   287 [0x12. Web stack debugging #2]()
-  -   293 [0x17. Web stack debugging #3]()
-  -   313 [0x1B. Web stack debugging #4]()
+  -   265 [0x0D. Web stack debugging #0](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0D-web_stack_debugging_0)
+  -   271 [0x0E. Web stack debugging #1](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x0E-web_stack_debugging_1)
+  -   287 [0x12. Web stack debugging #2](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x12-web_stack_debugging_2)
+  -   293 [0x17. Web stack debugging #3](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x17-web_stack_debugging_3)
+  -   313 [0x1B. Web stack debugging #4](https://github.com/AsuweRich/S.E_Bounty/tree/main/alx-system_engineering-devops/0x1B-web_stack_debugging_4)
 
 ```
 Technical Writing and Networking
