@@ -154,8 +154,10 @@ EOF  all  create  destroy  help  quit  show  update
 No known bugs at this time. 
 
 ## Authors
-Marcus Imagwe - [Github](https://github.com/Dr-MarcusI)  
-Ikechukwu Nwamah- [Github](https://www.github.com/oishbdh)
+Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
+Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+Asuwe Richard - [Github](https://github.com/AsuweRich) <br>
+Timothy Adekunle - [Github](https://github.com/LeadConsult)
 
 ## License
 Public Domain. No copy write protection.
