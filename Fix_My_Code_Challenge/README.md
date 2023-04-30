@@ -1,5 +1,9 @@
 # Fix_My_Code_Challenge
 
+![Repo size](https://img.shields.io/github/repo-size/AsuweRich/Fix_My_Code_Challenge)
+![Pep8 style](https://img.shields.io/badge/PEP8-style%20guide-purple?style=round-square)
+![Latest commit](https://img.shields.io/github/last-commit/AsuweRich/Fix_My_Code_Challenge/main?style=round-square)
+
 Background Context
 ------------------
 
