@@ -37,13 +37,13 @@ Resources
 
 **Read or watch**:
 
--   [The Python tutorial](https://alx-intranet.hbtn.io/rltoken/JsFCs_NBzMAR7-XPAZ9BoA "The Python tutorial") (*only the first three chapters below*)
--   [Whetting Your Appetite](https://alx-intranet.hbtn.io/rltoken/kifRlLG2iMX5AZiW8lrCMg "Whetting Your Appetite")
--   [Using the Python Interpreter](https://alx-intranet.hbtn.io/rltoken/RVpfAuagCo9SdfYeoHd6jg "Using the Python Interpreter")
--   [An Informal Introduction to Python](https://alx-intranet.hbtn.io/rltoken/bVps0ZPWq7qVZ7vc-eJGTw "An Informal Introduction to Python") (*Read up until "3.1.2. Strings" included*)
--   [How To Use String Formatters in Python 3](https://alx-intranet.hbtn.io/rltoken/kopLNaXzBklkJ1fMCa0Gqw "How To Use String Formatters in Python 3")
--   [Learn to Program](https://alx-intranet.hbtn.io/rltoken/szBsJ-Qyig_RrImN7RGlOg "Learn to Program")
--   [Pycodestyle -- Style Guide for Python Code](https://alx-intranet.hbtn.io/rltoken/tgYt-0zVy1T4sDlE9ohxnA "Pycodestyle -- Style Guide for Python Code")
+-   [The Python tutorial](https://docs.python.org/3/tutorial/index.html "The Python tutorial") (*only the first three chapters below*)
+-   [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html "Whetting Your Appetite")
+-   [Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html "Using the Python Interpreter")
+-   [An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html "An Informal Introduction to Python") (*Read up until "3.1.2. Strings" included*)
+-   [How To Use String Formatters in Python 3](https://realpython.com/python-f-strings/ "How To Use String Formatters in Python 3")
+-   [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt "Learn to Program")
+-   [Pycodestyle -- Style Guide for Python Code](https://pypi.org/project/pycodestyle/ "Pycodestyle -- Style Guide for Python Code")
 
 Learning Objectives
 -------------------
@@ -132,7 +132,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ### Pycodestyle
 
-`Pycodestyle` is now the [new standard of Python style code](https://alx-intranet.hbtn.io/rltoken/UQ25jC6sA5XqZl6ZZIdAaw "new standard of Python style code")
+`Pycodestyle` is now the [new standard of Python style code](https://github.com/PyCQA/pycodestyle/issues/466 "new standard of Python style code")
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/231/Flyingcircus_2.jpg)
 
@@ -220,7 +220,7 @@ Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/mast
     -   followed by a new line
 -   You are not allowed to cast the variable `number` into a string
 -   Your code must be 3 lines long
--   You have to use the new print numbers [tips](https://alx-intranet.hbtn.io/rltoken/bKDyX1T7EsKyOMXp_2YzAg "tips") (with `.format(...)`)
+-   You have to use the new print numbers [tips](https://realpython.com/python-f-strings/ "tips") (with `.format(...)`)
 
 ```
 guillaume@ubuntu:~/py/0x00$ ./3-print_number.py
