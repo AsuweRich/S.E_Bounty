@@ -28,7 +28,7 @@ algorithm section .
 * [0x16. C - Simple Shell](./0x16-simple_shell)
 * [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists)
 * [0x18. C - Dynamic libraries](./0x18-dynamic_libraries)
-* [0x19. C - Stacks,Queues LIFO-FIFO](./0x19-stacks_queues_lifo_fifo)
+* [0x19. C - Stacks,Queues LIFO-FIFO](https://github.com/AsuweRich/S.E_Bounty/tree/main/monty)
 * [0x0A. C - argc, argv](./0x0A-argc_argv)
 * [0x0B. C - malloc, free](./0x0B-malloc_free)
 * [0x0C. C - more malloc, free](./0x0C-more_malloc_free)
@@ -36,9 +36,9 @@ algorithm section .
 * [0x0E. C - Structures, typedef](./0x0E-structures_typedef)
 * [0x0F. C - Variadic functions](./0x0F-variadic_functions)
 * [0x1A. C - Hash tables](./0x1A-hash_tables)
-* [0x1B. C - Sorting algorithms & Big O ](./0x1B-sorting_algorithms)
+* [0x1B. C - Sorting algorithms & Big O ](https://github.com/AsuweRich/S.E_Bounty/tree/main/sorting_algorithms)
 * [0x1C. C - Makefiles](./0x1C-makefiles)
-* [0x1D. C - Binary trees](./0x1D-binary_trees)
+* [0x1D. C - Binary trees](https://github.com/AsuweRich/S.E_Bounty/tree/main/binary_trees)
 * [0x1E. C - Search Algorithms](./0x1E-search_algorithms)
 
 
@@ -57,7 +57,7 @@ To access any project you are willing to view , please proceed like this:
 
 
 
-        - git clone https://github.com/Pericles001/alx-low_level_programming
+        - git clone https://github.com/AsuweRich/alx-low_level_programming
         - cd alx-low_level_programming
 
 
@@ -80,7 +80,7 @@ To access any project you are willing to view , please proceed like this:
 
 ## Author
 
-* **Pericles Adjovi** <[Pericles001](https://github.com/Pericles001)>
+* **Asuwe Richard Wuese** <[AsuweRich](https://github.com/AsuweRich)>
 
 ## Aknowledgements
 
