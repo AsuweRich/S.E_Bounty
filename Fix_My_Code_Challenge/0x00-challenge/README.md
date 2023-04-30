@@ -11,7 +11,7 @@ Background Context
 
 Sometimes you will know the language, sometimes not.
 
-Please download the repository [0x00-Fix_My_Code_Challenge](https://alx-intranet.hbtn.io/rltoken/rq-j1VNUKRTQoADfDRXJmg "0x00-Fix_My_Code_Challenge") and use it as initial files for all solutions.
+Please download the repository [0x00-Fix_My_Code_Challenge](https://github.com/holbertonschool/0x00-Fix_My_Code_Challenge "0x00-Fix_My_Code_Challenge") and use it as initial files for all solutions.
 
 You should not recode everything, just fix it!
 
@@ -34,7 +34,7 @@ Tasks
 
 #advanced
 
-Please take a look at my implementation of FizzBuzz in Python: [source code](https://github.com/holbertonschool/Fix-my-code-0/blob/master/0-fizzbuzz.py "source code")
+Please take a look at my implementation of FizzBuzz in Python: [source code](https://github.com/holbertonschool/0x00-Fix_My_Code_Challenge/blob/master/0-fizzbuzz.py "source code")
 
 Something is going wrong....
 
@@ -59,7 +59,7 @@ $
 
 #advanced
 
-Please take a look at my implementation of printing a square in Javascript: [source code](https://alx-intranet.hbtn.io/rltoken/aRr-rGLsvmrlvezQoxEtCg "source code")
+Please take a look at my implementation of printing a square in Javascript: [source code](https://github.com/holbertonschool/0x00-Fix_My_Code_Challenge/blob/master/1-print_square.js "source code")
 
 Something is going wrong....
 
@@ -104,7 +104,7 @@ $
 
 #advanced
 
-Please find here my implementation of sorting arguments in Ruby: [source code](https://alx-intranet.hbtn.io/rltoken/Rn9VSH6Vo4vGiqNzqBJ6mg "source code")
+Please find here my implementation of sorting arguments in Ruby: [source code](https://github.com/holbertonschool/0x00-Fix_My_Code_Challenge/blob/master/2-sort.rb "source code")
 
 Something is going wrong....
 
@@ -134,7 +134,7 @@ $
 
 #advanced
 
-Please find here my implementation of a User class in Python: [source code](https://github.com/holbertonschool/Fix-my-code-0/blob/master/3-user.py "source code")
+Please find here my implementation of a User class in Python: [source code](https://github.com/holbertonschool/0x00-Fix_My_Code_Challenge/blob/master/3-user.py "source code")
 
 Something is going wrong....
 
@@ -160,7 +160,7 @@ My tests should not print any error...
 
 #advanced
 
-Please find here my implementation of a Double linked list in C: [source code](https://alx-intranet.hbtn.io/rltoken/X0d3R2LB1bZuQel0ghSX2Q "source code")
+Please find here my implementation of a Double linked list in C: [source code](https://github.com/holbertonschool/0x00-Fix_My_Code_Challenge/tree/master/4-delete_dnodeint "source code")
 
 Something is going wrong....
 
