@@ -8,16 +8,16 @@ Resources
 
 **Read or watch**:
 
--   [Everything you need to know to start with C.pdf](https://alx-intranet.hbtn.io/rltoken/twmJy4JyAFEDV75jf0H9Bw "Everything you need to know to start with C.pdf") (*You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: "comments", "Data types | Integer types", "Declaration", "Characters", "Arithmetic operators", "Variables assignments", "Comparisons", "Logical operators", "if, if...else", "while loops".*)
--   [Keywords and identifiers](https://alx-intranet.hbtn.io/rltoken/58ThnAAxwJv5s_ceKMMPhw "Keywords and identifiers")
--   [integers](https://alx-intranet.hbtn.io/rltoken/2sXkmDiD7BF7pNIOxMQWFA "integers")
--   [Arithmetic Operators in C](https://alx-intranet.hbtn.io/rltoken/S-b9MN2iELhSEwCI093Vzw "Arithmetic Operators in C")
--   [If statements in C](https://alx-intranet.hbtn.io/rltoken/usvxrTB3ko5kGTq48p5fSA "If statements in C")
--   [if...else statement](https://alx-intranet.hbtn.io/rltoken/CU6mSX1qdZKOhDEgmToUGA "if...else statement")
--   [Relational operators](https://alx-intranet.hbtn.io/rltoken/O1N-qacaTC-BHXm3Dp3eUA "Relational operators")
--   [Logical operators](https://alx-intranet.hbtn.io/rltoken/ndmvlsrk_wLgwBs-Yma9ag "Logical operators")
--   [while loop in C](https://alx-intranet.hbtn.io/rltoken/mwx2_bj3gIFEgCqdwdTp4w "while loop in C")
--   [While loop](https://alx-intranet.hbtn.io/rltoken/MW4Ob-6JLWt7Zn6vZ0EsBw "While loop")
+-   [Everything you need to know to start with C.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2022/4/e0ccf91eec6b977a9e00ed384dc285df9c2772e3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230503%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230503T165040Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d80675cc3e95649054fb8a14f33827eca94182c3565d67cf41f8afcd7a28955e "Everything you need to know to start with C.pdf") (*You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: "comments", "Data types | Integer types", "Declaration", "Characters", "Arithmetic operators", "Variables assignments", "Comparisons", "Logical operators", "if, if...else", "while loops".*)
+-   [Keywords and identifiers](https://publications.gbdirect.co.uk//c_book/chapter2/keywords_and_identifiers.html "Keywords and identifiers")
+-   [integers](https://publications.gbdirect.co.uk//c_book/chapter2/integral_types.html "integers")
+-   [Arithmetic Operators in C](https://www.tutorialspoint.com/cprogramming/c_arithmetic_operators.htm "Arithmetic Operators in C")
+-   [If statements in C](https://www.cprogramming.com/tutorial/c/lesson2.html "If statements in C")
+-   [if...else statement](https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm "if...else statement")
+-   [Relational operators](https://www.tutorialspoint.com/cprogramming/c_relational_operators.htm "Relational operators")
+-   [Logical operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-logical-operators/ "Logical operators")
+-   [while loop in C](https://www.tutorialspoint.com/cprogramming/c_while_loop.htm "while loop in C")
+-   [While loop](https://www.youtube.com/watch?v=Ju1LYO9pkaI "While loop")
 
 **man or help**:
 
@@ -26,7 +26,7 @@ Resources
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/mGnreK2ar-4GUXzcb9OtXw "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -68,7 +68,7 @@ mandatory
 
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print whether the number stored in the variable `n` is positive or negative.
 
--   You can find the source code [here](https://alx-intranet.hbtn.io/rltoken/rrqNDWjrCWdARnWFLPExPw "here")
+-   You can find the source code [here](https://github.com/holbertonschool/0x01.c/blob/master/0-positive_or_negative_c "here")
 -   The variable `n` will store a different value every time you will run this program
 -   You don't have to understand what `rand`, `srand`, `RAND_MAX` do. Please do not touch this code
 -   The output of the program should be:
@@ -114,7 +114,7 @@ mandatory
 
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`.
 
--   You can find the source code [here](https://alx-intranet.hbtn.io/rltoken/5HWhPDsq3jq1yCRQFrLl4Q "here")
+-   You can find the source code [here](https://github.com/holbertonschool/0x01.c/blob/master/1-last_digit_c "here")
 -   The variable `n` will store a different value every time you run this program
 -   You don't have to understand what `rand`, `srand`, and `RAND_MAX` do. Please do not touch this code
 -   The output of the program should be:
