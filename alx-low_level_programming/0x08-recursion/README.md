@@ -13,16 +13,16 @@ Resources
 
 **Read or watch**:
 
--   [0x08. Recursion, introduction](https://alx-intranet.hbtn.io/rltoken/dzZB83Hm3lO7dScjhebAxw "0x08. Recursion, introduction")
--   [What on Earth is Recursion?](https://alx-intranet.hbtn.io/rltoken/xYjKl3024oN58Bi_621_vQ "What on Earth is Recursion?")
--   [C - Recursion](https://alx-intranet.hbtn.io/rltoken/u4ojc5CZpf4qiuQvmXCiOA "C - Recursion")
--   [C Programming Tutorial 85, Recursion pt.1](https://alx-intranet.hbtn.io/rltoken/Wv-wffgpXelN9ZTrbmiOyA "C Programming Tutorial 85, Recursion pt.1")
--   [C Programming Tutorial 86, Recursion pt.2](https://alx-intranet.hbtn.io/rltoken/7GVdI-KT-M1vOIzwEjSahQ "C Programming Tutorial 86, Recursion pt.2")
+-   [0x08. Recursion, introduction](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2021/1/2818ba6f14f644b871dcbd746925fa15b8cd5937.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230503%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230503T221840Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a227b24d891ba0db49c036070e4f50b77f2cde4de36c26c6cd54ed48bd0769ed "0x08. Recursion, introduction")
+-   [What on Earth is Recursion?](https://www.youtube.com/watch?v=Mv9NEXX1VHc "What on Earth is Recursion?")
+-   [C - Recursion](https://www.tutorialspoint.com/cprogramming/c_recursion.htm "C - Recursion")
+-   [C Programming Tutorial 85, Recursion pt.1](https://www.youtube.com/watch?v=XGxbXMP6k8k "C Programming Tutorial 85, Recursion pt.1")
+-   [C Programming Tutorial 86, Recursion pt.2](https://www.youtube.com/watch?v=7XiIS6HobNs "C Programming Tutorial 86, Recursion pt.2")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/m6zCd6ius5xDzpuPxT4_aQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
