@@ -10,16 +10,16 @@ Resources
 
 **Read or watch**:
 
--   [Everything you need to know to start with C.pdf](https://alx-intranet.hbtn.io/rltoken/Mt-kMhgTyVzA2i5SYsWBwQ "Everything you need to know to start with C.pdf") (*You do not have to learn everything in there yet, but make sure you read it entirely first*)
--   [Dennis Ritchie](https://alx-intranet.hbtn.io/rltoken/YWFrRob_-Yo-_NQikMLI-g "Dennis Ritchie")
--   ["C" Programming Language: Brian Kernighan](https://alx-intranet.hbtn.io/rltoken/W4oygfMgAp5Hyc7o6QuSYQ ""C" Programming Language: Brian Kernighan")
--   [Why C Programming Is Awesome](https://alx-intranet.hbtn.io/rltoken/WYdE1novaWa0yt5fzGvLBw "Why C Programming Is Awesome")
--   [Learning to program in C part 1](https://alx-intranet.hbtn.io/rltoken/aE_pZLbexuLroHA0FmjLbw "Learning to program in C part 1")
--   [Learning to program in C part 2](https://alx-intranet.hbtn.io/rltoken/3a5y1N-0FlTaPbKRxlRLlQ "Learning to program in C part 2")
--   [Understanding C program Compilation Process](https://alx-intranet.hbtn.io/rltoken/idYJyVfQRZ9e5aljiT5UKg "Understanding C program Compilation Process")
--   [Betty Coding Style](https://alx-intranet.hbtn.io/rltoken/Iu2Vb1CbDPMHuDJG1iILKA "Betty Coding Style")
--   [Hash-bang under the hood](https://alx-intranet.hbtn.io/rltoken/zwv5CHLybXN6KFmsjbu_tg "Hash-bang under the hood") (*Look at only after you finish consuming the other resources*)
--   [Linus Torvalds on C vs. C++](https://alx-intranet.hbtn.io/rltoken/JrokM8Pk6bd9wPqQvEfSAA "Linus Torvalds on C vs. C++") (*Look at only after you finish consuming the other resources*)
+-   [Everything you need to know to start with C.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2022/4/e0ccf91eec6b977a9e00ed384dc285df9c2772e3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230503%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230503T163916Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=588c59006a0077711d83dbee42bb87508e5ca52e054c5c72f50d7b6dabd3a265 "Everything you need to know to start with C.pdf") (*You do not have to learn everything in there yet, but make sure you read it entirely first*)
+-   [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie "Dennis Ritchie")
+-   ["C" Programming Language: Brian Kernighan](https://www.youtube.com/watch?v=de2Hsvxaf8M ""C" Programming Language: Brian Kernighan")
+-   [Why C Programming Is Awesome](https://www.youtube.com/watch?v=smGalmxPVYc "Why C Programming Is Awesome")
+-   [Learning to program in C part 1](https://www.youtube.com/watch?v=rk2fK2IIiiQ "Learning to program in C part 1")
+-   [Learning to program in C part 2](https://www.youtube.com/watch?v=FwpP_MsZWnU "Learning to program in C part 2")
+-   [Understanding C program Compilation Process](https://www.youtube.com/watch?v=VDslRumKvRA "Understanding C program Compilation Process")
+-   [Betty Coding Style](https://github.com/holbertonschool/Betty/wiki "Betty Coding Style")
+-   [Hash-bang under the hood](https://twitter.com/unix_byte/status/1024147947393495040?s=21 "Hash-bang under the hood") (*Look at only after you finish consuming the other resources*)
+-   [Linus Torvalds on C vs. C++](http://harmful.cat-v.org/software/c++/linus "Linus Torvalds on C vs. C++") (*Look at only after you finish consuming the other resources*)
 
 **man or help**:
 
@@ -31,7 +31,7 @@ Resources
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/feOAhqRw7z0sSUKoD-91HA "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -78,8 +78,8 @@ More Info
 
 To run the Betty linter just with command `betty <filename>`:
 
--   Go to the [Betty](https://alx-intranet.hbtn.io/rltoken/wQ4sMfsWfxvyfN67Sc11zA "Betty") repository
--   Clone the [repo](https://alx-intranet.hbtn.io/rltoken/wQ4sMfsWfxvyfN67Sc11zA "repo") to your local machine
+-   Go to the [Betty](https://github.com/holbertonschool/Betty "Betty") repository
+-   Clone the [repo](https://github.com/holbertonschool/Betty "repo") to your local machine
 -   `cd` into the Betty directory
 -   Install the linter with `sudo ./install.sh`
 -   `emacs` or `vi` a new file called `betty`, and copy the script below:
