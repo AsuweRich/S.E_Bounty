@@ -4,23 +4,22 @@
 PythonBack-end
 
 -   By Emmanuel Turlay, Staff Software Engineer at Cruise
--   Weight: 1
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/ee85b9f67c384e29525b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220628%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220628T132116Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8d0b744d99c8db95af5258137e5f83fc0d6f2f664dbab7e577a4df43a690951b)
+![image](https://user-images.githubusercontent.com/106776383/235888094-b19b7517-4ef1-41b2-8fc1-52fe8e00cade.png)
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [PEP 530 -- Asynchronous Comprehensions](https://alx-intranet.hbtn.io/rltoken/hlwtED-iLsdORSgly8DsyQ "PEP 530 -- Asynchronous Comprehensions")
--   [What's New in Python: Asynchronous Comprehensions / Generators](https://alx-intranet.hbtn.io/rltoken/0OkbObYzCKtO7ZUAxfKvkw "What's New in Python: Asynchronous Comprehensions / Generators")
--   [Type-hints for generators](https://alx-intranet.hbtn.io/rltoken/l4Fnno568VbVIn9GvrFVtQ "Type-hints for generators")
+-   [PEP 530 -- Asynchronous Comprehensions](https://peps.python.org/pep-0530/ "PEP 530 -- Asynchronous Comprehensions")
+-   [What's New in Python: Asynchronous Comprehensions / Generators](https://www.blog.pythonlibrary.org/2017/02/14/whats-new-in-python-asynchronous-comprehensions-generators/ "What's New in Python: Asynchronous Comprehensions / Generators")
+-   [Type-hints for generators](https://stackoverflow.com/questions/42531143/how-to-type-hint-a-generator-in-python-3 "Type-hints for generators")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/_jK22HqiCeh5NjKJ4ZHBww "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   How to write an asynchronous generator
 -   How to use async comprehensions
