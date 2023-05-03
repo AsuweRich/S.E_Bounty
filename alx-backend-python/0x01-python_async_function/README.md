@@ -4,19 +4,18 @@
 PythonBack-end
 
 -   By Emmanuel Turlay, Staff Software Engineer at Cruise
--   Weight: 1
 
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/4aeaa9c3cb1f316c05c4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220627%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220627T153335Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=bb4b42ed7b89822a9e9b7f48f49fb42d7bfd50feb9c13428f1f674751bd3af58)
+![image](https://user-images.githubusercontent.com/106776383/235691047-7d5eec54-5656-467f-81d0-939613a8fe3c.png)
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [Async IO in Python: A Complete Walkthrough](https://alx-intranet.hbtn.io/rltoken/zYkXScziW1D5rNdNEvObjQ "Async IO in Python: A Complete Walkthrough")
--   [asyncio - Asynchronous I/O](https://alx-intranet.hbtn.io/rltoken/aZUO4GiWHbPIrVBIwptFAw "asyncio - Asynchronous I/O")
--   [random.uniform](https://alx-intranet.hbtn.io/rltoken/72mVf1s8rx2ih_U2WjBmaA "random.uniform")
+-   [Async IO in Python: A Complete Walkthrough](https://realpython.com/async-io-python/ "Async IO in Python: A Complete Walkthrough")
+-   [asyncio - Asynchronous I/O](https://docs.python.org/3/library/asyncio.html "asyncio - Asynchronous I/O")
+-   [random.uniform](https://docs.python.org/3/library/random.html#random.uniform "random.uniform")
 
 Learning Objectives
 -------------------
