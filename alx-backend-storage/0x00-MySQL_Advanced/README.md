@@ -19,17 +19,17 @@ Resources
 
 **Read or watch**:
 
--   [MySQL cheatsheet](https://alx-intranet.hbtn.io/rltoken/8w9di_hk19DIMSBEV3EayQ "MySQL cheatsheet")
--   [MySQL Performance: How To Leverage MySQL Database Indexing](https://alx-intranet.hbtn.io/rltoken/2GJbZ48zRPA70o2YhTdH7g "MySQL Performance: How To Leverage MySQL Database Indexing")
--   [Stored Procedure](https://alx-intranet.hbtn.io/rltoken/K180X2OCzb6gzPngjn-EIg "Stored Procedure")
--   [Triggers](https://alx-intranet.hbtn.io/rltoken/cJ1qA4o-rRm4rWIsqYKSZg "Triggers")
--   [Views](https://alx-intranet.hbtn.io/rltoken/vHg1z3UAOcWMvOt8xZHeiA "Views")
--   [Functions and Operators](https://alx-intranet.hbtn.io/rltoken/g-c1m6iljScpi4LeqxBRqQ "Functions and Operators")
--   [Trigger Syntax and Examples](https://alx-intranet.hbtn.io/rltoken/gLVwKjQfRL0Jr_nWqAS7VQ "Trigger Syntax and Examples")
--   [CREATE TABLE Statement](https://alx-intranet.hbtn.io/rltoken/X789nJ22H6HVh1uCQPl0lg "CREATE TABLE Statement")
--   [CREATE PROCEDURE and CREATE FUNCTION Statements](https://alx-intranet.hbtn.io/rltoken/mfrWMt1KL3NHXblJykMgZg "CREATE PROCEDURE and CREATE FUNCTION Statements")
--   [CREATE INDEX Statement](https://alx-intranet.hbtn.io/rltoken/oCu8Rg9WfKyF4BhTt8dZGQ "CREATE INDEX Statement")
--   [CREATE VIEW Statement](https://alx-intranet.hbtn.io/rltoken/FEZNlZFKZmD1ISnLINkCwQ "CREATE VIEW Statement")
+-   [MySQL cheatsheet](https://devhints.io/mysql "MySQL cheatsheet")
+-   [MySQL Performance: How To Leverage MySQL Database Indexing](https://www.liquidweb.com/kb/mysql-optimization-how-to-leverage-mysql-database-indexing/ "MySQL Performance: How To Leverage MySQL Database Indexing")
+-   [Stored Procedure](https://www.w3resource.com/mysql/mysql-procedure.php "Stored Procedure")
+-   [Triggers](https://www.w3resource.com/mysql/mysql-triggers.php "Triggers")
+-   [Views](https://www.w3resource.com/mysql/mysql-views.php "Views")
+-   [Functions and Operators](https://dev.mysql.com/doc/refman/5.7/en/functions.html "Functions and Operators")
+-   [Trigger Syntax and Examples](https://dev.mysql.com/doc/refman/5.7/en/trigger-syntax.html "Trigger Syntax and Examples")
+-   [CREATE TABLE Statement](https://dev.mysql.com/doc/refman/5.7/en/create-table.html "CREATE TABLE Statement")
+-   [CREATE PROCEDURE and CREATE FUNCTION Statements](https://dev.mysql.com/doc/refman/5.7/en/create-procedure.html "CREATE PROCEDURE and CREATE FUNCTION Statements")
+-   [CREATE INDEX Statement](https://dev.mysql.com/doc/refman/5.7/en/create-index.html "CREATE INDEX Statement")
+-   [CREATE VIEW Statement](https://dev.mysql.com/doc/refman/5.7/en/create-view.html "CREATE VIEW Statement")
 
 Learning Objectives
 -------------------
