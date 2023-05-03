@@ -9,16 +9,16 @@ Resources
 
 **Read or watch**:
 
--   [Nested while loops](https://alx-intranet.hbtn.io/rltoken/aDRkFzUkVysnD94Dpm3w5g "Nested while loops")
--   [C - Functions](https://alx-intranet.hbtn.io/rltoken/zf4IZeoe0yFZL2X7_nznQQ "C - Functions")
--   [Learning to Program in C (Part 06)](https://alx-intranet.hbtn.io/rltoken/iQ87CI4Lf41U_uRh9QsoQA "Learning to Program in C (Part 06)") (*stop at 14:00*)
--   [What is the purpose of a function prototype?](https://alx-intranet.hbtn.io/rltoken/pUXhvD6-xl5BbWyj1AhCEA "What is the purpose of a function prototype?")
--   [C - Header Files](https://alx-intranet.hbtn.io/rltoken/IFY075ffrszSJvHqPAa-zQ "C - Header Files") (*stop before the "Once-Only Headers" paragraph*)
+-   [Nested while loops](https://www.youtube.com/watch?v=Z3iGeQ1gIss "Nested while loops")
+-   [C - Functions](https://www.tutorialspoint.com/cprogramming/c_functions.htm "C - Functions")
+-   [Learning to Program in C (Part 06)](https://www.youtube.com/watch?v=qMlnFwYdqIw "Learning to Program in C (Part 06)") (*stop at 14:00*)
+-   [What is the purpose of a function prototype?](https://www.geeksforgeeks.org/what-is-the-purpose-of-a-function-prototype/ "What is the purpose of a function prototype?")
+-   [C - Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm "C - Header Files") (*stop before the "Once-Only Headers" paragraph*)
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/qxo8nrqjGy1G9N_n87yE4g "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg "explain to anyone"), **without the help of Google**:
 
 ### General
 
