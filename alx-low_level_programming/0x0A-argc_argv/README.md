@@ -9,15 +9,15 @@ Resources
 
 **Read or watch**:
 
--   [Arguments to main](https://alx-intranet.hbtn.io/rltoken/Jip_nI4tv2ybQZ-jV3fqJg "Arguments to main")
--   [argc and argv](https://alx-intranet.hbtn.io/rltoken/31aLwv8qsXuiUZrOk9Djqg "argc and argv")
--   [What does argc and argv mean?](https://alx-intranet.hbtn.io/rltoken/A0pzqslB6Z3Y3OV3hJQ6Tw "What does argc and argv mean?")
--   [how to compile with unused variables](https://alx-intranet.hbtn.io/rltoken/MkOUE1ndq1UAx9Erk-AVbg "how to compile with unused variables")
+-   [Arguments to main](https://publications.gbdirect.co.uk//c_book/chapter10/arguments_to_main.html "Arguments to main")
+-   [argc and argv](http://crasseux.com/books/ctutorial/argc-and-argv.html "argc and argv")
+-   [What does argc and argv mean?](https://www.youtube.com/watch?v=aP1ijjeZc24 "What does argc and argv mean?")
+-   [how to compile with unused variables](https://www.google.com/webhp?q=unused+variable+C "how to compile with unused variables")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/P3IGlnHQyySuo9hPXasUAA "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
