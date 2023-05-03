@@ -19,15 +19,15 @@ Resources
 
 **Read or watch**:
 
--   [C - Arrays](https://alx-intranet.hbtn.io/rltoken/PVi2XMuApOK3jfhsoqsyXw "C - Arrays")
--   [C - Pointers](https://alx-intranet.hbtn.io/rltoken/oyHybzYBeFiLUMALpb_usA "C - Pointers")
--   [C - Strings](https://alx-intranet.hbtn.io/rltoken/sUeh9qDyW9pePOfJIpx_Bw "C - Strings")
--   [Memory Layout](https://alx-intranet.hbtn.io/rltoken/0k6CD2ZMzSFOMUxMOBiAlQ "Memory Layout")
+-   [C - Arrays](https://www.tutorialspoint.com/cprogramming/c_arrays.htm "C - Arrays")
+-   [C - Pointers](https://www.tutorialspoint.com/cprogramming/c_pointers.htm "C - Pointers")
+-   [C - Strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm "C - Strings")
+-   [Memory Layout](https://aticleworld.com/memory-layout-of-c-program/ "Memory Layout")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/Snxxk_vBUNDA93PWmqdH3g "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -495,3 +495,95 @@ julien@ubuntu:~/0x05$
 -   GitHub repository: `alx-low_level_programming`
 -   Directory: `0x05-pointers_arrays_strings`
 -   File: `9-strcpy.c`
+
+### 10\. Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers
+
+mandatory
+
+Write a function that convert a string to an integer.
+
+-   Prototype: `int _atoi(char *s)`;
+-   The number in the string can be preceded by an infinite number of characters
+-   You need to take into account all the `-` and `+` signs before the number
+-   If there are no numbers in the string, the function must return `0`
+-   You are not allowed to use `long`
+-   You are not allowed to declare new variables of “type” array
+-   You are not allowed to hard-code special values
+-   We will use the `-fsanitize=signed-integer-overflow` gcc flag to compile your code.
+
+FYI: The standard library provides a similar function: `atoi`. Run `man atoi` to learn more.
+
+```
+julien@ubuntu:~/0x05$ cat 100-main.c
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int nb;
+
+    nb = _atoi("98");
+    printf("%d\n", nb);
+    nb = _atoi("-402");
+    printf("%d\n", nb);
+    nb = _atoi("          ------++++++-----+++++--98");
+    printf("%d\n", nb);
+    nb = _atoi("214748364");
+    printf("%d\n", nb);
+    nb = _atoi("0");
+    printf("%d\n", nb);
+    nb = _atoi("Suite 402");
+    printf("%d\n", nb);
+    nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
+    printf("%d\n", nb);
+    nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+    printf("%d\n", nb);
+    return (0);
+}
+julien@ubuntu:~/0x05$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -fsanitize=signed-integer-overflow 100-main.c 100-atoi.c -o 100-atoi
+julien@ubuntu:~/0x05$ ./100-atoi 
+98
+-402
+-98
+214748364
+0
+402
+98
+402
+julien@ubuntu:~/0x05$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x05-pointers_arrays_strings`
+-   File: `100-atoi.c`
+
+### 11\. Don't hate the hacker, hate the code
+
+mandatory
+
+Create a program that generates random valid passwords for the program [101-crackme](https://github.com/holbertonschool/0x04.c).
+
+-   You are allowed to use the standard library
+-   You don’t have to pass the `betty-style` tests (you still need to pass the `betty-doc` tests)
+-   man `srand`, `rand`, `time`
+-   `gdb` and `objdump` can help
+
+```
+julien@ubuntu:~/0x05$ gcc -Wall -pedantic -Werror -Wextra 101-keygen.c -o 101-keygen
+julien@ubuntu:~/0x05$ ./101-crackme "`./101-keygen`"
+Tada! Congrats
+julien@ubuntu:~/0x05$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x05-pointers_arrays_strings`
+-   File: `101-keygen.c`
