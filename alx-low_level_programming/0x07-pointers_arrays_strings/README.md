@@ -17,15 +17,15 @@ Resources
 
 **Read or watch**:
 
--   [C - Pointer to Pointer](https://alx-intranet.hbtn.io/rltoken/eyikXPg7ZxCAEuWklB6xtQ "C - Pointer to Pointer")
--   [C -- Pointer to Pointer with example](https://alx-intranet.hbtn.io/rltoken/ojr7OUUm2I-MULE4lWlrkg "C -- Pointer to Pointer with example")
--   [Multi-dimensional Arrays in C](https://alx-intranet.hbtn.io/rltoken/HUZIJ6t55KM7d7FBCwWm8Q "Multi-dimensional Arrays in C")
--   [Two dimensional (2D) arrays in C programming with example](https://alx-intranet.hbtn.io/rltoken/Dx9nIBRj68sRBGe2NRI_aQ "Two dimensional (2D) arrays in C programming with example")
+-   [C - Pointer to Pointer](https://www.tutorialspoint.com/cprogramming/c_pointer_to_pointer.htm "C - Pointer to Pointer")
+-   [C -- Pointer to Pointer with example](https://beginnersbook.com/2014/01/c-pointer-to-pointer/ "C -- Pointer to Pointer with example")
+-   [Multi-dimensional Arrays in C](https://www.tutorialspoint.com/cprogramming/c_multi_dimensional_arrays.htm "Multi-dimensional Arrays in C")
+-   [Two dimensional (2D) arrays in C programming with example](https://beginnersbook.com/2014/01/2d-arrays-in-c-example/ "Two dimensional (2D) arrays in C programming with example")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/4zAEhwhzlwolYh1Tmjg2Pg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
