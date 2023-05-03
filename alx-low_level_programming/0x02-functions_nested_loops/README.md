@@ -8,16 +8,16 @@ Resources
 
 **Read or watch**:
 
--   [Nested while loops](https://alx-intranet.hbtn.io/rltoken/_4aLZ5nW24njUT2VbSZdQQ "Nested while loops")
--   [C - Functions](https://alx-intranet.hbtn.io/rltoken/Vg1zzzrxLhPh71405uggSg "C - Functions")
--   [Learning to Program in C (Part 06)](https://alx-intranet.hbtn.io/rltoken/jveXtnJII2S0z7a06c7-JA "Learning to Program in C (Part 06)") (*stop at 14:00*)
--   [What is the purpose of a function prototype?](https://alx-intranet.hbtn.io/rltoken/XZ--UJZO76ZoUWNA9bTmbg "What is the purpose of a function prototype?")
--   [C - Header Files](https://alx-intranet.hbtn.io/rltoken/AS8JW4ObD5gmyX2mgtqV0A "C - Header Files") (*stop before the "Once-Only Headers" paragraph*)
+-   [Nested while loops](https://www.youtube.com/watch?v=Z3iGeQ1gIss "Nested while loops")
+-   [C - Functions](http://www.tutorialspoint.com/cprogramming/c_functions.htm "C - Functions")
+-   [Learning to Program in C (Part 06)](https://www.youtube.com/watch?v=qMlnFwYdqIw "Learning to Program in C (Part 06)") (*stop at 14:00*)
+-   [What is the purpose of a function prototype?](https://www.geeksforgeeks.org/what-is-the-purpose-of-a-function-prototype/ "What is the purpose of a function prototype?")
+-   [C - Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm "C - Header Files") (*stop before the "Once-Only Headers" paragraph*)
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/973IovM3wuVbqNXrcxZ4Bg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -432,7 +432,7 @@ mandatory
 Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
 
 -   Prototype: `void jack_bauer(void);`
--   You can listen to [this soundtrack](https://alx-intranet.hbtn.io/rltoken/aNwRcWg7MPM1J2lYuuuBjA "this soundtrack") while coding :)
+-   You can listen to [this soundtrack](https://www.youtube.com/watch?v=btAfXqgMkPs "this soundtrack") while coding :)
 
 ```
 julien@ubuntu:~/0x02$ cat 8-main.c
