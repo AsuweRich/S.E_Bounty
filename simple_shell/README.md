@@ -190,7 +190,7 @@ mandatory
 
 -   Write a `README`
 -   Write a `man` for your shell.
--   You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. Format, see [Docker](https://alx-intranet.hbtn.io/rltoken/UL8J3kgl7HBK_Z9iBL3JFg "Docker")
+-   You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. Format, see [Docker](https://github.com/moby/moby/blob/master/AUTHORS "Docker")
 
 **Repo:**
 
