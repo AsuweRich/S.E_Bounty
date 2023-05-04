@@ -3,25 +3,18 @@
 
 -   By Julien Barbier
 
-#### In a nutshell...
-
--   **Auto QA review:** 0.0/98 mandatory & 0.0/16 optional
--   **Altogether:**  **0.0%**
-    -   Mandatory: 0.0%
-    -   Optional: 0.0%
-    -   Calculation:  0.0% + (0.0% * 0.0%)  == **0.0%**
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [What is a Doubly Linked List](https://alx-intranet.hbtn.io/rltoken/C5_IRM981SVn8oA8RP3gag "What is a Doubly Linked List")
+-   [What is a Doubly Linked List](https://www.youtube.com/watch?v=k0pjD12bzP0 "What is a Doubly Linked List")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/0ABh2M07w5kdsh9gRx1XwA "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -1079,13 +1072,12 @@ Repo:
 
 5. Get node at index
 mandatory
-Score: 0.00% (Checks completed: 0.00%)
 
-Write a function that returns the nth node of a dlistint_t linked list.
+Write a function that returns the nth node of a `dlistint_t` linked list.
 
-    Prototype: dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
-    where index is the index of the node, starting from 0
-    if the node does not exist, return NULL
+-   Prototype: `dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);`
+-   where `index` is the index of the node, starting from `0`
+-   if the node does not exist, return `NULL`
 
 julien@ubuntu:~/0x17. Doubly linked lists$ cat 5-main.c
 #include <stdlib.h>
@@ -1132,21 +1124,20 @@ julien@ubuntu:~/0x17. Doubly linked lists$ ./h
 98
 julien@ubuntu:~/0x17. Doubly linked lists$ 
 
-Repo:
+**Repo:**
 
-    GitHub repository: alx-low_level_programming
-    Directory: 0x17-doubly_linked_lists
-    File: 5-get_dnodeint.c
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x17-doubly_linked_lists`
+-   File: `5-get_dnodeint.c`
 
 6. Sum list
 mandatory
-Score: 0.00% (Checks completed: 0.00%)
 
-Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
+Write a function that returns the sum of all the data `(n)` of a `dlistint_t` linked list.
 
-    Prototype: int sum_dlistint(dlistint_t *head);
-    if the list is empty, return 0
-
+-   Prototype: `int sum_dlistint(dlistint_t *head);`
+-   if the list is empty, return `0`
+```
 julien@ubuntu:~/0x17. Doubly linked lists$ cat 6-main.c 
 #include <stdlib.h>
 #include <string.h>
@@ -1182,26 +1173,26 @@ julien@ubuntu:~/0x17. Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra 6
 julien@ubuntu:~/0x17. Doubly linked lists$ ./i 
 sum = 1534
 julien@ubuntu:~/0x17. Doubly linked lists$ 
+```
 
-Repo:
+**Repo:**
 
-    GitHub repository: alx-low_level_programming
-    Directory: 0x17-doubly_linked_lists
-    File: 6-sum_dlistint.c
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x17-doubly_linked_lists`
+-   File: `6-sum_dlistint.c`
 
-7. Insert at index
+### 7. Insert at index
 mandatory
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that inserts a new node at a given position.
 
-    Prototype: dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
-    where idx is the index of the list where the new node should be added. Index starts at 0
-    Returns: the address of the new node, or NULL if it failed
-    if it is not possible to add the new node at index idx, do not add the new node and return NULL
+-   Prototype: `dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);`
+-   where `idx` is the index of the list where the new node should be added. Index starts at `0`
+-   Returns: the address of the new node, or `NULL` if it failed
+-   if it is not possible to add the new node at index `idx`, do not add the new node and return `NULL`
 
-Your files 2-add_dnodeint.c and 3-add_dnodeint_end.c will be compiled during the correction
-
+Your files `2-add_dnodeint.c` and `3-add_dnodeint_end.c` will be compiled during the correction
+```
 julien@ubuntu:~/0x17. Doubly linked lists$ cat 7-main.c
 #include <stdlib.h>
 #include <string.h>
@@ -1255,23 +1246,23 @@ julien@ubuntu:~/0x17. Doubly linked lists$ ./j
 402
 1024
 julien@ubuntu:~/0x17. Doubly linked lists$
+```
 
-Repo:
+**Repo:**
 
-    GitHub repository: alx-low_level_programming
-    Directory: 0x17-doubly_linked_lists
-    File: 7-insert_dnodeint.c, 2-add_dnodeint.c, 3-add_dnodeint_end.c
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x17-doubly_linked_lists`
+-   File: `7-insert_dnodeint.c, 2-add_dnodeint.c, 3-add_dnodeint_end.c`
 
-8. Delete at index
+### 8. Delete at index
 mandatory
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that deletes the node at index index of a dlistint_t linked list.
 
-    Prototype: int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
-    where index is the index of the node that should be deleted. Index starts at 0
-    Returns: 1 if it succeeded, -1 if it failed
-
+-   Prototype: int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+-   where index is the index of the node that should be deleted. Index starts at 0
+-   Returns: 1 if it succeeded, -1 if it failed
+```
 julien@ubuntu:~/0x17. Doubly linked lists$ cat 8-main.c
 #include <stdlib.h>
 #include <string.h>
@@ -1397,25 +1388,6 @@ julien@ubuntu:~/0x17. Doubly linked lists$ ./k
 -----------------
 -----------------
 julien@ubuntu:~/0x17. Doubly linked lists$ 
-
-Repo:
-
-    GitHub repository: alx-low_level_programming
-    Directory: 0x17-doubly_linked_lists
-    File: 8-delete_dnodeint.c
-
-
------------------
------------------
------------------
------------------
------------------
------------------
------------------
------------------
------------------
-julien@ubuntu:~/0x17. Doubly linked lists$
-
 ```
 
 **Repo:**
@@ -1423,3 +1395,58 @@ julien@ubuntu:~/0x17. Doubly linked lists$
 -   GitHub repository: `alx-low_level_programming`
 -   Directory: `0x17-doubly_linked_lists`
 -   File: `8-delete_dnodeint.c`
+
+### 9. Crackme4
+#advanced
+
+Find the password for [crackme4[(https://github.com/holbertonschool/0x17.c).
+
+-   Save the password in the file `100-password`
+-   Your file should contain the exact password, no new line, no extra space
+-   Hint: The program prints “OK” when the password is correct
+
+**Repo:**
+
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x17-doubly_linked_lists`
+-   File: `100-password`
+
+### 10. Palindromes
+#advanced
+
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is `9009` = `91` × `99`.
+
+Find the largest palindrome made from the product of two 3-digit numbers.
+
+-   Save the result in the file `102-result`
+-   Your file should contain the exact result, no new line, no extra space
+
+**Repo:**
+
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x17-doubly_linked_lists`
+-   File: `102-result`
+
+### 11. crackme5
+#advanced
+
+Write a keygen for [crackme5](https://github.com/holbertonschool/0x17.c).
+
+-   Usage of the crackme: `./crackme5 username key`
+-   The crackme will segfault if you do not enter the correct key for the user
+-   Usage for your keygen: `./keygen5 username`
+-   Your keygen should print a valid key for the `username`
+```
+julien@ubuntu:~/0x17$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-keygen.c -o keygen5
+julien@ubuntu:~/0x17$ ./crackme5 julien javascript
+Segmentation fault (core dumped)
+julien@ubuntu:~/0x17$ ./crackme5 julien `./keygen5 julien`
+Congrats!
+julien@ubuntu:~/0x17$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x17-doubly_linked_lists`
+-   File: `103-keygen.c`
