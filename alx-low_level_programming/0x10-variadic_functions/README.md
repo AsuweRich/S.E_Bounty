@@ -9,9 +9,9 @@ Resources
 
 **Read or watch**:
 
--   [stdarg.h](https://alx-intranet.hbtn.io/rltoken/wLRJdO8pA2-Vb-rF2Y71sA "stdarg.h")
--   [Variadic Functions](https://alx-intranet.hbtn.io/rltoken/3gW8GycmyjarbJR76FkrzA "Variadic Functions")
--   [Const Keyword](https://alx-intranet.hbtn.io/rltoken/_RRPCY32VODyN_r2HIEnBQ "Const Keyword")
+-   [stdarg.h](https://en.wikipedia.org/wiki/Stdarg.h "stdarg.h")
+-   [Variadic Functions](https://www.gnu.org/software/libc/manual/html_node/Variadic-Functions.html "Variadic Functions")
+-   [Const Keyword](https://www.youtube.com/watch?v=1W4oyuOdXv8 "Const Keyword")
 
 **man or help**:
 
@@ -20,7 +20,7 @@ Resources
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/QhsjfwBH5C7EriBICg67sQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
