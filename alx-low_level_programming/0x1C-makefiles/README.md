@@ -12,12 +12,14 @@ Resources
 
 **Read or watch**:
 
--   [Makefile](https://alx-intranet.hbtn.io/rltoken/moIpBFMN3sJcVMNn5VIFlA "Makefile")
+-   [Makefile](https://www.google.com/search?q=makefile "Makefile")
+-   [Installing the make utility](https://www.geeksforgeeks.org/how-to-install-make-on-ubuntu/ "Installing the make utility")
+-   [make-official documentation](https://www.gnu.org/software/make/manual/html_node/ "make-official documentation")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/u_RzOFqA4lSt5AdGRAfQ_w "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -53,8 +55,6 @@ Tasks
 ### 0\. make -f 0-Makefile
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Create your first Makefile.
 
@@ -95,7 +95,6 @@ j#0000000000000k?qwgdC=]4#0000000000000
 j#00000000000000w]+]++qw#00000000000000
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 julien@ubuntu:~/0x1C. Makefiles$
-
 ```
 
 **Repo:**
@@ -109,8 +108,6 @@ julien@ubuntu:~/0x1C. Makefiles$
 ### 1\. make -f 1-Makefile
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Requirements:
 
@@ -127,7 +124,6 @@ gcc main.c school.c -o school
 julien@ubuntu:~/0x1C. Makefiles$ make -f 1-Makefile
 gcc main.c school.c -o school
 julien@ubuntu:~/0x1C. Makefiles$
-
 ```
 
 **Repo:**
@@ -141,8 +137,6 @@ julien@ubuntu:~/0x1C. Makefiles$
 ### 2\. make -f 2-Makefile
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Create your first useful Makefile.
 
@@ -171,7 +165,6 @@ julien@ubuntu:~/0x1C. Makefiles$ make -f 2-Makefile
 gcc    -c -o main.o main.c
 gcc main.o school.o -o school
 julien@ubuntu:~/0x1C. Makefiles$
-
 ```
 
 **Repo:**
@@ -185,8 +178,6 @@ julien@ubuntu:~/0x1C. Makefiles$
 ### 3\. make -f 3-Makefile
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Requirements:
 
@@ -254,7 +245,6 @@ gcc    -c -o main.o main.c
 gcc    -c -o school.o school.c
 gcc main.o school.o -o school
 julien@ubuntu:~/0x1C. Makefiles$
-
 ```
 
 **Repo:**
@@ -268,8 +258,6 @@ julien@ubuntu:~/0x1C. Makefiles$
 ### 4\. A complete Makefile
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Requirements:
 
@@ -298,7 +286,6 @@ gcc -Wall -Werror -Wextra -pedantic   -c -o main.o main.c
 gcc -Wall -Werror -Wextra -pedantic   -c -o school.o school.c
 gcc main.o school.o -o school
 julien@ubuntu:~/0x1C. Makefiles$
-
 ```
 
 **Repo:**
@@ -312,8 +299,6 @@ julien@ubuntu:~/0x1C. Makefiles$
 ### 5\. Island Perimeter
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 **Technical interview preparation**:
 
@@ -359,7 +344,6 @@ guillaume@ubuntu:~/0x1C$
 guillaume@ubuntu:~/0x1C$ ./5-main.py
 12
 guillaume@ubuntu:~/0x1C$
-
 ```
 
 **Repo:**
@@ -373,8 +357,6 @@ guillaume@ubuntu:~/0x1C$
 ### 6\. make -f 100-Makefile
 
 #advanced
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Requirements:
 
