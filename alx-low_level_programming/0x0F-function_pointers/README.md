@@ -2,25 +2,22 @@
 ===========================
 
 -   By Alexandre Gautier
--   Ongoing project - started 09-29-2021, must end by 09-30-2021 (in about 18 hours) - you're done with 0% of tasks.
--   Checker will be released at 09-29-2021 06:00 PM
--   QA review fully automated.
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [Function Pointer in C](https://alx-intranet.hbtn.io/rltoken/yt8Q9jxzT_gyRAvnNkAgkw "Function Pointer in C")
--   [Pointers to functions](https://alx-intranet.hbtn.io/rltoken/wP-yWvo9IqbcQsywMmh_iQ "Pointers to functions")
--   [Function Pointers in C / C++](https://alx-intranet.hbtn.io/rltoken/dAN27S1yyBPeBa8RGfvPNA "Function Pointers in C / C++")
--   [why pointers to functions?](https://alx-intranet.hbtn.io/rltoken/1vvWpH9Ux8axOLc9jPWcMw "why pointers to functions?")
--   [Everything you need to know about pointers in C](https://alx-intranet.hbtn.io/rltoken/G_0lQzs4LAd1e5tKhNMPiw "Everything you need to know about pointers in C")
+-   [Function Pointer in C](https://www.geeksforgeeks.org/function-pointer-in-c/ "Function Pointer in C")
+-   [Pointers to functions](https://publications.gbdirect.co.uk//c_book/chapter5/function_pointers.html "Pointers to functions")
+-   [Function Pointers in C / C++](https://www.youtube.com/watch?v=ynYtgGUNelE "Function Pointers in C / C++")
+-   [why pointers to functions?](https://www.youtube.com/watch?v=sxTFSDAZM8s&feature=youtu.be "why pointers to functions?")
+-   [Everything you need to know about pointers in C](https://boredzo.org/pointers/ "Everything you need to know about pointers in C")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/k0azA8UvMNuoAq5DODHvdw "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -387,7 +384,7 @@ Repo:
 
 Score: 0.00% (Checks completed: 0.00%)
 
-Write a program that prints the [opcodes](https://alx-intranet.hbtn.io/rltoken/5eSu8Ohx0ddeNGmaeDo_zQ "opcodes") of its own main function.
+Write a program that prints the [opcodes](https://en.wikipedia.org/wiki/Opcode "opcodes") of its own main function.
 
 -   Usage: `./main number_of_bytes`
 -   Output format:
