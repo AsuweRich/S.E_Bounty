@@ -16,8 +16,8 @@ Resources
 
 **Read or watch**:
 
--   [0x0a - malloc & free - quick overview.pdf](https://alx-intranet.hbtn.io/rltoken/7q6RmWq86XkUhvmlhrg9bg "0x0a - malloc & free - quick overview.pdf")
--   [Dynamic memory allocation in C - malloc calloc realloc free](https://alx-intranet.hbtn.io/rltoken/pfGb2oVIYLO_1a8jtFGQYw "Dynamic memory allocation in C - malloc calloc realloc free") (*stop at 6:50*)
+-   [0x0a - malloc & free - quick overview.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2021/1/a094c90e7f466bbeaa49cb24c8f04e7f27aaad41.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230504%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230504T045512Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=59b334cc6e93c85b414864ea500ac3dbe5eaecc7eb836135874a59c11bee6e98 "0x0a - malloc & free - quick overview.pdf")
+-   [Dynamic memory allocation in C - malloc calloc realloc free](https://www.youtube.com/watch?v=xDVC3wKjS64 "Dynamic memory allocation in C - malloc calloc realloc free") (*stop at 6:50*)
 
 **man or help**:
 
@@ -27,7 +27,7 @@ Resources
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/2LjkSexDe-xcLQZ0f5ungQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -427,3 +427,123 @@ julien@ubuntu:~/0x0a. malloc, free$
 -   GitHub repository: `alx-low_level_programming`
 -   Directory: `0x0B-malloc_free`
 -   File: `4-free_grid.c`
+
+### 5\. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe
+
+advanced
+
+Write a function that concatenates all the arguments of your program.
+
+-   Prototype: `char *argstostr(int ac, char **av);`
+-   Returns `NULL` if `ac == 0` or `av == NULL`
+-   Returns a pointer to a new string, or `NULL` if it fails
+-   Each argument should be followed by a `\n` in the new string
+```
+julien@ubuntu:~/0x0a. malloc, free$ cat 100-main.c
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - check the code for ALX School students.
+ *
+ * Return: Always 0.
+ */
+int main(int ac, char *av[])
+{
+    char *s;
+
+    s = argstostr(ac, av);
+    if (s == NULL)
+    {
+        return (1);
+    }
+    printf("%s", s);
+    free(s);
+    return (0);
+}
+julien@ubuntu:~/0x0a. malloc, free$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-argstostr.c -o args
+julien@ubuntu:~/0x0a. malloc, free$ ./args I will "show you" how great I am
+./args
+I
+will
+show you
+how
+great
+I
+am
+julien@ubuntu:~/0x0a. malloc, free$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x0B-malloc_free`
+-   File: `100-argstostr.c`
+
+### 6\. I will show you how great I am
+
+advanced
+
+Write a function that splits a string into words.
+
+-   Prototype: `char **strtow(char *str);`
+-   The function returns a pointer to an array of strings (words)
+-   Each element of this array should contain a single word, null-terminated
+-   The last element of the returned array should be `NULL`
+-   Words are separated by spaces
+-   Returns `NULL` if `str == NULL` or `str == ""`
+-   If your function fails, it should return `NULL`
+```
+julien@ubuntu:~/0x0a. malloc, free$ cat 101-main.c
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * print_tab - Prints an array of string
+ * @tab: The array to print
+ *
+ * Return: nothing
+ */
+void print_tab(char **tab)
+{
+    int i;
+
+    for (i = 0; tab[i] != NULL; ++i)
+    {
+        printf("%s\n", tab[i]);
+    }
+}
+
+/**
+ * main - check the code for ALX School students.
+ *
+ * Return: 1 if an error occurred, 0 otherwise
+ */
+int main(void)
+{
+    char **tab;
+
+    tab = strtow("      ALX School         #cisfun      ");
+    if (tab == NULL)
+    {
+        printf("Failed\n");
+        return (1);
+    }
+    print_tab(tab);
+    return (0);
+}
+julien@ubuntu:~/0x0a. malloc, free$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-strtow.c -o strtow
+julien@ubuntu:~/0x0a. malloc, free$ ./strtow | cat -e
+ALX$
+School$
+#cisfun$
+julien@ubuntu:~/0x0a. malloc, free$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-low_level_programming`
+-   Directory: `0x0B-malloc_free`
+-   File: `101-strtow.c`
