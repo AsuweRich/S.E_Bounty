@@ -11,6 +11,7 @@ Concepts
 
 -   [Everything you need to know to start coding your own shell](https://alx-intranet.hbtn.io/concepts/64)
 -   [Approaching a Project](https://alx-intranet.hbtn.io/concepts/350)
+![image](https://user-images.githubusercontent.com/106776383/236330106-9851e6dd-c113-4614-ab92-476eb9f565ba.png)
 
 Background Context
 ------------------
@@ -19,16 +20,16 @@ Write a simple UNIX command interpreter.
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/235/shell.jpeg)
 
-*^ "The Gates of Shell", by [Spencer Cheng](https://alx-intranet.hbtn.io/rltoken/AtYRSM03vJDrko9xHodxFQ "Spencer Cheng"), featuring [Julien Barbier](https://alx-intranet.hbtn.io/rltoken/-ezXgcyfhc8qU1DeUInLUA "Julien Barbier")*
+*^ "The Gates of Shell", by [Spencer Cheng](https://twitter.com/spencerhcheng/status/855104635069054977 "Spencer Cheng"), featuring [Julien Barbier]https://twitter.com/julienbarbier42 "Julien Barbier")*
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [Unix shell](https://alx-intranet.hbtn.io/rltoken/f0YU9TAhniMXWlSXtb64Yw "Unix shell")
--   [Thompson shell](https://alx-intranet.hbtn.io/rltoken/7LJOp2qP7qHUcsOK2-F3qA "Thompson shell")
--   [Ken Thompson](https://alx-intranet.hbtn.io/rltoken/wTSu31ZP1f7fFTJFgRQC7w "Ken Thompson")
+-   [Unix shell](https://en.wikipedia.org/wiki/Unix_shell "Unix shell")
+-   [Thompson shell](https://en.wikipedia.org/wiki/Thompson_shell "Thompson shell")
+-   [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson "Ken Thompson")
 -   **Everything you need to know to start coding your own shell** concept page
 
 **man or help**:
@@ -38,7 +39,7 @@ Resources
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/4mHp8pZKm5sjL4-TEJEKeg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -70,7 +71,7 @@ Requirements
 -   Your shell should not have any memory leaks
 -   No more than 5 functions per file
 -   All your header files should be include guarded
--   Use system calls only when you need to ([why?](https://alx-intranet.hbtn.io/rltoken/EU7B1PTSy14INnZEShpobQ "why?"))
+-   Use system calls only when you need to ([why?](https://www.quora.com/Why-are-system-calls-expensive-in-operating-systems "why?"))
 
 ### GitHub
 
@@ -92,7 +93,6 @@ $ echo "qwerty" | /bin/sh
 $ echo "qwerty" | /bin/../bin/sh
 /bin/../bin/sh: 1: qwerty: not found
 $
-
 ```
 
 Same error with your program `hsh`:
@@ -103,7 +103,6 @@ $ echo "qwerty" | ./hsh
 $ echo "qwerty" | ./././hsh
 ./././hsh: 1: qwerty: not found
 $
-
 ```
 
 ### List of allowed functions and system calls
@@ -146,7 +145,6 @@ Your shell will be compiled this way:
 
 ```
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
-
 ```
 
 ### Testing
@@ -160,7 +158,6 @@ hsh main.c shell.c
 ($)
 ($) exit
 $
-
 ```
 
 But also in non-interactive mode:
@@ -177,7 +174,6 @@ $ cat test_ls_2 | ./hsh
 hsh main.c shell.c test_ls_2
 hsh main.c shell.c test_ls_2
 $
-
 ```
 
 ### Checks
@@ -256,7 +252,6 @@ julien@ubuntu:~/shell$ echo "/bin/ls" | ./shell
 #cisfun$ barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c stat.c         wait
 env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
 #cisfun$ julien@ubuntu:~/shell$
-
 ```
 
 **Repo:**
@@ -301,7 +296,6 @@ drwx------ 3 root   root   4096 Dec  5 12:07 systemd-private-062a0eca7f2a4434973
 -rw-rw-r-- 1 julien julien    0 Dec  5 12:09 unity_support_test.0
 :) ^C
 julien@ubuntu:~/shell$
-
 ```
 
 **Repo:**
@@ -347,7 +341,6 @@ PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/us
 DISPLAY=:0
 $ exit
 julien@ubuntu:~/shell$
-
 ```
 
 **Repo:**
@@ -370,3 +363,218 @@ Write a blog post describing step by step what happens when you type `ls -l *.c`
 When done, please add all urls below (blog post, LinkedIn post, etc.)
 
 #### Add URLs here:
+---
+
+Tasks
+-----------
+
+### 0\. Betty would be proud
+mandatory
+
+Write a beautiful code that passes the Betty checks
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 1\. Simple shell 0.1
+mandatory
+
+Write a UNIX command line interpreter.
+
+- Usage: `simple_shell`
+
+Your Shell should:
+
+- Display a prompt and wait for the user to type a command. A command line always ends with a new line.
+- The prompt is displayed again each time a command has been executed.
+- The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
+- The command lines are made only of one word. No arguments will be passed to programs.
+- If an executable cannot be found, print an error message and display the prompt again.
+- Handle errors.
+- You have to handle the “end of file” condition (`Ctrl+D`)
+
+You don’t have to:
+
+- use the `PATH`
+- implement built-ins
+- handle special characters : `"`, `'`, ```, `\`, `*`, `&`, `#`
+- be able to move the cursor
+- handle commands with arguments
+*`execve` will be the core part of your Shell, don’t forget to pass the environ to it…*
+```
+julien@ubuntu:~/shell$ ./shell 
+#cisfun$ ls
+./shell: No such file or directory
+#cisfun$ /bin/ls
+barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c  stat.c         wait
+env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
+#cisfun$ /bin/ls -l
+./shell: No such file or directory
+#cisfun$ ^[[D^[[D^[[D
+./shell: No such file or directory
+#cisfun$ ^[[C^[[C^[[C^[[C
+./shell: No such file or directory
+#cisfun$ exit
+./shell: No such file or directory
+#cisfun$ ^C
+julien@ubuntu:~/shell$ echo "/bin/ls" | ./shell
+barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c  stat.c         wait
+env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
+#cisfun$ julien@ubuntu:~/shell$
+```
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 2\. Simple shell 0.2
+mandatory
+
+Simple shell 0.1 +
+
+  - Handle command lines with arguments
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 3\. Simple shell 0.3
+mandatory
+
+Simple shell 0.2 +
+
+- Handle the `PATH`
+- `fork` must not be called if the command doesn’t exist
+```
+julien@ubuntu:~/shell$ ./shell_0.3
+:) /bin/ls
+barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
+env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
+:) ls
+barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
+env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
+:) ls -l /tmp 
+total 20
+-rw------- 1 julien julien    0 Dec  5 12:09 config-err-aAMZrR
+drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-colord.service-V7DUzr
+drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-rtkit-daemon.service-ANGvoV
+drwx------ 3 root   root   4096 Dec  5 12:07 systemd-private-062a0eca7f2a44349733e78cb4abdff4-systemd-timesyncd.service-CdXUtH
+-rw-rw-r-- 1 julien julien    0 Dec  5 12:09 unity_support_test.0
+:) ^C
+julien@ubuntu:~/shell$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 4\. Simple shell 0.4
+mandatory
+
+Simple shell 0.3 +
+
+- Implement the `exit` built-in, that exits the shell
+- Usage: `exit`
+- You don’t have to handle any argument to the built-in `exit`
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 5\. Simple shell 1.0
+mandatory
+
+Simple shell 0.4 +
+
+- Implement the `env` **built-in**, that prints the current environment
+```
+julien@ubuntu:~/shell$ ./simple_shell
+$ env
+USER=julien
+LANGUAGE=en_US
+SESSION=ubuntu
+COMPIZ_CONFIG_PROFILE=ubuntu
+SHLVL=1
+HOME=/home/julien
+C_IS=Fun_:)
+DESKTOP_SESSION=ubuntu
+LOGNAME=julien
+TERM=xterm-256color
+PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+DISPLAY=:0
+$ exit
+julien@ubuntu:~/shell$
+```
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 6\. Simple shell 0.1.1
+mandatory
+
+Simple shell 0.1 +
+
+- Write your own `getline` function
+- Use a buffer to `read` many chars at once and call the least possible the read system call
+- You will need to use `static` variables
+- You are not allowed to use `getline`
+
+You don’t have to:
+
+- be able to move the cursor
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 7\. Simple shell 0.2.1
+mandatory
+
+Simple shell 0.2 +
+
+- You are not allowed to use strtok
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 8\. Simple shell 0.4.1
+mandatory
+
+Simple shell 0.4 +
+
+- handle arguments for the built-in `exit`
+- Usage: `exit status`, where `status` is an integer used to exit the shell
+```
+julien@ubuntu:~/shell$ ./shell_0.4.1
+$ exit 98
+julien@ubuntu:~/shell$ echo $?
+98
+julien@ubuntu:~/shell$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 9\. setenv, unsetenv
+mandatory
+
+Simple shell 1.0 +
+
+Implement the `setenv` and `unsetenv` builtin commands
+
+- `setenv`
+    - Initialize a new environment variable, or modify an existing one
+    - Command syntax: `setenv VARIABLE VALUE`
+    - Should print something on stderr on failure
+- `unsetenv`
+    - Remove an environment variable
+    - Command syntax: `unsetenv VARIABLE`
+    - Should print something on stderr on failure
+
+**Repo:**
+
+-   GitHub repository: `simple_shell`
