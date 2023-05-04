@@ -2,9 +2,7 @@
 =============================
 
 -   By Julien Barbier
--   Ongoing project - started 10-07-2021, must end by 10-08-2021 (in about 9 hours) - you're done with 0% of tasks.
--   Checker was released at 10-07-2021 06:00 PM
--   QA review fully automated.
+
 
 Concepts
 --------
@@ -20,14 +18,14 @@ Resources
 
 **Read or watch**:
 
--   [Linked Lists](https://alx-intranet.hbtn.io/rltoken/joxg32-tt4lUh8Afgst8tA "Linked Lists")
--   [Google](https://alx-intranet.hbtn.io/rltoken/USaZbNdfcuIFII-K2YPsKQ "Google")
--   [Youtube](https://alx-intranet.hbtn.io/rltoken/epKUCIcoA6XaN1T3Vtr_9w "Youtube")
+-   [Linked Lists](https://www.youtube.com/watch?v=udapt4FGY20&feature=youtu.be&t=2m10s "Linked Lists")
+-   [Google](https://www.google.com/#q=linked+lists "Google")
+-   [Youtube](https://www.youtube.com/results?search_query=linked+lists "Youtube")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/-nidxOqh9IU1Kx0WXKHY5Q "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -480,7 +478,7 @@ julien@ubuntu:~/0x12. Singly linked lists$
 
 #advanced
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/de3291ccf5b255fff6ce37bfde7a13f481e7ed0c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20211007%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211007T225929Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=6db4ca2afd70e3afd4f78f3b573af13c643aa2e0f5b0e416cfc610129da219ed)
+![image](https://user-images.githubusercontent.com/106776383/236189518-385c67eb-3a0f-4d78-8f3f-aeff4b060e30.png)
 
 Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.
 
