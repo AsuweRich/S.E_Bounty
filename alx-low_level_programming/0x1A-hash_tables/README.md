@@ -2,22 +2,21 @@ x1A. C - Hash tables
 ====================
 
 -   By Julien Barbier
--   Weight: 1
-
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [What is a HashTable Data Structure - Introduction to Hash Tables , Part 0](https://alx-intranet.hbtn.io/rltoken/IQVfdxJlS6jhAgcuUoCseg "What is a HashTable Data Structure - Introduction to Hash Tables , Part 0")
--   [Hash function](https://alx-intranet.hbtn.io/rltoken/ZKpRI_FxOxAz80Onpfy0Ew "Hash function")
--   [Hash table](https://alx-intranet.hbtn.io/rltoken/mxjKpEfAw3E5B8S3inPuHQ "Hash table")
-
+-   [What is a HashTable Data Structure - Introduction to Hash Tables , Part 0](https://www.youtube.com/watch?v=MfhjkfocRR0 "What is a HashTable Data Structure - Introduction to Hash Tables , Part 0")
+-   [Hash function](https://en.wikipedia.org/wiki/Hash_function "Hash function")
+-   [Hash table](https://en.wikipedia.org/wiki/Hash_table "Hash table")
+-   [All about hash tables](https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus "All about hash tables")
+-   [why hash tables and not arrays](https://stackoverflow.com/questions/31930046/what-is-a-hash-table-and-how-do-you-make-it-in-c "why hash tables and not arrays")
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/fLjDjjaCL1oE-WJcDPpmFg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -92,7 +91,7 @@ We strongly encourage you to work all together on a set of tests
 
 Python dictionaries are implemented using hash tables. When you will be done with this project, you will be able to better understand the power and simplicity of Python dictionaries. So much is actually happening when you type `d = {'a': 1, 'b': 2}`, but everything looks so simple for the user. Python doesn't use the exact same implementation than the one you will work on today though. If you are curious on how it works under the hood, here is a good blog post about [how dictionaries are implemented in Python 2.7](https://alx-intranet.hbtn.io/rltoken/LGV7VAHGAkef5wdIhqiY2A "how dictionaries are implemented in Python 2.7") (not mandatory).
 
-Note that all dictionaries are not implemented using hash tables and there is a difference between a dictionary and a hash table. [Read more here](https://alx-intranet.hbtn.io/rltoken/6wE80OFPwL-As1zGh2iMFg "Read more here") (not mandatory).
+Note that all dictionaries are not implemented using hash tables and there is a difference between a dictionary and a hash table. [Read more here](https://stackoverflow.com/questions/2061222/what-is-the-true-difference-between-a-dictionary-and-a-hash-table "Read more here") (not mandatory).
 
 Tasks
 -----
@@ -100,8 +99,6 @@ Tasks
 ### 0\. >>> ht = {}
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that creates a hash table.
 
@@ -156,7 +153,6 @@ julien@ubuntu:~/0x1A. Hash tables$ valgrind ./a
 ==7602== For counts of detected and suppressed errors, rerun with: -v
 ==7602== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 julien@ubuntu:~/0x1A. Hash tables$
-
 ```
 
 **Repo:**
@@ -171,12 +167,10 @@ julien@ubuntu:~/0x1A. Hash tables$
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
-
 Write a hash function implementing the djb2 algorithm.
 
 -   Prototype: `unsigned long int hash_djb2(const unsigned char *str);`
--   You are allowed to copy and paste the function from [this page](https://alx-intranet.hbtn.io/rltoken/3B7lCUBD4yZh66Pbl2KcEQ "this page")
+-   You are allowed to copy and paste the function from [this page](https://gist.github.com/papamuziko/7bb52dfbb859fdffc4bd0f95b76f71e8 "this page")
 
 ```
 julien@ubuntu:~/0x1A. Hash tables$ cat 1-djb2.c
@@ -222,7 +216,6 @@ julien@ubuntu:~/0x1A. Hash tables$ ./b
 3749890792216096085
 5861846
 julien@ubuntu:~/0x1A. Hash tables$
-
 ```
 
 **Repo:**
@@ -236,8 +229,6 @@ julien@ubuntu:~/0x1A. Hash tables$
 ### 2\. key -> index
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that gives you the index of a key.
 
@@ -286,7 +277,6 @@ julien@ubuntu:~/0x1A. Hash tables$ ./c
 5861846
 470
 julien@ubuntu:~/0x1A. Hash tables$
-
 ```
 
 **Repo:**
@@ -300,8 +290,6 @@ julien@ubuntu:~/0x1A. Hash tables$
 ### 3\. >>> ht['betty'] = 'cool'
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that adds an element to the hash table.
 
@@ -334,7 +322,6 @@ int main(void)
 }
 julien@ubuntu:~/0x1A. Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c -o d
 julien@ubuntu:~/0x1A. Hash tables$
-
 ```
 
 If you want to test for collisions, here are some strings that collide using the djb2 algorithm:
@@ -358,8 +345,6 @@ If you want to test for collisions, here are some strings that collide using the
 ### 4\. >>> ht['betty']
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that retrieves a value associated with a key.
 
@@ -424,7 +409,6 @@ Betty:Cool
 c:isfun
 javascript:(null)
 julien@ubuntu:~/0x1A. Hash tables$
-
 ```
 
 **Repo:**
@@ -438,8 +422,6 @@ julien@ubuntu:~/0x1A. Hash tables$
 ### 5\. >>> print(ht)
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that prints a hash table.
 
@@ -483,7 +465,6 @@ julien@ubuntu:~/0x1A. Hash tables$ ./f
 {}
 {'Betty': 'Cool', 'python': 'awesome', 'Bob': 'and Kris love asm', '98': 'Battery Street', 'N': 'queens', 'c': 'fun', 'Asterix': 'Obelix'}
 julien@ubuntu:~/0x1A. Hash tables$
-
 ```
 
 **Repo:**
@@ -497,8 +478,6 @@ julien@ubuntu:~/0x1A. Hash tables$
 ### 6\. >>> del ht
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 Write a function that deletes a hash table.
 
@@ -565,7 +544,6 @@ julien@ubuntu:~/0x1A. Hash tables$ valgrind ./g
 ==6621== For counts of detected and suppressed errors, rerun with: -v
 ==6621== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 julien@ubuntu:~/0x1A. Hash tables$
-
 ```
 
 **Repo:**
@@ -578,17 +556,15 @@ julien@ubuntu:~/0x1A. Hash tables$
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
+In [PHP](https://www.php.net/manual/en/intro-whatis.php "PHP"), hash tables are **ordered**. Wait... WAT? How is this even possible?
 
-In [PHP](https://alx-intranet.hbtn.io/rltoken/UoWjDMSf7CR02W8bnn1geg "PHP"), hash tables are **ordered**. Wait... WAT? How is this even possible?
-
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/5ebbea5dea5a575b38243d597604000715982925.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220106T101606Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e72c795827e974decbca3babf3f6d270a64e257aead4b343f93ca814dbbdb607)
+![image](https://user-images.githubusercontent.com/106776383/236243322-b155a49e-88a6-450e-aac8-039116e33c39.png)
 
 **Before you continue**, please take a moment to think about it: how you would implement it if you were asked to during an interview or a job. What data structures would you use? How would it work?
 
 For this task, please:
 
--   Read [PHP Internals Book: HashTable](https://alx-intranet.hbtn.io/rltoken/SIdpN9PE_9aYBCHUGPX-fw "PHP Internals Book: HashTable")
+-   Read [PHP Internals Book: HashTable](https://www.phpinternalsbook.com/php5/hashtables/basic_structure.html "PHP Internals Book: HashTable")
 -   Use the same hash function
 -   Use these data structures:
 
@@ -629,7 +605,6 @@ typedef struct shash_table_s
      shash_node_t *shead;
      shash_node_t *stail;
 } shash_table_t;
-
 ```
 
 Rewrite the previous functions using these data structures:
@@ -695,8 +670,8 @@ julien@ubuntu:~/0x1A. Hash tables$ ./sht
 {'a': '6', 'b': '3', 'c': '2', 'j': '1', 'm': '7', 'n': '5', 'y': '0', 'z': '4'}
 {'z': '4', 'y': '0', 'n': '5', 'm': '7', 'j': '1', 'c': '2', 'b': '3', 'a': '6'}
 julien@ubuntu:~/0x1A. Hash tables$
+```
 
-```\
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/253/php.png)
 
 **Repo:**
