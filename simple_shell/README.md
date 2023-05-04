@@ -583,15 +583,16 @@ Implement the `setenv` and `unsetenv` builtin commands
 ### 10\. cd
 #advanced
 
-SSimple shell 1.0 +
+Simple shell 1.0 +
 
 Implement the builtin command `cd`:
 
-Changes the current directory of the process.
-Command syntax: `cd [DIRECTORY]`
-If no argument is given to `cd` the command must be interpreted like `cd $HOME`
-You have to handle the command `cd -`
-You have to update the environment variable PWD when you change directory
+- Changes the current directory of the process.
+- Command syntax: `cd [DIRECTORY]`
+- If no argument is given to `cd` the command must be interpreted like `cd $HOME`
+- You have to handle the command `cd -`
+- You have to update the environment variable PWD when you change directory
+
 `man chdir`, `man getcwd`
 
 **Repo:**
@@ -603,7 +604,7 @@ You have to update the environment variable PWD when you change directory
 
 Simple shell 1.0 +
 
-Handle the commands separator `;`
+- Handle the commands separator `;`
 ```
 alex@~$ ls /var ; ls /var
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
@@ -631,7 +632,7 @@ alex@~$
 
 Simple shell 1.0 +
 
-Handle the `&&` and `||` shell logical operators
+- Handle the `&&` and `||` shell logical operators
 ```
 alex@~$ ls /var && ls /var
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
