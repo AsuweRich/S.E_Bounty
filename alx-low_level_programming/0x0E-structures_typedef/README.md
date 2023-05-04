@@ -3,21 +3,20 @@
 
 -   By Julien Barbier
 
-
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/50af78a28a081e809856d4cdbde2d7ca9d4aa93d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210927T115814Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=0158eddf0bf8015b6b59f632a1f63a2db9337f476ec9a445b33187a425b611da)
+![image](https://user-images.githubusercontent.com/106776383/236123447-0ea37e1b-48bc-4f43-9b1b-71088805a3d3.png)
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [0x0d. Structures.pdf](https://alx-intranet.hbtn.io/rltoken/giS4eNQT2BQ9RLK0PMhgJQ "0x0d. Structures.pdf")
--   [struct (C programming language)](https://alx-intranet.hbtn.io/rltoken/MinJEDOHpeZs31qaXU8v1w "struct (C programming language)")
--   [Documentation: structures](https://alx-intranet.hbtn.io/rltoken/GiGFlaP5uUxeWLwfzdH15w "Documentation: structures")
--   [0x0d. Typedef and structures.pdf](https://alx-intranet.hbtn.io/rltoken/TGQ3RopVP7CjUTzF-XDXUw "0x0d. Typedef and structures.pdf")
--   [typedef](https://alx-intranet.hbtn.io/rltoken/aqqM2t7PLG5cyHaKwm5nBg "typedef")
+-   [0x0d. Structures.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2021/1/6eb80c79c99f6125450a0dc11b300d46238d1a5a.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230504%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230504T055658Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c4e2180886f04320bfa06369418d34f579f935f4e6cfb499acbe7b7bbb70f544 "0x0d. Structures.pdf")
+-   [struct (C programming language)](https://intranet.alxswe.com/rltoken/MinJEDOHpeZs31qaXU8v1w "struct (C programming language)")
+-   [Documentation: structures](https://github.com/holbertonschool/Betty/wiki/Documentation:-Data-structures "Documentation: structures")
+-   [0x0d. Typedef and structures.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2021/1/c8ff3e6f7202be7fa489a584e41d005504a07c23.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230504%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230504T055838Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=de0d6d89425c4777217f83b84f40e34528e2037346a0714f13e97bfd145493ee "0x0d. Typedef and structures.pdf")
+-   [typedef](https://publications.gbdirect.co.uk//c_book/chapter8/typedef.html "typedef")
 -   **Programming in C** by Stephen Kochan - *Chapter 8, Working with Structures p163-189*
--   [The Lost Art of C Structure Packing](https://alx-intranet.hbtn.io/rltoken/emb4ohNT7XKi8Peep5lyeA "The Lost Art of C Structure Packing") (*Advanced - not mandatory*)
+-   [The Lost Art of C Structure Packing](http://www.catb.org/esr/structure-packing/ "The Lost Art of C Structure Packing") (*Advanced - not mandatory*)
 
 Learning Objectives
 -------------------
@@ -52,7 +51,7 @@ Tasks
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/3b534d73d79949ef8b7535d462014518256953f2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210927T115814Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=15974b53741f059d40e4a9bbac57ea8b8a42b55ad5ef57253789e6a0dc79fd9a)
+![image](https://user-images.githubusercontent.com/106776383/236123648-2d8e97e8-1423-4820-9279-02ad9ab59dce.png)
 
 Define a new type `struct dog` with the following elements:
 
@@ -136,7 +135,7 @@ julien@ubuntu:~/0x0d. structures, typedef$
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/bb940d2ab10c3a4740f3c154cb980133e65e438e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210927T115814Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7b1af8bf61e4886bb5b5a0e97e271312f82966326b6d2a2f15041c6fd417b106)
+![image](https://user-images.githubusercontent.com/106776383/236123776-3e381a24-d1c3-4fbc-926d-0b1d10aea11b.png)
 
 Write a function that prints a `struct dog`
 
@@ -185,7 +184,7 @@ julien@ubuntu:~/0x0d. structures, typedef$
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/9ef84b3fd1636992602868e45d3062719326de0e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210927T115814Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=982ebe4952d4ed369adad65d76e68662ec6f229f91eb5c6daaec764c2ce63971)
+![image](https://user-images.githubusercontent.com/106776383/236123896-e0f18ae8-a57c-4c13-82fa-1816f68c5032.png)
 
 Define a new type `dog_t` as a new name for the type `struct dog`.
 
@@ -226,7 +225,7 @@ julien@ubuntu:~/0x0d. structures, typedef$
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/8c1e394774fb8d25e0bbbb73a75ebc7de0c80745.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210927T115814Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3fd6fcd462bf81857d3fe8899ce52bbb2d8b1e869f524b350a3ba285341c7adc)
+![image](https://user-images.githubusercontent.com/106776383/236124049-15d3cabe-62db-41c9-a754-8ce3477b3ae3.png)
 
 Write a function that creates a new dog.
 
@@ -269,7 +268,7 @@ julien@ubuntu:~/0x0d. structures, typedef$
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/683112dbdd805c36a9b366cede0653dd80da5ec3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210927%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210927T115814Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=894938711e5d339e72220eaad16bdd522155e77fc83b3c208a030033458f89d0)
+![image](https://user-images.githubusercontent.com/106776383/236124170-518da91e-7aa4-4e3a-9afd-792afe07fca3.png)
 
 Write a function that frees dogs.
 
