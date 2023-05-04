@@ -9,8 +9,8 @@ Resources
 
 **Read or watch**:
 
--   [File descriptors](https://alx-intranet.hbtn.io/rltoken/Duva-9Fjyskt39R__Nnazg "File descriptors")
--   [C Programming in Linux Tutorial #024 - open() read() write() Functions](https://alx-intranet.hbtn.io/rltoken/9Tmu01qEnA9q9khz3gqzJQ "C Programming in Linux Tutorial #024 - open() read() write() Functions")
+-   [File descriptors](https://en.wikipedia.org/wiki/File_descriptor "File descriptors")
+-   [C Programming in Linux Tutorial #024 - open() read() write() Functions](https://www.youtube.com/watch?v=e-srF6c3TJ8 "C Programming in Linux Tutorial #024 - open() read() write() Functions")
 
 **man or help**:
 
@@ -23,7 +23,7 @@ Resources
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/kBB3D033ty5y5-MtUyV3Hw "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -62,19 +62,20 @@ Requirements
 --
 
 Tasks
+------
+
 0. Tread lightly, she is near
 mandatory
-Score: 0.00% (Checks completed: 0.00%)
 
-Write a function that reads a text file and prints it to the POSIX standard output.
+Write a function that reads a text file and prints it to the `POSIX` standard output.
 
-    Prototype: ssize_t read_textfile(const char *filename, size_t letters);
-    where letters is the number of letters it should read and print
-    returns the actual number of letters it could read and print
-    if the file can not be opened or read, return 0
-    if filename is NULL return 0
-    if write fails or does not write the expected amount of bytes, return 0
-
+-   Prototype: `ssize_t read_textfile(const char *filename, size_t letters);`
+-   where letters is the number of letters it should read and print
+-   returns the actual number of letters it could read and print
+-   if the file can not be opened or read, return `0`
+-   if `filename` is `NULL` return `0`
+-   if `write` fails or does not write the expected amount of bytes, return `0`
+```
 julien@ubuntu:~/0x15. File descriptors and permissions$ cat Requiescat 
 Requiescat
 by Oscar Wilde
@@ -168,8 +169,9 @@ Heap earth upon it.
 
 (printed chars: 468)
 julien@ubuntu:~/0x15. File descriptors and permissions$ 
+```
 
-Repo:
+**Repo:**
 
     GitHub repository: alx-low_level_programming
     Directory: 0x15-file_io
