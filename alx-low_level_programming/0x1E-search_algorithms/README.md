@@ -9,13 +9,13 @@ Resources
 
 **Read or watch**:
 
--   [Search algorithm](https://alx-intranet.hbtn.io/rltoken/ap2kuRv8qrUMyQ0-MY3EXw "Search algorithm")
--   [Space complexity (1)](https://alx-intranet.hbtn.io/rltoken/QK9ENdoTyqGs0d4_M3XE3g "Space complexity (1)")
+-   [Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm "Search algorithm")
+-   [Space complexity (1)](https://www.geeksforgeeks.org/g-fact-86/ "Space complexity (1)")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/i0Ru9NIvGBHVAlsg7w5vVg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -64,9 +64,7 @@ Tasks
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
-
-Write a function that searches for a value in an array of integers using the [Linear search algorithm](https://alx-intranet.hbtn.io/rltoken/17RKhbmvh_u4ebCwaSxCxg "Linear search algorithm")
+Write a function that searches for a value in an array of integers using the [Linear search algorithm](https://en.wikipedia.org/wiki/Linear_search "Linear search algorithm")
 
 -   Prototype : `int linear_search(int *array, size_t size, int value);`
 -   Where `array` is a pointer to the first element of the array to search in
@@ -123,7 +121,6 @@ Value checked array[7] = [7]
 Value checked array[8] = [-1]
 Value checked array[9] = [9]
 Found 999 at index: -1
-
 ```
 
 **Repo:**
@@ -138,9 +135,7 @@ Found 999 at index: -1
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
-
-Write a function that searches for a value in a sorted array of integers using the [Binary search algorithm](https://alx-intranet.hbtn.io/rltoken/SnveFJhSDE7o8bEx-kGGpA "Binary search algorithm")
+Write a function that searches for a value in a sorted array of integers using the [Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm "Binary search algorithm")
 
 -   Prototype : `int binary_search(int *array, size_t size, int value);`
 -   Where `array` is a pointer to the first element of the array to search in
@@ -192,7 +187,6 @@ Searching in array: 5, 6, 7, 8, 9
 Searching in array: 8, 9
 Searching in array: 9
 Found 999 at index: -1
-
 ```
 
 **Repo:**
@@ -206,8 +200,6 @@ Found 999 at index: -1
 ### 2\. Big O #0
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 What is the `time complexity` (worst case) of a linear search in an array of size `n`?
 
@@ -223,8 +215,6 @@ What is the `time complexity` (worst case) of a linear search in an array of s
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
-
 What is the `space complexity` (worst case) of an iterative linear search algorithm in an array of size `n`?
 
 **Repo:**
@@ -238,8 +228,6 @@ What is the `space complexity` (worst case) of an iterative linear search algo
 ### 4\. Big O #2
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 What is the `time complexity` (worst case) of a binary search in an array of size `n`?
 
@@ -255,8 +243,6 @@ What is the `time complexity` (worst case) of a binary search in an array of s
 
 mandatory
 
-Score: 0.00% (Checks completed: 0.00%)
-
 What is the `space complexity` (worst case) of a binary search in an array of size `n`?
 
 **Repo:**
@@ -270,8 +256,6 @@ What is the `space complexity` (worst case) of a binary search in an array of 
 ### 6\. Big O #4
 
 mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
 
 What is the space complexity of this function / algorithm?
 
@@ -299,9 +283,7 @@ int **allocate_map(int n, int m)
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
-
-Write a function that searches for a value in a sorted array of integers using the [Jump search algorithm](https://alx-intranet.hbtn.io/rltoken/1Op40kSYMN23JsOu6F3P1A "Jump search algorithm")
+Write a function that searches for a value in a sorted array of integers using the [Jump search algorithm](https://en.wikipedia.org/wiki/Jump_search "Jump search algorithm")
 
 -   Prototype : `int jump_search(int *array, size_t size, int value);`
 -   Where `array` is a pointer to the first element of the array to search in
@@ -361,7 +343,6 @@ Value checked array[9] = [9]
 Value found between indexes [9] and [12]
 Value checked array[9] = [9]
 Found 999 at index: -1
-
 ```
 
 **Repo:**
@@ -375,8 +356,6 @@ Found 999 at index: -1
 ### 8\. Big O #5
 
 #advanced
-
-Score: 0.00% (Checks completed: 0.00%)
 
 What is the `time complexity` (average case) of a jump search in an array of size `n`, using `step = sqrt(n)`?
 
@@ -392,9 +371,7 @@ What is the `time complexity` (average case) of a jump search in an array of s
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
-
-Write a function that searches for a value in a sorted array of integers using the [Interpolation search algorithm](https://alx-intranet.hbtn.io/rltoken/cswpABHiyyRmGrPkzsMTyw "Interpolation search algorithm")
+Write a function that searches for a value in a sorted array of integers using the [Interpolation search algorithm](https://en.wikipedia.org/wiki/Interpolation_search "Interpolation search algorithm")
 
 -   Prototype : `int interpolation_search(int *array, size_t size, int value);`
 -   Where `array` is a pointer to the first element of the array to search in
@@ -440,7 +417,6 @@ Found 7 at index: 14
 
 Value checked array[2109] is out of range
 Found 999 at index: -1
-
 ```
 
 **Repo:**
@@ -455,9 +431,7 @@ Found 999 at index: -1
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
-
-Write a function that searches for a value in a sorted array of integers using the [Exponential search algorithm](https://alx-intranet.hbtn.io/rltoken/J7wng_ddosamvEkFl0ekqA "Exponential search algorithm")
+Write a function that searches for a value in a sorted array of integers using the [Exponential search algorithm](https://en.wikipedia.org/wiki/Exponential_search "Exponential search algorithm")
 
 -   Prototype : `int exponential_search(int *array, size_t size, int value);`
 -   Where `array` is a pointer to the first element of the array to search in
@@ -521,7 +495,6 @@ Searching in array: 61, 62, 76, 99
 Searching in array: 76, 99
 Searching in array: 99
 Found 999 at index: -1
-
 ```
 
 **Repo:**
@@ -535,8 +508,6 @@ Found 999 at index: -1
 ### 11\. Advanced binary search
 
 #advanced
-
-Score: 0.00% (Checks completed: 0.00%)
 
 You may have noticed that the basic binary search does not necessarily return the index of the *first* value in the array (if this value appears more than once in the array). In this exercise, you'll have to solve this problem.
 
@@ -592,7 +563,6 @@ Searching in array: 6, 6, 7, 8, 9
 Searching in array: 8, 9
 Searching in array: 9
 Found 999 at index: -1
-
 ```
 
 **Repo:**
@@ -606,8 +576,6 @@ Found 999 at index: -1
 ### 12\. Jump search in a singly linked list
 
 #advanced
-
-Score: 0.00% (Checks completed: 0.00%)
 
 You might think that linear search is not as effective as any other algorithm, right? Well, we should see what happens with a singly linked list.
 
@@ -629,7 +597,6 @@ typedef struct listint_s
     size_t index;
     struct listint_s *next;
 } listint_t;
-
 ```
 
 Write a function that searches for a value in a sorted list of integers using the Jump search algorithm.
@@ -645,7 +612,7 @@ Write a function that searches for a value in a sorted list of integers using th
 -   You can use the `sqrt()` function included in `<math.h>` (don't forget to compile with -lm)
 -   Every time you compare a value in the list to the value you are searching, you have to print this value (see example)
 
-NOTE: [You can find here](https://alx-intranet.hbtn.io/rltoken/DXrlCzhZtQAc3pUOJth8OQ "You can find here") the functions used in the example. You don't need to push them, we will compile your file with our own implementation during the correction.
+NOTE: [You can find here](https://github.com/holbertonschool/0x1D.c/tree/master/listint "You can find here") the functions used in the example. You don't need to push them, we will compile your file with our own implementation during the correction.
 
 ```
 wilfried@0x1E-search_algorithms$ cat 105-main.c
@@ -730,7 +697,6 @@ Value checked at index [13] = [62]
 Value checked at index [14] = [76]
 Value checked at index [15] = [99]
 Found 999 at index: (nil)
-
 ```
 
 **Repo:**
@@ -745,9 +711,7 @@ Found 999 at index: (nil)
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
-
-As you see now, looking for a specific value in a singly linked list always leads to browse every element of the list. A common way to optimize the time complexity of a search in a singly linked list is to modify the list itself by adding an "express lane" to browse it. A linked list with an express lane is called a [skip list](https://alx-intranet.hbtn.io/rltoken/SD8K3P6iYfmYTq39XZzo_Q "skip list"). This change does not come without consequences. Indeed, the space complexity of a search in this kind of list will grow as `sizeof(skiplist_t) > sizeof(listint_t)` (see example below).
+As you see now, looking for a specific value in a singly linked list always leads to browse every element of the list. A common way to optimize the time complexity of a search in a singly linked list is to modify the list itself by adding an "express lane" to browse it. A linked list with an express lane is called a [skip list](https://en.wikipedia.org/wiki/Skip_list "skip list"). This change does not come without consequences. Indeed, the space complexity of a search in this kind of list will grow as `sizeof(skiplist_t) > sizeof(listint_t)` (see example below).
 
 Please define the following data structure in your `search_algos.h` header file:
 
@@ -769,7 +733,6 @@ typedef struct skiplist_s
     struct skiplist_s *next;
     struct skiplist_s *express;
 } skiplist_t;
-
 ```
 
 Write a function that searches for a value in a sorted skip list of integers.
@@ -783,7 +746,7 @@ Write a function that searches for a value in a sorted skip list of integers.
 -   If `value` is not present in `list` or if `head` is `NULL`, your function must return `NULL`
 -   Every time you compare a value in the list to the value you are searching, you have to print this value (see example below)
 
-NOTE: [You can find here](https://alx-intranet.hbtn.io/rltoken/ZTcTNOravCLvET4WjJJqrg "You can find here") the functions used in the example. You don't need to push them, we will compile your file with our own implementation during the correction.
+NOTE: [You can find here](https://github.com/holbertonschool/0x1D.c/tree/master/skiplist "You can find here") the functions used in the example. You don't need to push them, we will compile your file with our own implementation during the correction.
 
 ```
 wilfried@0x1E-search_algorithms$ cat 106-main.c
@@ -873,7 +836,6 @@ Value checked at index [13] = [62]
 Value checked at index [14] = [76]
 Value checked at index [15] = [99]
 Found 999 at index: (nil)
-
 ```
 
 **Repo:**
@@ -888,8 +850,6 @@ Found 999 at index: (nil)
 
 #advanced
 
-Score: 0.00% (Checks completed: 0.00%)
-
 What is the `time complexity` (average case) of a jump search in a singly linked list of size `n`, using `step = sqrt(n)`?
 
 **Repo:**
@@ -903,8 +863,6 @@ What is the `time complexity` (average case) of a jump search in a singly link
 ### 15\. Big O #7
 
 #advanced
-
-Score: 0.00% (Checks completed: 0.00%)
 
 What is the `time complexity` (average case) of a jump search in a skip list of size `n`, with an express lane using `step = sqrt(n)`?
 
