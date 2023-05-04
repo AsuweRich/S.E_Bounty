@@ -10,9 +10,26 @@ Concepts
 *For this project, students are expected to look at these concepts:*
 
 -   [Group Projects](https://alx-intranet.hbtn.io/concepts/111)
+
+    ![image](https://user-images.githubusercontent.com/106776383/236344247-2b57e9f9-c55c-48b3-876e-66e51b475093.png)
+    
 -   [Pair Programming - How To](https://alx-intranet.hbtn.io/concepts/121)
+
+    ![image](https://user-images.githubusercontent.com/106776383/236344449-2031639b-7029-4240-866d-033097f3aab7.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236344615-d0ca11b9-cd77-456d-b7e4-e1f456e1a18f.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236344696-671de842-bc86-4c5b-9fa0-410f3ae31b04.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236344764-85d97fa3-0680-4cf9-bd91-148da7639901.png)
+
 -   [Flowcharts](https://alx-intranet.hbtn.io/concepts/130)
+  
 -   [Technical Writing](https://alx-intranet.hbtn.io/concepts/225)
+
+    ![image](https://user-images.githubusercontent.com/106776383/236344938-b189de14-d367-4c83-a211-e67a06a39139.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236345058-a0877af0-2256-4a15-a363-46f8dd052ec4.png)
 
 Background Context
 ------------------
@@ -28,7 +45,7 @@ Resources
 
 **Read or watch**:
 
--   [Secrets of printf](https://alx-intranet.hbtn.io/rltoken/gxdsTXxWMklkBTgY197HYQ "Secrets of printf")
+-   [Secrets of printf](https://www.academia.edu/10297206/Secrets_of_printf_ "Secrets of printf")
 -   **Group Projects** concept page (*Don't forget to read this*)
 -   **Flowcharts** concept page
 
@@ -203,13 +220,109 @@ Handle the following conversion specifiers:
 
 -   GitHub repository: `printf`
 
-### 2\. Just because it's in print doesn't mean it's the gospel
+### 2\. With a face like mine, I do better in print
 
-mandatory
+#advanced
 
-Create a man page for your function.
+Handle the following custom conversion specifiers:
+
+-   `b`: the unsigned int argument is converted to binary
+```
+alex@ubuntu:~/c/printf$ cat main.c
+#include "main.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    _printf("%b\n", 98);
+    return (0);
+}
+alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
+alex@ubuntu:~/c/printf$ ./a.out
+1100010
+alex@ubuntu:~/c/printf$
+```
 
 **Repo:**
 
 -   GitHub repository: `printf`
--   File: `man_3_printf`
+
+### 3\. What one has not experienced, one will never understand in print
+
+#advanced
+
+Handle the following conversion specifiers:
+
+-   `u`
+-   `o`
+-   `x`
+-   `X`
+-   You don’t have to handle the flag characters
+-   You don’t have to handle field width
+-   You don’t have to handle precision
+-   You don’t have to handle the length modifiers
+
+**Repo:**
+
+-   GitHub repository: `printf`
+
+### 4\. Nothing in fine print is ever good news
+
+#advanced
+
+Use a local buffer of 1024 chars in order to call `write` as little as possible.
+
+**Repo:**
+
+-   GitHub repository: `printf`
+
+### 5\. My weakness is wearing too much leopard print
+
+#advanced
+
+Handle the following custom conversion specifier:
+
+-   `S` : prints the string.
+-   Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: `\x`, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
+```
+alex@ubuntu:~/c/printf$ cat main.c
+#include "main.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    _printf("%S\n", "Best\nSchool");
+    return (0);
+}
+alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
+alex@ubuntu:~/c/printf$ ./a.out
+Best\x0ASchool
+alex@ubuntu:~/c/printf$
+```
+
+**Repo:**
+
+-   GitHub repository: `printf`
+
+### 6\. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print
+
+#advanced
+
+Handle the following conversion specifier: `p`.
+
+-`You don’t have to handle the flag characters
+-`You don’t have to handle field width
+-`You don’t have to handle precision
+-`You don’t have to handle the length modifiers
+
+**Repo:**
+
+-   GitHub repository: `printf`
