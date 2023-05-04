@@ -9,19 +9,19 @@ Resources
 
 **Read or watch**:
 
--   [Understanding C program Compilation Process](https://alx-intranet.hbtn.io/rltoken/73Xp4zJlc-orfeEzmlYVDg "Understanding C program Compilation Process")
--   [Object-like Macros](https://alx-intranet.hbtn.io/rltoken/kaqIw352MSJ8xoi1xU09ZA "Object-like Macros")
--   [Macro Arguments](https://alx-intranet.hbtn.io/rltoken/wcQZzunlgjepxExZFc2ORQ "Macro Arguments")
--   [Pre Processor Directives in C](https://alx-intranet.hbtn.io/rltoken/S4zfCHzg82fUAxdt8_SaZQ "Pre Processor Directives in C")
--   [The C Preprocessor](https://alx-intranet.hbtn.io/rltoken/G33GiOIZofiIN4Tx9_acbQ "The C Preprocessor")
--   [Standard Predefined Macros](https://alx-intranet.hbtn.io/rltoken/0OYhpL2cJfsIMBWhTuZsAA "Standard Predefined Macros")
--   [include guard](https://alx-intranet.hbtn.io/rltoken/oF2vgIZNePdU965jCEZLHA "include guard")
--   [Common Predefined Macros](https://alx-intranet.hbtn.io/rltoken/ROl5xAMKX-JpenEqmf7FnQ "Common Predefined Macros")
+-   [Understanding C program Compilation Process](https://www.youtube.com/watch?v=eW5he5uFBNM "Understanding C program Compilation Process")
+-   [Object-like Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Object-like-Macros.html#Object-like-Macros "Object-like Macros")
+-   [Macro Arguments](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Macro-Arguments.html#Macro-Arguments "Macro Arguments")
+-   [Pre Processor Directives in C](https://www.youtube.com/watch?v=X6HiYbY3Uak "Pre Processor Directives in C")
+-   [The C Preprocessor](https://www.cprogramming.com/tutorial/cpreprocessor.html "The C Preprocessor")
+-   [Standard Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Standard-Predefined-Macros.html#Standard-Predefined-Macros "Standard Predefined Macros")
+-   [include guard](https://en.wikipedia.org/wiki/Include_guard "include guard")
+-   [Common Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Common-Predefined-Macros.html#Common-Predefined-Macros "Common Predefined Macros")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/OnMlvyxq0Mzr-7GHRPI9tQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
