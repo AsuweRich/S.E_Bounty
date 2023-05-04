@@ -26,7 +26,7 @@ Resources
 
 **Read or watch**:
 
--   [Do I cast the result of malloc?](https://alx-intranet.hbtn.io/rltoken/uKhvfzpF3v8Be10NCZlQtA "Do I cast the result of malloc?")
+-   [Do I cast the result of malloc?](https://intranet.alxswe.com/rltoken/uKhvfzpF3v8Be10NCZlQtA "Do I cast the result of malloc?")
 
 **man or help**:
 
@@ -37,7 +37,7 @@ Resources
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/UzyOEQw26ytlKDLQq7AGXw "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
