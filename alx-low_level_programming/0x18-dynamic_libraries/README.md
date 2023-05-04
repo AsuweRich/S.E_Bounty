@@ -8,14 +8,13 @@ Resources
 
 **Read or watch**:
 
--   [What is difference between Dynamic and Static library (Static and Dynamic linking)](https://alx-intranet.hbtn.io/rltoken/XLLmLISlteUIxrLzNdm3_Q "What is difference between Dynamic and Static library (Static and Dynamic linking)")
--   [create dynamic libraries on Linux](https://alx-intranet.hbtn.io/rltoken/JEqzgE_pPe48rvbspGL-2g "create dynamic libraries on Linux")
--   [Technical Writing](https://alx-intranet.hbtn.io/rltoken/dAV47Y4Iulj75aeSxpYHbQ "Technical Writing")
+-   [What is difference between Dynamic and Static library (Static and Dynamic linking)](https://www.youtube.com/watch?v=eW5he5uFBNM "What is difference between Dynamic and Static library (Static and Dynamic linking)")
+-   [create dynamic libraries on Linux](https://www.google.com/#q=linux+create+dynamic+library "create dynamic libraries on Linux")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/wZXKCWgm5hGCD0ZKtZAOrQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
