@@ -491,3 +491,275 @@ Every good language comes with the capability of commenting. When the first non-
 
 -   GitHub repository: `monty`
 
+### 11\. pchar
+
+#advanced
+
+Implement the `pchar` opcode.
+
+**The pchar opcode**
+
+The opcode `pchar` prints the char at the top of the stack, followed by a new line.
+
+-   Usage: `pchar`
+-   The integer stored at the top of the stack is treated as the ascii value of the character to be printed
+-   If the value is not in the ascii table (man ascii) print the error message `L<line_number>: can't pchar, value out of range`, followed by a new line, and exit with the status `EXIT_FAILURE`
+-   If the stack is empty, print the error message `L<line_number>: can't pchar, stack empty`, followed by a new line, and exit with the status `EXIT_FAILURE`
+```
+julien@ubuntu:~/monty$ cat bytecodes/28.m 
+push 72
+pchar
+julien@ubuntu:~/monty$ ./monty bytecodes/28.m 
+H
+julien@ubuntu:~/monty$
+```
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 12\. pstr
+
+#advanced
+
+Implement the `pstr` opcode.
+
+**The pstr opcode**
+
+The opcode `pstr` prints the string starting at the top of the stack, followed by a new line.
+
+-   Usage: `pstr`
+-   The integer stored in each element of the stack is treated as the ascii value of the character to be printed
+-   The string stops when either:
+        -   the stack is over
+        -   the value of the element is `0`
+        -   the value of the element is not in the ascii table
+-   If the stack is empty, print only a new line
+```
+julien@ubuntu:~/monty$ cat bytecodes/31.m 
+push 1
+push 2
+push 3
+push 4
+push 0
+push 110
+push 0
+push 108
+push 111
+push 111
+push 104
+push 99
+push 83
+pstr
+julien@ubuntu:~/monty$ ./monty bytecodes/31.m 
+School
+julien@ubuntu:~/monty$
+```
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 13\. rotl
+
+#advanced
+
+Implement the `rotl` opcode.
+
+**The rotl opcode**
+
+The opcode `rotl` rotates the stack to the top.
+
+-   Usage: `rotl`
+-   The top element of the stack becomes the last one, and the second top element of the stack becomes the first one
+-   `rotl` never fails
+```
+julien@ubuntu:~/monty$ cat bytecodes/35.m 
+push 1
+push 2
+push 3
+push 4
+push 5
+push 6
+push 7
+push 8
+push 9
+push 0
+pall
+rotl
+pall
+julien@ubuntu:~/monty$ ./monty bytecodes/35.m 
+0
+9
+8
+7
+6
+5
+4
+3
+2
+1
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+julien@ubuntu:~/monty$
+```
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 14\. rotr
+
+#advanced
+
+Implement the `rotr` opcode.
+
+**The rotr opcode**
+
+The opcode `rotr` rotates the stack to the bottom.
+
+-   Usage: `rotr`
+-   The last element of the stack becomes the top element of the stack
+-   `rotr` never fails
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 15\. stack, queue
+
+#advanced
+
+Implement the `stack` and `queue` opcodes.
+
+**The stack opcode**
+
+The opcode `stack` sets the format of the data to a stack (LIFO). This is the default behavior of the program.
+
+-   Usage: `stack`
+**The queue opcode**
+
+The opcode `queue` sets the format of the data to a queue (FIFO).
+
+-   Usage: `queue`
+When switching mode:
+
+-   The top of the stack becomes the front of the queue
+-   The front of the queue becomes the top of the stack
+```
+julien@ubuntu:~/monty$ cat bytecodes/47.m
+queue
+push 1
+push 2
+push 3
+pall
+stack
+push 4
+push 5
+push 6
+pall
+add
+pall
+queue
+push 11111
+add
+pall
+julien@ubuntu:~/monty$ ./monty bytecodes/47.m
+1
+2
+3
+6
+5
+4
+1
+2
+3
+11
+4
+1
+2
+3
+15
+1
+2
+3
+11111
+julien@ubuntu:~/monty$
+```
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 16\. Brainf*ck
+
+#advanced
+
+Implement the `stack` and `queue` opcodes.
+
+**The stack opcode**
+
+The opcode `stack` sets the format of the data to a stack (LIFO). This is the default behavior of the program.
+
+-   Usage: `stack`
+**The queue opcode**
+
+The opcode `queue` sets the format of the data to a queue (FIFO).
+
+-   Usage: `queue`
+When switching mode:
+
+-   The top of the stack becomes the front of the queue
+-   The front of the queue becomes the top of the stack
+```
+julien@ubuntu:~/monty$ cat bytecodes/47.m
+queue
+push 1
+push 2
+push 3
+pall
+stack
+push 4
+push 5
+push 6
+pall
+add
+pall
+queue
+push 11111
+add
+pall
+julien@ubuntu:~/monty$ ./monty bytecodes/47.m
+1
+2
+3
+6
+5
+4
+1
+2
+3
+11
+4
+1
+2
+3
+15
+1
+2
+3
+11111
+julien@ubuntu:~/monty$
+```
+
+**Repo:**
+
+-   GitHub repository: `monty`
