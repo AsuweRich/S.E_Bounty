@@ -75,7 +75,6 @@ typedef struct stack_s
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
-
 ```
 
 ```
@@ -92,7 +91,6 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
 ```
 
 ### Compilation & Output
@@ -101,7 +99,6 @@ typedef struct instruction_s
 
 ```
 $ gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty
-
 ```
 
 -   Any output must be printed on `stdout`
@@ -132,7 +129,6 @@ push 4$
       push    6        $
 pall$
 julien@ubuntu:~/monty$
-
 ```
 
 Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
@@ -155,7 +151,6 @@ $
 $
 pall This is the end of our program. Monty is awesome!$
 julien@ubuntu:~/monty$
-
 ```
 
 **The monty program**
@@ -215,7 +210,6 @@ julien@ubuntu:~/monty$ ./monty bytecodes/00.m
 2
 1
 julien@ubuntu:~/monty$
-
 ```
 
 **Repo:**
@@ -248,7 +242,6 @@ julien@ubuntu:~/monty$ ./monty bytecodes/06.m
 2
 3
 julien@ubuntu:~/monty$
-
 ```
 
 **Repo:**
@@ -288,7 +281,6 @@ julien@ubuntu:~/monty$ ./monty bytecodes/07.m
 1
 1
 julien@ubuntu:~/monty$
-
 ```
 
 **Repo:**
@@ -324,7 +316,6 @@ julien@ubuntu:~/monty$ ./monty bytecodes/09.m
 3
 1
 julien@ubuntu:~/monty$
-
 ```
 
 **Repo:**
@@ -363,7 +354,6 @@ julien@ubuntu:~/monty$ ./monty bytecodes/12.m
 5
 1
 julien@ubuntu:~/monty$
-
 ```
 
 **Repo:**
@@ -398,11 +388,11 @@ Implement the `sub` opcode.
 
 The opcode sub subtracts the top element of the stack from the second top element of the stack.
 
--       Usage: `sub`
--       If the stack contains less than two elements, print the error message `L<line_number>: can't sub, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
--       The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
-        -       The top element of the stack contains the result
-        -       The stack is one element shorter
+-   Usage: `sub`
+-   If the stack contains less than two elements, print the error message `L<line_number>: can't sub, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
+-   The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
+    -   The top element of the stack contains the result
+    -   The stack is one element shorter
 ```
 julien@ubuntu:~/monty$ cat bytecodes/19.m 
 push 1
@@ -432,12 +422,12 @@ Implement the `div` opcode.
 
 The opcode `div` divides the second top element of the stack by the top element of the stack.
 
--       Usage: `div`
--       If the stack contains less than two elements, print the error message `L<line_number>: can't div, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
--       The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
-        -       The top element of the stack contains the result
-        -       The stack is one element shorter
--       If the top element of the stack is `0`, print the error message `L<line_number>: division by zero`, followed by a new line, and exit with the status `EXIT_FAILURE`
+-   Usage: `div`
+-   If the stack contains less than two elements, print the error message `L<line_number>: can't div, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
+-   The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
+    -   The top element of the stack contains the result
+    -   The stack is one element shorter
+-   If the top element of the stack is `0`, print the error message `L<line_number>: division by zero`, followed by a new line, and exit with the status `EXIT_FAILURE`
 
 **Repo:**
 
@@ -456,8 +446,8 @@ The opcode `mul` multiplies the second top element of the stack with the top ele
 -   Usage: `mul`
 -   If the stack contains less than two elements, print the error message `L<line_number>: can't mul, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
 -   The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
-        -   The top element of the stack contains the result
-        -   The stack is one element shorter
+    -   The top element of the stack contains the result
+    -   The stack is one element shorter
 
 **Repo:**
 
@@ -476,8 +466,8 @@ The opcode `mod` computes the rest of the division of the second top element of 
 -   Usage: `mod`
 -   If the stack contains less than two elements, print the error message `L<line_number>: can't mod, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
 The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
-        -   The top element of the stack contains the result
-        -   The stack is one element shorter
+    -   The top element of the stack contains the result
+    -   The stack is one element shorter
 -   If the top element of the stack is `0`, print the error message `L<line_number>: division by zero`, followed by a new line, and exit with the status `EXIT_FAILURE`
 
 **Repo:**
@@ -534,9 +524,9 @@ The opcode `pstr` prints the string starting at the top of the stack, followed b
 -   Usage: `pstr`
 -   The integer stored in each element of the stack is treated as the ascii value of the character to be printed
 -   The string stops when either:
-        -   the stack is over
-        -   the value of the element is `0`
-        -   the value of the element is not in the ascii table
+    -   the stack is over
+    -   the value of the element is `0`
+    -   the value of the element is not in the ascii table
 -   If the stack is empty, print only a new line
 ```
 julien@ubuntu:~/monty$ cat bytecodes/31.m 
