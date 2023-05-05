@@ -367,6 +367,7 @@ julien@ubuntu:~/monty$
 
 -   GitHub repository: `monty`
 
+
 ### 5\. nop
 
 mandatory
@@ -382,3 +383,111 @@ The opcode `nop` doesn't do anything.
 **Repo:**
 
 -   GitHub repository: `monty`
+
+
+### 6\. sub
+
+#advanced
+
+Implement the `sub` opcode.
+
+**The sub opcode**
+
+The opcode sub subtracts the top element of the stack from the second top element of the stack.
+
+-       Usage: `sub`
+-       If the stack contains less than two elements, print the error message `L<line_number>: can't sub, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
+-       The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
+        -       The top element of the stack contains the result
+        -       The stack is one element shorter
+```
+julien@ubuntu:~/monty$ cat bytecodes/19.m 
+push 1
+push 2
+push 10
+push 3
+sub
+pall
+julien@ubuntu:~/monty$ ./monty bytecodes/19.m 
+7
+2
+1
+julien@ubuntu:~/monty$
+```
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 7\. div
+
+#advanced
+
+Implement the `div` opcode.
+
+**The div opcode**
+
+The opcode `div` divides the second top element of the stack by the top element of the stack.
+
+-       Usage: `div`
+-       If the stack contains less than two elements, print the error message `L<line_number>: can't div, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
+-       The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
+        -       The top element of the stack contains the result
+        -       The stack is one element shorter
+-       If the top element of the stack is `0`, print the error message `L<line_number>: division by zero`, followed by a new line, and exit with the status `EXIT_FAILURE`
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 8\. mul
+
+#advanced
+
+Implement the `mul` opcode.
+
+**The mul opcode**
+
+The opcode `mul` multiplies the second top element of the stack with the top element of the stack.
+
+-   Usage: `mul`
+-   If the stack contains less than two elements, print the error message `L<line_number>: can't mul, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
+-   The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
+        -   The top element of the stack contains the result
+        -   The stack is one element shorter
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 9\. mod
+
+#advanced
+
+Implement the `mod` opcode.
+
+**The mod opcode**
+
+The opcode `mod` computes the rest of the division of the second top element of the stack by the top element of the stack.
+
+-   Usage: `mod`
+-   If the stack contains less than two elements, print the error message `L<line_number>: can't mod, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
+The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
+        -   The top element of the stack contains the result
+        -   The stack is one element shorter
+-   If the top element of the stack is `0`, print the error message `L<line_number>: division by zero`, followed by a new line, and exit with the status `EXIT_FAILURE`
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
+### 10\. comments
+
+#advanced
+
+Every good language comes with the capability of commenting. When the first non-space character of a line is `#`, treat this line as a comment (don’t do anything).
+
+**Repo:**
+
+-   GitHub repository: `monty`
+
