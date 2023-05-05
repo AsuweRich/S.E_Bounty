@@ -9,16 +9,16 @@ Resources
 
 **Read or watch**:
 
--   [Binary tree](https://alx-intranet.hbtn.io/rltoken/1F2x42-8vUbOmU4L1C1KMg "Binary tree") (*note the first line: `Not to be confused with B-tree.`*)
--   [Data Structure and Algorithms - Tree](https://alx-intranet.hbtn.io/rltoken/QmcTMCkQyrgMjrqoWxYdhw "Data Structure and Algorithms - Tree")
--   [Tree Traversal](https://alx-intranet.hbtn.io/rltoken/nMxoYQdZR_guroan8JeqBQ "Tree Traversal")
--   [Binary Search Tree](https://alx-intranet.hbtn.io/rltoken/qO5dBlMnYJzbaWG3xVpcnQ "Binary Search Tree")
--   [Data structures: Binary Tree](https://alx-intranet.hbtn.io/rltoken/BeyJ2gjlE7_djwRiDyeHig "Data structures: Binary Tree")
+-   [Binary tree](https://en.wikipedia.org/wiki/Binary_tree "Binary tree") (*note the first line: `Not to be confused with B-tree.`*)
+-   [Data Structure and Algorithms - Tree](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm "Data Structure and Algorithms - Tree")
+-   [Tree Traversal](https://www.programiz.com/dsa/tree-traversal "Tree Traversal")
+-   [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree "Binary Search Tree")
+-   [Data structures: Binary Tree](https://www.youtube.com/watch?v=H5JubkIy_p8 "Data structures: Binary Tree")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/rDjGcLNoVZsZG1Br0UbX6A "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -78,28 +78,24 @@ struct binary_tree_s
 };
 
 typedef struct binary_tree_s binary_tree_t;
-
 ```
 
 #### Binary Search Tree
 
 ```
 typedef struct binary_tree_s bst_t;
-
 ```
 
 #### AVL Tree
 
 ```
 typedef struct binary_tree_s avl_t;
-
 ```
 
 #### Max Binary Heap
 
 ```
 typedef struct binary_tree_s heap_t;
-
 ```
 
 **Note:** For tasks 0 to 23 (included), you have to deal with simple binary trees. They are not BSTs, thus they don't follow any kind of rule.
@@ -158,7 +154,6 @@ alex@/tmp/binary_trees$ ./0-node
   .--(012)--.         .--(402)--.
 (006)     (016)     (256)     (512)
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -214,7 +209,6 @@ alex@/tmp/binary_trees$ ./1-left
   .--(054)       .--(402)
 (012)          (128)
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -270,7 +264,6 @@ alex@/tmp/binary_trees$ ./2-right
 (012)--.       (128)--.
      (054)          (402)
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -334,7 +327,6 @@ alex@/tmp/binary_trees$ valgrind ./3-del
 ==13264== For counts of detected and suppressed errors, rerun with: -v
 ==13264== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -395,7 +387,6 @@ Is 98 a leaf: 0
 Is 128 a leaf: 0
 Is 402 a leaf: 1
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -456,7 +447,6 @@ Is 98 a root: 1
 Is 128 a root: 0
 Is 402 a root: 0
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -527,7 +517,6 @@ alex@/tmp/binary_trees$ ./6-pre
 256
 512
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -598,7 +587,6 @@ alex@/tmp/binary_trees$ ./7-in
 402
 512
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -669,7 +657,6 @@ alex@/tmp/binary_trees$ ./8-post
 402
 98
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -729,7 +716,6 @@ Height from 98: 2
 Height from 128: 1
 Height from 54: 0
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -789,7 +775,6 @@ Depth of 98: 0
 Depth of 128: 1
 Depth of 54: 2
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -849,7 +834,6 @@ Size of 98: 5
 Size of 128: 2
 Size of 54: 1
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -910,7 +894,6 @@ Leaves in 98: 2
 Leaves in 128: 1
 Leaves in 54: 1
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -971,7 +954,6 @@ Nodes in 98: 3
 Nodes in 128: 1
 Nodes in 54: 0
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -1037,7 +1019,6 @@ Balance of 98: +2
 Balance of 128: -1
 Balance of 54: +0
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -1098,7 +1079,6 @@ Is 98 full: 0
 Is 12 full: 1
 Is 128 full: 0
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -1176,7 +1156,6 @@ Perfect: 0
                               (010)     (010)
 Perfect: 0
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -1246,7 +1225,6 @@ Sibling of 110: 402
 Sibling of 54: 10
 Sibling of 98: (nil)
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
@@ -1313,7 +1291,6 @@ Uncle of 110: 12
 Uncle of 54: 128
 Uncle of 12: (nil)
 alex@/tmp/binary_trees$
-
 ```
 
 **Repo:**
