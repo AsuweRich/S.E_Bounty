@@ -10,13 +10,16 @@ Resources
 
 **Read or watch**:
 
--   [Google](https://alx-intranet.hbtn.io/rltoken/tn1X658KGumYYq_szFJI5w "Google")
--   [How do I use extern to share variables between source files in C?](https://alx-intranet.hbtn.io/rltoken/0KVWTdE8xXy__jUfBfakCw "How do I use extern to share variables between source files in C?")
+-   [Google](https://www.google.com/webhp?q=stack%20and%20queue "Google")
+-   [How do I use extern to share variables between source files in C?](https://stackoverflow.com/questions/1433204/how-do-i-use-extern-to-share-variables-between-source-files "How do I use extern to share variables between source files in C?")
+-   [Stacks and Queues in C](https://data-flair.training/blogs/stacks-and-queues-in-c/ "Stacks and Queues in C")
+-   [Stack operations](https://www.digitalocean.com/community/tutorials/stack-in "Stack operations")
+-   [Queue operations](https://www.edureka.co/blog/queue-in-c/ "Queue operations")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/_kxhiyVFey_mAGnzuHKL1w "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -103,7 +106,7 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty
 
 -   Any output must be printed on `stdout`
 -   Any error message must be printed on `stderr`
-    -   [Here is a link to a GitHub repository](https://alx-intranet.hbtn.io/rltoken/Cv-FVD5dZn3814FM4WkBPQ "Here is a link to a GitHub repository") that could help you making sure your errors are printed on `stderr`
+    -   [Here is a link to a GitHub repository](https://fs.blog/feynman-learning-technique/ "Here is a link to a GitHub repository") that could help you making sure your errors are printed on `stderr`
 
 ### Tests
 
