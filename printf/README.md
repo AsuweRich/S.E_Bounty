@@ -38,7 +38,7 @@ Write your own `printf` function.
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/228/printf.png)
 
-*^ In this picture, [Kris](https://alx-intranet.hbtn.io/rltoken/pSPZEmqi5O8ZoeLM5-65WA "Kris"), and [Jul](https://alx-intranet.hbtn.io/rltoken/X_vDffLlUpbtqnubfnQx8Q "Jul")*
+*^ In this picture, [Kris](https://twitter.com/krisbredemeier "Kris"), and [Jul](https://twitter.com/cyrjulien "Jul")*
 
 Resources
 ---------
