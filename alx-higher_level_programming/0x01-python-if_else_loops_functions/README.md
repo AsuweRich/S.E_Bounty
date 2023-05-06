@@ -816,6 +816,7 @@ Write the Python function `def magic_calculation(a, b, c):` that does exactly th
              47 RETURN_VALUE
 ```
 [tips - ByteCode](https://docs.python.org/3.4/library/dis.html "tips - ByteCode")
+
 **Repo:**
 
 -   GitHub repository: `alx-higher_level_programming`
