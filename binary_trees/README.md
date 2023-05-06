@@ -2500,3 +2500,214 @@ alex@/tmp/binary_trees$
 -   GitHub repository: `binary_trees`
 -   File: `124-sorted_array_to_avl.c, 0-binary_tree_node.c`
 
+### 35\. Big O #AVL Tree
+
+#advanced
+
+What are the average time complexities of those operations on an AVL Tree (one answer per line):
+
+-   Inserting the value `n`
+-   Removing the node with the value `n`
+-   Searching for a node in an AVL tree of size n
+
+**Repo:**
+
+-   GitHub repository: `binary_trees`
+-   File: `125-O`
+
+### 36\. Is Binary heap
+
+#advanced
+
+Write a function that checks if a binary tree is a valid Max Binary Heap
+
+-   Prototype: `int binary_tree_is_heap(const binary_tree_t *tree);`
+-   Where `tree` is a pointer to the root node of the tree to check
+-   Your function must return `1` if tree is a valid Max Binary Heap, and `0` otherwise
+-   If `tree` is `NULL`, return `0`
+
+Properties of a Max Binary Heap:
+
+-   It’s a complete tree
+-   In a Max Binary Heap, the value at root must be maximum among all values present in Binary Heap
+-   The last property must be recursively true for all nodes in Binary Tree
+```
+alex@/tmp/binary_trees$ cat 130-main.c
+#include <stdlib.h>
+#include <stdio.h>
+#include "binary_trees.h"
+
+/**
+ * basic_tree - Build a basic binary tree
+ *
+ * Return: A pointer to the created tree
+ */
+binary_tree_t *basic_tree(void)
+{
+    binary_tree_t *root;
+
+    root = binary_tree_node(NULL, 98);
+    root->left = binary_tree_node(root, 90);
+    root->right = binary_tree_node(root, 85);
+    root->left->right = binary_tree_node(root->left, 80);
+    root->left->left = binary_tree_node(root->left, 79);
+    return (root);
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    binary_tree_t *root;
+    int heap;
+
+    root = basic_tree();
+
+    binary_tree_print(root);
+    heap = binary_tree_is_heap(root);
+    printf("Is %d heap: %d\n", root->n, heap);
+    heap = binary_tree_is_heap(root->left);
+    printf("Is %d heap: %d\n", root->left->n, heap);
+
+    root->right->left = binary_tree_node(root->right, 97);
+    binary_tree_print(root);
+    heap = binary_tree_is_heap(root);
+    printf("Is %d heap: %d\n", root->n, heap);
+
+    root = basic_tree();
+    root->right->right = binary_tree_node(root->right, 79);
+    binary_tree_print(root);
+    heap = binary_tree_is_heap(root);
+    printf("Is %d heap: %d\n", root->n, heap);
+    return (0);
+}
+alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 130-main.c 130-binary_tree_is_heap.c 0-binary_tree_node.c -o 130-is_heap
+alex@/tmp/binary_trees$ ./130-is_heap
+       .-------(098)--.
+  .--(090)--.       (085)
+(079)     (080)
+Is 98 heap: 1
+Is 90 heap: 1
+       .-------(098)-------.
+  .--(090)--.         .--(085)
+(079)     (080)     (097)
+Is 98 heap: 0
+       .-------(098)--.
+  .--(090)--.       (085)--.
+(079)     (080)          (079)
+Is 98 heap: 0
+alex@/tmp/binary_trees$
+```
+
+**Repo:**
+
+-   GitHub repository: `binary_trees`
+-   File: `130-binary_tree_is_heap.c`
+
+### 37\. Heap - Insert
+
+#advanced
+
+Write a function that inserts a value in Max Binary Heap
+
+-   Prototype: `heap_t *heap_insert(heap_t **root, int value)`
+-   Where `root` is a double pointer to the root node of the Heap to insert the value
+-   And `value` is the value to store in the node to be inserted
+-   Your function must return a pointer to the created node, or `NULL` on failure
+-   If the address stored in `root` is `NUL`L, the created node must become the root node.
+-   You have to respect a `Max Heap` ordering
+-   You are allowed to have up to `6` functions in your file
+
+Your file `0-binary_tree_node.c` will be compiled during the correction
+```
+aalex@/tmp/binary_trees$ cat 131-main.c
+#include <stdlib.h>
+#include <stdio.h>
+#include "binary_trees.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code on failure
+ */
+int main(void)
+{
+    heap_t *root;
+    heap_t *node;
+
+    root = NULL;
+    node = heap_insert(&root, 98);
+    printf("Inserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = heap_insert(&root, 402);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = heap_insert(&root, 12);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = heap_insert(&root, 46);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = heap_insert(&root, 128);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = heap_insert(&root, 256);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = heap_insert(&root, 512);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = heap_insert(&root, 50);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    return (0);
+}
+alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 131-main.c 131-heap_insert.c 0-binary_tree_node.c -o 131-heap_insert
+alex@/tmp/binary_trees$ ./131-heap_insert
+Inserted: 98
+(098)
+
+Inserted: 402
+  .--(402)
+(098)
+
+Inserted: 12
+  .--(402)--.
+(098)     (012)
+
+Inserted: 46
+       .--(402)--.
+  .--(098)     (012)
+(046)
+
+Inserted: 128
+       .-------(402)--.
+  .--(128)--.       (012)
+(046)     (098)
+
+Inserted: 256
+       .-------(402)-------.
+  .--(128)--.         .--(256)
+(046)     (098)     (012)
+
+Inserted: 512
+       .-------(512)-------.
+  .--(128)--.         .--(402)--.
+(046)     (098)     (012)     (256)
+
+Inserted: 50
+            .-------(512)-------.
+       .--(128)--.         .--(402)--.
+  .--(050)     (098)     (012)     (256)
+(046)
+alex@/tmp/binary_trees$
+```
+
+**Repo:**
+
+-   GitHub repository: `binary_trees`
+-   File: `131-heap_insert.c, 0-binary_tree_node.c`
+
