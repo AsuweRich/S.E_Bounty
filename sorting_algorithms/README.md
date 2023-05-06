@@ -1185,7 +1185,7 @@ alex@/tmp/sort$
 -   GitHub repository: `sorting_algorithms`
 -   File: `107-quick_sort_hoare.c, 107-O`
 
-[Done?] [Help] [Check your code] [QA Review]
+[Done?]     [Help]  [Check your code]   [QA Review]
 
 
 ### 12\. Dealer
@@ -1193,6 +1193,7 @@ alex@/tmp/sort$
 #advanced
 
 Score: 0.00% (Checks completed: 0.00%)
+
 [![You&#39;re Second Best](https://img.youtube.com/vi/_HJlGWXzlLA/maxresdefault.jpg)](https://youtu.be/_HJlGWXzlLA)
 
 Write a function that sorts a deck of cards.
