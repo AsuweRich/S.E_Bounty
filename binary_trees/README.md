@@ -2152,3 +2152,351 @@ alex@/tmp/binary_trees$
 
 -   GitHub repository: `binary_trees`
 -   File: `120-binary_tree_is_avl.c`
+
+### 31\. AVL - Insert
+
+#advanced
+
+Write a function that inserts a value in an AVL Tree
+
+-   Prototype: `avl_t *avl_insert(avl_t **tree, int value);`
+-   Where `tree` is a double pointer to the root node of the AVL tree for inserting the value
+-   And `value` is the value to store in the node to be inserted
+-   Your function must return a pointer to the created node, or `NULL` on failure
+-   If the address stored in `tree` is `NULL`, the created node must become the root node.
+-   The resulting tree after insertion, must be a balanced AVL Tree
+
+Your files `14-binary_tree_balance.c`, `103-binary_tree_rotate_left.c`, `104-binary_tree_rotate_right.c` and `0-binary_tree_node.c` will be compiled during the correction
+```
+alex@/tmp/binary_trees$ cat 121-main.c
+#include <stdlib.h>
+#include <stdio.h>
+#include "binary_trees.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code on failure
+ */
+int main(void)
+{
+    avl_t *root;
+    avl_t *node;
+
+    root = NULL;
+    node = avl_insert(&root, 98);
+    printf("Inserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = avl_insert(&root, 402);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = avl_insert(&root, 12);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = avl_insert(&root, 46);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = avl_insert(&root, 128);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = avl_insert(&root, 256);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = avl_insert(&root, 512);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    node = avl_insert(&root, 50);
+    printf("\nInserted: %d\n", node->n);
+    binary_tree_print(root);
+    return (0);
+}
+alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 121-avl_insert.c 121-main.c 14-binary_tree_balance.c 103-binary_tree_rotate_left.c 104-binary_tree_rotate_right.c 0-binary_tree_node.c -o 121-avl_insert
+alex@/tmp/binary_trees$ ./121-avl_insert
+Inserted: 98
+(098)
+
+Inserted: 402
+(098)--.
+     (402)
+
+Inserted: 12
+  .--(098)--.
+(012)     (402)
+
+Inserted: 46
+  .-------(098)--.
+(012)--.       (402)
+     (046)
+
+Inserted: 128
+  .-------(098)-------.
+(012)--.         .--(402)
+     (046)     (128)
+
+Inserted: 256
+  .-------(098)-------.
+(012)--.         .--(256)--.
+     (046)     (128)     (402)
+
+Inserted: 512
+  .-------(098)-------.
+(012)--.         .--(256)--.
+     (046)     (128)     (402)--.
+                              (512)
+
+Inserted: 50
+       .-------(098)-------.
+  .--(046)--.         .--(256)--.
+(012)     (050)     (128)     (402)--.
+                                   (512)
+alex@/tmp/binary_trees$
+```
+
+**Repo:**
+
+-   GitHub repository: `binary_trees`
+-   File: `121-avl_insert.c, 14-binary_tree_balance.c, 103-binary_tree_rotate_left.c, 104-binary_tree_rotate_right.c, 0-binary_tree_node.c`
+
+### 32\. AVL - Array to AVL
+
+#advanced
+
+Write a function that builds an AVL tree from an array
+
+-   Prototype: `avl_t *array_to_avl(int *array, size_t size);`
+-   Where `array` is a pointer to the first element of the array to be converted
+-   And `size` is the number of element in the array
+-   Your function must return a pointer to the root node of the created AVL tree, or `NULL` on failure
+-   If a value of the array is already present in the tree, this value must be ignored
+
+Your files `121-avl_insert.c`, `0-binary_tree_node.c`, `14-binary_tree_balance.c`, `103-binary_tree_rotate_left.c` and `104-binary_tree_rotate_right.c` will be compiled during the correction
+```
+alex@/tmp/binary_trees$ cat 122-main.c 
+#include <stdlib.h>
+#include "binary_trees.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code on failure
+ */
+int main(void)
+{
+    avl_t *tree;
+    int array[] = {
+        79, 47, 68, 87, 84, 91, 21, 32, 34, 2,
+        20, 22, 98, 1, 62, 95
+    };
+    size_t n = sizeof(array) / sizeof(array[0]);
+
+    tree = array_to_avl(array, n);
+    if (!tree)
+        return (1);
+    binary_tree_print(tree);
+    return (0);
+}
+alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 122-array_to_avl.c 122-main.c 121-avl_insert.c 0-binary_tree_node.c 14-binary_tree_balance.c 103-binary_tree_rotate_left.c 104-binary_tree_rotate_right.c -o 122-avl_array
+alex@/tmp/binary_trees$ ./122-avl_array 
+                 .-----------------(047)-----------------.
+       .-------(021)-------.                   .-------(084)-------.
+  .--(002)--.         .--(032)--.         .--(068)--.         .--(091)-------.
+(001)     (020)     (022)     (034)     (062)     (079)     (087)       .--(098)
+                                                                      (095)
+alex@/tmp/binary_trees$
+```
+
+**Repo:**
+
+-   GitHub repository: `binary_trees`
+-   File: `122-array_to_avl.c, 121-avl_insert.c, 0-binary_tree_node.c, 103-binary_tree_rotate_left.c, 104-binary_tree_rotate_right.c, 14-binary_tree_balance.c`
+
+### 33\. AVL - Remove
+
+#advanced
+
+Write a function that removes a node from an AVL tree
+
+-   Prototype: `avl_t *avl_remove(avl_t *root, int value);`
+-   Where `root` is a pointer to the root node of the tree for removing a node
+-   And `value` is the value to remove in the tree
+-   Once located, the node containing a value equals to `value` must be removed and freed
+-   If the node to be deleted has two children, it must be replaced with its first `in-order successor` (not predecessor)
+-   After deletion of the desired node, the tree must be rebalanced if necessary
+-   Your function must return a pointer to the new root node of the tree after removing the desired value, and after rebalancing
+
+Your files `14-binary_tree_balance.c`, `103-binary_tree_rotate_left.c` and `104-binary_tree_rotate_right.c` will be compiled during the correction
+```
+alex@/tmp/binary_trees$ cat 123-main.c
+#include <stdio.h>
+#include <stdlib.h>
+#include "binary_trees.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code on failure
+ */
+int main(void)
+{
+    avl_t *tree;
+    int array[] = {
+        79, 47, 68, 87, 84, 91, 21, 32, 34, 2,
+        20, 22, 98, 1, 62, 95
+    };
+    size_t n = sizeof(array) / sizeof(array[0]);
+
+    tree = array_to_avl(array, n);
+    if (!tree)
+        return (1);
+    binary_tree_print(tree);
+
+    tree = avl_remove(tree, 47);
+    printf("Removed 47...\n");
+    binary_tree_print(tree);
+
+    tree = avl_remove(tree, 79);
+    printf("Removed 79...\n");
+    binary_tree_print(tree);
+
+    tree = avl_remove(tree, 32);
+    printf("Removed 32...\n");
+    binary_tree_print(tree);
+
+    tree = avl_remove(tree, 34);
+    printf("Removed 34...\n");
+    binary_tree_print(tree);
+
+    tree = avl_remove(tree, 22);
+    printf("Removed 22...\n");
+    binary_tree_print(tree);
+    binary_tree_delete(tree);
+    return (0);
+}
+alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 123-avl_remove.c 123-main.c 103-binary_tree_rotate_left.c 104-binary_tree_rotate_right.c 122-array_to_avl.c 121-avl_insert.c 14-binary_tree_balance.c 3-binary_tree_delete.c 0-binary_tree_node.c -o 123-avl_rm
+alex@/tmp/binary_trees$ valgrind ./123-avl_rm
+==15646== Memcheck, a memory error detector
+==15646== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==15646== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==15646== Command: ./123-avl_rm
+==15646== 
+                 .-----------------(047)-----------------.
+       .-------(021)-------.                   .-------(084)-------.
+  .--(002)--.         .--(032)--.         .--(068)--.         .--(091)-------.
+(001)     (020)     (022)     (034)     (062)     (079)     (087)       .--(098)
+                                                                      (095)
+Removed 47...
+                 .-----------------(062)------------.
+       .-------(021)-------.              .-------(084)-------.
+  .--(002)--.         .--(032)--.       (068)--.         .--(091)-------.
+(001)     (020)     (022)     (034)          (079)     (087)       .--(098)
+                                                                 (095)
+Removed 79...
+                 .-----------------(062)-----------------.
+       .-------(021)-------.                   .-------(091)-------.
+  .--(002)--.         .--(032)--.         .--(084)--.         .--(098)
+(001)     (020)     (022)     (034)     (068)     (087)     (095)
+Removed 32...
+                 .------------(062)-----------------.
+       .-------(021)-------.              .-------(091)-------.
+  .--(002)--.         .--(034)       .--(084)--.         .--(098)
+(001)     (020)     (022)          (068)     (087)     (095)
+Removed 34...
+                 .-------(062)-----------------.
+       .-------(021)--.              .-------(091)-------.
+  .--(002)--.       (022)       .--(084)--.         .--(098)
+(001)     (020)               (068)     (087)     (095)
+Removed 22...
+       .------------(062)-----------------.
+  .--(002)-------.              .-------(091)-------.
+(001)       .--(021)       .--(084)--.         .--(098)
+          (020)          (068)     (087)     (095)
+==15646== 
+==15646== HEAP SUMMARY:
+==15646==     in use at exit: 0 bytes in 0 blocks
+==15646==   total heap usage: 48 allocs, 48 frees, 7,350 bytes allocated
+==15646== 
+==15646== All heap blocks were freed -- no leaks are possible
+==15646== 
+==15646== For counts of detected and suppressed errors, rerun with: -v
+==15646== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+alex@/tmp/binary_trees$
+```
+
+**Repo:**
+
+-   GitHub repository: `binary_trees`
+-   File: `123-avl_remove.c, 14-binary_tree_balance.c, 103-binary_tree_rotate_left.c, 104-binary_tree_rotate_right.c`
+
+### 34\. AVL - From sorted array
+
+#advanced
+
+Write a function that builds an AVL tree from an array
+
+-   Prototype: `avl_t *sorted_array_to_avl(int *array, size_t size);`
+-   Where `array` is a pointer to the first element of the array to be converted
+-   And `size` is the number of element in the array
+-   Your function must return a pointer to the root node of the created AVL tree, or `NULL` on failure
+-   You can assume there will be no duplicate value in the array
+-   You are not allowed to rotate
+-   You can only have 2 functions in your file
+
+Your file `0-binary_tree_node.c` will be compiled during the correction
+```
+alex@/tmp/binary_trees$ cat 124-main.c
+#include <stdlib.h>
+#include <stdio.h>
+#include "binary_trees.h"
+
+/**
+ * print_array - Prints an array of integers
+ *
+ * @array: The array to be printed
+ * @size: Size of the array
+ */
+void print_array(const int *array, size_t size)
+{
+    size_t i;
+
+    for (i = 0; i < size; ++i)
+        printf("(%03d)", array[i]);
+    printf("\n");
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 on success, error code on failure
+ */
+int main(void)
+{
+    avl_t *tree;
+    int array[] = {
+        1, 2, 20, 21, 22, 32, 34, 47, 62, 68,
+        79, 84, 87, 91, 95, 98
+    };
+    size_t n = sizeof(array) / sizeof(array[0]);
+
+    tree = sorted_array_to_avl(array, n);
+    if (!tree)
+        return (1);
+    print_array(array, n);
+    binary_tree_print(tree);
+    return (0);
+}
+alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 124-main.c 124-sorted_array_to_avl.c 0-binary_tree_node.c -o 124-avl_sorted
+alex@/tmp/binary_trees$ ./124-avl_sorted
+(001)(002)(020)(021)(022)(032)(034)(047)(062)(068)(079)(084)(087)(091)(095)(098)
+                 .-----------------(047)-----------------.
+       .-------(021)-------.                   .-------(084)-------.
+  .--(002)--.         .--(032)--.         .--(068)--.         .--(091)--.
+(001)     (020)     (022)     (034)     (062)     (079)     (087)     (095)--.
+                                                                           (098)
+alex@/tmp/binary_trees$
+```
+
+**Repo:**
+
+-   GitHub repository: `binary_trees`
+-   File: `124-sorted_array_to_avl.c, 0-binary_tree_node.c`
+
