@@ -9,22 +9,24 @@
 Background Context
 ------------------
 
-This project is meant to be done by groups of two students. Each group of two should [pair program](https://alx-intranet.hbtn.io/rltoken/gIcHRL9I7i1lw2CTAll37A "pair program") for at least the mandatory part.
+This project is meant to be done by groups of two students. Each group of two should [pair program](https://en.wikipedia.org/wiki/Pair_programming "pair program") for at least the mandatory part.
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [Sorting algorithm](https://alx-intranet.hbtn.io/rltoken/-j5MKLBlzZAC2RfJ5DTBIg "Sorting algorithm")
--   [Big O notation](https://alx-intranet.hbtn.io/rltoken/WRvrE2BaNVQFssHiUATTrw "Big O notation")
--   [Sorting algorithms animations](https://alx-intranet.hbtn.io/rltoken/ol0P7NbYVb5R31iOv4Q40A "Sorting algorithms animations")
--   [15 sorting algorithms in 6 minutes](https://alx-intranet.hbtn.io/rltoken/_I0aEvhfJ66Xyob6dd9Utw "15 sorting algorithms in 6 minutes") (***WARNING**: The following video can trigger seizure/epilepsy. It is not required for the project, as it is only a funny visualization of different sorting algorithms*)
+-   [Sorting algorithm](https://en.wikipedia.org/wiki/Sorting_algorithm "Sorting algorithm")
+-   [Big O notation](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation "Big O notation")
+-   [Sorting algorithms animations](https://www.toptal.com/developers/sorting-algorithms "Sorting algorithms animations")
+-   [15 sorting algorithms in 6 minutes](https://www.youtube.com/watch?v=kPRA0W1kECg "15 sorting algorithms in 6 minutes") (***WARNING**: The following video can trigger seizure/epilepsy. It is not required for the project, as it is only a funny visualization of different sorting algorithms*)
+-   [CS50 Algorithms explanation in detail by David Malan](https://www.youtube.com/watch?v=yb0PY3LX2x8&t=2s "CS50 Algorithms explanation in detail by David Malan")
+-   [All about sorting algorithms](https://www.geeksforgeeks.org/sorting-algorithms/ "All about sorting algorithms")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/b-QhraVUoSGmQ1C4QfNoFw "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -87,7 +89,6 @@ void print_array(const int *array, size_t size)
     }
     printf("\n");
 }
-
 ```
 
 ```
@@ -114,7 +115,6 @@ void print_list(const listint_t *list)
     }
     printf("\n");
 }
-
 ```
 
 -   Our files `print_array.c` and `print_list.c` (containing the `print_array` and `print_list` functions) will be compiled with your functions during the correction.
@@ -135,7 +135,6 @@ typedef struct listint_s
     struct listint_s *prev;
     struct listint_s *next;
 } listint_t;
-
 ```
 
 Please, note this format is used for Quiz and Task questions.
@@ -153,7 +152,7 @@ Please use the "short" notation (don't use constants). Example: `O(nk)` or `O
 
 ### Tests
 
-Here is a quick tip to help you test your sorting algorithms with big sets of random integers: [Random.org](https://alx-intranet.hbtn.io/rltoken/YR-VWQbICB59wZs1eAaI3w "Random.org")
+Here is a quick tip to help you test your sorting algorithms with big sets of random integers: [Random.org](https://www.random.org/integer-sets/ "Random.org")
 
 Quiz questions
 --------------
@@ -168,6 +167,7 @@ Tasks
 mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
+[Bubble-sort with Hungarian (&quot;Csángó&quot;) folk dance](https://img.youtube.com/vi/lyZQPjUT5B4/maxresdefault.jpg)](https://youtu.be/lyZQPjUT5B4)
 
 Write a function that sorts an array of integers in ascending order using the [Bubble sort](https://alx-intranet.hbtn.io/rltoken/awhP8BhtkGi-lwmMc2-KAw "Bubble sort") algorithm
 
@@ -231,7 +231,6 @@ alex@/tmp/sort$ ./bubble
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
-
 ```
 
 **Repo:**
@@ -246,6 +245,7 @@ alex@/tmp/sort$
 mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
+[![Insert-sort with Romanian folk dance](https://img.youtube.com/vi/ROalU379l3U/maxresdefault.jpg)](https://youtu.be/ROalU379l3U)
 
 Write a function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://alx-intranet.hbtn.io/rltoken/GocxRKbPdsmERXeOHMCO2w "Insertion sort") algorithm
 
@@ -345,7 +345,6 @@ alex@/tmp/sort$ ./insertion
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
-
 ```
 
 **Repo:**
@@ -360,6 +359,7 @@ alex@/tmp/sort$
 mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
+[![Select-sort with Gypsy folk dance](https://img.youtube.com/vi/Ns4TPTC8whw/maxresdefault.jpg)](https://youtu.be/Ns4TPTC8whw)
 
 Write a function that sorts an array of integers in ascending order using the [Selection sort](https://alx-intranet.hbtn.io/rltoken/SEbg0fBEraioQcl-igvUSw "Selection sort") algorithm
 
@@ -410,7 +410,6 @@ alex@/tmp/sort$ ./select
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
-
 ```
 
 **Repo:**
@@ -425,6 +424,7 @@ alex@/tmp/sort$
 mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
+[![Quick-sort with Hungarian (Küküllőmenti legényes) folk dance](https://img.youtube.com/vi/ywWBy6J5gz8/maxresdefault.jpg)](https://youtu.be/ywWBy6J5gz8)
 
 Write a function that sorts an array of integers in ascending order using the [Quick sort](https://alx-intranet.hbtn.io/rltoken/_pBTrH0Xyo4BRmQn4CtnMg "Quick sort") algorithm
 
@@ -476,7 +476,6 @@ alex@/tmp/sort$ ./quick
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
-
 ```
 
 **Repo:**
