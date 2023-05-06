@@ -167,9 +167,9 @@ Tasks
 mandatory
 
 Score: 0.00% (Checks completed: 0.00%)
-[Bubble-sort with Hungarian (&quot;Csángó&quot;) folk dance](https://img.youtube.com/vi/lyZQPjUT5B4/maxresdefault.jpg)](https://youtu.be/lyZQPjUT5B4)
+[![Bubble-sort with Hungarian folk dance](https://img.youtube.com/vi/lyZQPjUT5B4/maxresdefault.jpg)](https://youtu.be/lyZQPjUT5B4)
 
-Write a function that sorts an array of integers in ascending order using the [Bubble sort](https://alx-intranet.hbtn.io/rltoken/awhP8BhtkGi-lwmMc2-KAw "Bubble sort") algorithm
+Write a function that sorts an array of integers in ascending order using the [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort "Bubble sort") algorithm
 
 -   Prototype: `void bubble_sort(int *array, size_t size);`
 -   You're expected to print the `array` after each time you swap two elements (See example below)
@@ -247,7 +247,7 @@ mandatory
 Score: 0.00% (Checks completed: 0.00%)
 [![Insert-sort with Romanian folk dance](https://img.youtube.com/vi/ROalU379l3U/maxresdefault.jpg)](https://youtu.be/ROalU379l3U)
 
-Write a function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://alx-intranet.hbtn.io/rltoken/GocxRKbPdsmERXeOHMCO2w "Insertion sort") algorithm
+Write a function that sorts a doubly linked list of integers in ascending order using the [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort "Insertion sort") algorithm
 
 -   Prototype: `void insertion_sort_list(listint_t **list);`
 -   You are not allowed to modify the integer `n` of a node. You have to swap the nodes themselves.
@@ -361,7 +361,7 @@ mandatory
 Score: 0.00% (Checks completed: 0.00%)
 [![Select-sort with Gypsy folk dance](https://img.youtube.com/vi/Ns4TPTC8whw/maxresdefault.jpg)](https://youtu.be/Ns4TPTC8whw)
 
-Write a function that sorts an array of integers in ascending order using the [Selection sort](https://alx-intranet.hbtn.io/rltoken/SEbg0fBEraioQcl-igvUSw "Selection sort") algorithm
+Write a function that sorts an array of integers in ascending order using the [Selection sort](https://en.wikipedia.org/wiki/Selection_sort "Selection sort") algorithm
 
 -   Prototype: `void selection_sort(int *array, size_t size);`
 -   You're expected to print the `array` after each time you swap two elements (See example below)
@@ -426,7 +426,7 @@ mandatory
 Score: 0.00% (Checks completed: 0.00%)
 [![Quick-sort with Hungarian (Küküllőmenti legényes) folk dance](https://img.youtube.com/vi/ywWBy6J5gz8/maxresdefault.jpg)](https://youtu.be/ywWBy6J5gz8)
 
-Write a function that sorts an array of integers in ascending order using the [Quick sort](https://alx-intranet.hbtn.io/rltoken/_pBTrH0Xyo4BRmQn4CtnMg "Quick sort") algorithm
+Write a function that sorts an array of integers in ascending order using the [Quick sort](https://en.wikipedia.org/wiki/Quicksort "Quick sort") algorithm
 
 -   Prototype: `void quick_sort(int *array, size_t size);`
 -   You must implement the `Lomuto` partition scheme.
