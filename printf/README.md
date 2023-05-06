@@ -24,6 +24,21 @@ Concepts
     ![image](https://user-images.githubusercontent.com/106776383/236344764-85d97fa3-0680-4cf9-bd91-148da7639901.png)
 
 -   [Flowcharts](https://alx-intranet.hbtn.io/concepts/130)
+
+    ![image](https://user-images.githubusercontent.com/106776383/236608678-2c243234-0ac7-4c1b-9863-d5f941fb5427.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236608821-c8b4e539-569b-4d48-88f0-e0ab52c22261.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236608864-96c7fff5-5539-4ae4-8206-933d61a364b3.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236608907-4c3ee65f-52f3-4246-8ff9-71cf7a94cdd5.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236608970-529d95ae-8bd1-4a8c-b17d-50ef5e698e44.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236608997-34d6d503-d242-4743-a60f-f46c94590940.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236609021-6447b183-98a6-4e19-badf-4904b09bfd21.png)
+
   
 -   [Technical Writing](https://alx-intranet.hbtn.io/concepts/225)
 
@@ -91,7 +106,6 @@ More Info
 
 ```
 $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
-
 ```
 
 -   As a consequence, be careful not to push any c file containing a `main` function in the root directory of your project (you could have a `test` folder containing all your tests files including `main` functions)
@@ -171,7 +185,6 @@ Len:[12]
 Unknown:[%r]
 Unknown:[%r]
 alex@ubuntu:~/c/printf$
-
 ```
 
 -   We strongly encourage you to work all together on a set of tests
