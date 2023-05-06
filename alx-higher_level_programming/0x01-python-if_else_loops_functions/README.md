@@ -745,3 +745,79 @@ zYxWvUtSrQpOnMlKjIhGfEdCbAguillaume@ubuntu:~/0x01$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x01-python-if_else_loops_functions`
 -   File: `100-print_tebahpla.py`
+
+### 15\. Remove at position
+
+#advanced
+
+Write a function that creates a copy of the string, removing the character at the position `n` (not the Python way, the “C array index”).
+
+-   Prototype: `def remove_char_at(str, n):`
+-   You are not allowed to import any module
+
+You don’t need to understand `__import__`
+
+```
+guillaume@ubuntu:~/0x01$ cat 101-main.py
+#!/usr/bin/env python3
+remove_char_at = __import__('101-remove_char_at').remove_char_at
+
+print(remove_char_at("Best School", 3))
+print(remove_char_at("Chicago", 2))
+print(remove_char_at("C is fun!", 0))
+print(remove_char_at("School", 10))
+print(remove_char_at("Python", -2))
+
+guillaume@ubuntu:~/0x01$ ./101-main.py
+Bes School
+Chcago
+ is fun!
+School
+Python
+guillaume@ubuntu:~/0x01$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x01-python-if_else_loops_functions`
+-   File: `101-remove_char_at.py`
+
+### 16\. ByteCode -> Python #2
+
+#advanced
+
+Write the Python function `def magic_calculation(a, b, c):` that does exactly the same as the following Python bytecode:
+
+```
+3           0 LOAD_FAST                0 (a)
+              3 LOAD_FAST                1 (b)
+              6 COMPARE_OP               0 (<)
+              9 POP_JUMP_IF_FALSE       16
+
+  4          12 LOAD_FAST                2 (c)
+             15 RETURN_VALUE
+
+  5     >>   16 LOAD_FAST                2 (c)
+             19 LOAD_FAST                1 (b)
+             22 COMPARE_OP               4 (>)
+             25 POP_JUMP_IF_FALSE       36
+
+  6          28 LOAD_FAST                0 (a)
+             31 LOAD_FAST                1 (b)
+             34 BINARY_ADD
+             35 RETURN_VALUE
+
+  7     >>   36 LOAD_FAST                0 (a)
+             39 LOAD_FAST                1 (b)
+             42 BINARY_MULTIPLY
+             43 LOAD_FAST                2 (c)
+             46 BINARY_SUBTRACT
+             47 RETURN_VALUE
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x01-python-if_else_loops_functions`
+-   File: `102-magic_calculation.py`
