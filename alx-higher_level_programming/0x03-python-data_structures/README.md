@@ -8,14 +8,14 @@ Resources
 
 **Read or watch**:
 
--   [3.1.3. Lists](https://alx-intranet.hbtn.io/rltoken/VarQbHxfmbnpGnaGp3Nb_A "3.1.3. Lists")
--   [Data structures](https://alx-intranet.hbtn.io/rltoken/2aa8Mp-V2eSieGeX3OX8yQ "Data structures") (*until `5.3. Tuples and Sequences` included*)
--   [Learn to Program 6 : Lists](https://alx-intranet.hbtn.io/rltoken/BX2_CuHj1sq4eYGiXbCYSg "Learn to Program 6 : Lists")
+-   [3.1.3. Lists](https://docs.python.org/3/tutorial/introduction.html#lists "3.1.3. Lists")
+-   [Data structures](https://docs.python.org/3/tutorial/datastructures.html "Data structures") (*until `5.3. Tuples and Sequences` included*)
+-   [Learn to Program 6 : Lists](https://www.youtube.com/watch?v=A1HUzrvS-Pw "Learn to Program 6 : Lists")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/qZrNhvUqi5zcqE4cMFGU6Q "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -91,7 +91,6 @@ guillaume@ubuntu:~/0x03$ ./0-main.py
 4
 5
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -124,7 +123,6 @@ print("Element at index {:d} is {}".format(idx, element_at(my_list, idx)))
 guillaume@ubuntu:~/0x03$ ./1-main.py
 Element at index 3 is 4
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -162,7 +160,6 @@ guillaume@ubuntu:~/0x03$ ./2-main.py
 [1, 2, 3, 9, 5]
 [1, 2, 3, 9, 5]
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -199,7 +196,6 @@ guillaume@ubuntu:~/0x03$ ./3-main.py
 2
 1
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -237,7 +233,6 @@ guillaume@ubuntu:~/0x03$ ./4-main.py
 [1, 2, 3, 9, 5]
 [1, 2, 3, 4, 5]
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -271,7 +266,6 @@ Best Shool
 hiago
  is fun!
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -315,7 +309,6 @@ guillaume@ubuntu:~/0x03$ ./6-main.py | cat -e
 --$
 $
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -357,7 +350,6 @@ guillaume@ubuntu:~/0x03$ ./7-main.py
 (2, 89)
 (1, 89)
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -388,7 +380,6 @@ print("Length: {:d} - First character: {}".format(length, first))
 guillaume@ubuntu:~/0x03$ ./8-main.py
 Length: 22 - First character: A
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -421,7 +412,6 @@ print("Max: {}".format(max_value))
 guillaume@ubuntu:~/0x03$ ./9-main.py
 Max: 90
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -463,7 +453,6 @@ guillaume@ubuntu:~/0x03$ ./10-main.py
 5 is not divisible by 2
 6 is divisible by 2
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -498,7 +487,6 @@ guillaume@ubuntu:~/0x03$ ./11-main.py
 [1, 2, 3, 5]
 [1, 2, 3, 5]
 guillaume@ubuntu:~/0x03$
-
 ```
 
 **Repo:**
@@ -513,7 +501,7 @@ mandatory
 
 Complete the source code in order to switch value of `a` and `b`
 
--   You can find the source code [here](https://alx-intranet.hbtn.io/rltoken/Iwhtw8ZaGLN7TIzodKGnYA "here")
+-   You can find the source code [here](https://github.com/holbertonschool/0x03.py/blob/master/12-switch_py "here")
 -   Your code should be inserted where the comment is (line 4)
 -   Your program should be exactly 5 lines long
 
@@ -523,7 +511,6 @@ a=10 - b=89
 guillaume@ubuntu:~/py/0x03$ wc -l 12-switch.py
 5 12-switch.py
 guillaume@ubuntu:~/py/0x03$
-
 ```
 
 **Repo:**
@@ -574,7 +561,6 @@ int is_palindrome(listint_t **head);
 
 #endif /* LISTS_H */
 carrie@ubuntu:0x03$
-
 ```
 
 ```
@@ -654,7 +640,6 @@ void free_listint(listint_t *head)
     }
 }
 carrie@ubuntu:0x03$
-
 ```
 
 ```
@@ -695,7 +680,6 @@ int main(void)
     return (0);
 }
 carrie@ubuntu:0x03$
-
 ```
 
 ```
@@ -713,7 +697,6 @@ carrie@ubuntu:0x03$ ./palindrome
 1
 Linked list is a palindrome
 carrie@ubuntu:0x03$
-
 ```
 
 **Repo:**
@@ -731,7 +714,7 @@ Since we now know a bit of C, we can look at what is happening under the hood of
 
 -   All your files will be interpreted/compiled on Ubuntu 14.04 LTS
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/7e7834b535261d05532fb80a9304f7051c4ad7ac.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20211121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211121T180457Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=665e724d14ace604a30295cda2420ee7685b2123a40ff31d766039451a58447b)
+![image](https://user-images.githubusercontent.com/106776383/236644520-6a546f30-8935-4134-977f-e54e08bb9eb1.png)
 
 Create a C function that prints some basic info about Python lists.
 
@@ -743,8 +726,8 @@ Create a C function that prints some basic info about Python lists.
 -   Start by reading:
     -   listobject.h
     -   object.h
-    -   [Common Object Structures](https://alx-intranet.hbtn.io/rltoken/jmRTk4m1VSzjsu3QTGaC6w "Common Object Structures")
-    -   [List Objects](https://alx-intranet.hbtn.io/rltoken/7V1HlQRESjCqrKrw_O_Urw "List Objects")
+    -   [Common Object Structures](https://docs.python.org/3.4/c-api/structures.html "Common Object Structures")
+    -   [List Objects](https://docs.python.org/3.4/c-api/list.html "List Objects")
 
 ```
 julien@ubuntu:~/CPython$ gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,PyList -o libPyList.so -fPIC -I/usr/include/python3.4 100-print_python_list_info.c
@@ -806,7 +789,6 @@ Element 1: int
 Element 2: int
 Element 3: int
 julien@CPython:~/CPython$
-
 ```
 
 **Repo:**
