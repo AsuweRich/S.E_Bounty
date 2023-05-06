@@ -10,12 +10,12 @@ Resources
 
 **Read or watch**:
 
--   [More Control Flow Tools](https://alx-intranet.hbtn.io/rltoken/jpjs5EnZTpBLLEremJYjPQ "More Control Flow Tools") (*Read until "4.6. Defining Functions" included*)
--   [IndentationError](https://alx-intranet.hbtn.io/rltoken/F9n2AE-fpEPzt2PfBMGYAQ "IndentationError")
--   [How To Use String Formatters in Python 3](https://alx-intranet.hbtn.io/rltoken/ZdtRIAkFu8dMBT99DcFBNg "How To Use String Formatters in Python 3")
--   [Learn to Program](https://alx-intranet.hbtn.io/rltoken/ElQgZYNHrLI7kV_ysEB1hQ "Learn to Program")
--   [Learn to Program 2 : Looping](https://alx-intranet.hbtn.io/rltoken/ElQgZYNHrLI7kV_ysEB1hQ "Learn to Program 2 : Looping")
--   [Pycodestyle -- Style Guide for Python Code](https://alx-intranet.hbtn.io/rltoken/TuTTnEg_Rwn8U1g3PEsZmA "Pycodestyle -- Style Guide for Python Code")
+-   [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html "More Control Flow Tools") (*Read until "4.6. Defining Functions" included*)
+-   [IndentationError](https://www.youtube.com/watch?v=1QXOd2ZQs-Q "IndentationError")
+-   [How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3 "How To Use String Formatters in Python 3")
+-   [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt "Learn to Program")
+-   [Learn to Program 2 : Looping](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt "Learn to Program 2 : Looping")
+-   [Pycodestyle -- Style Guide for Python Code](https://pypi.org/project/pycodestyle/ "Pycodestyle -- Style Guide for Python Code")
 
 **man or help**:
 
@@ -24,7 +24,7 @@ Resources
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/SdBJUMTPS5VW3cQNkhaeSg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -88,7 +88,7 @@ mandatory
 
 This program will assign a random signed number to the variable `number` each time it is executed. Complete the source code in order to print whether the number stored in the variable `number` is positive or negative.
 
--   You can find the source code [here](https://alx-intranet.hbtn.io/rltoken/rkvoXPA-lS3TAaemM9sChg "here")
+-   You can find the source code [here](https://github.com/holbertonschool/0x01.py/blob/master/0-positive_or_negative_py "here")
 -   The variable `number` will store a different value every time you will run this program
 -   You don't have to understand what `import`, `random. randint` do. Please do not touch this code
 -   The output of the program should be:
@@ -118,7 +118,6 @@ guillaume@ubuntu:~/0x01$ ./0-positive_or_negative.py
 guillaume@ubuntu:~/0x01$ ./0-positive_or_negative.py
 5 is positive
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -133,7 +132,7 @@ mandatory
 
 This program will assign a random signed number to the variable `number` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `number`.
 
--   You can find the source code [here](https://alx-intranet.hbtn.io/rltoken/hU682hcMxVchqWAcmh32tA "here")
+-   You can find the source code [here](https://github.com/holbertonschool/0x01.py/blob/master/1-last_digit_py "here")
 -   The variable `number` will store a different value every time you will run this program
 -   You don't have to understand what `import`, `random.randint` do. **Please do not touch this code**. This line should not change: `number = random.randint(-10000, 10000)`
 -   The output of the program should be:
@@ -169,7 +168,6 @@ Last digit of 3850 is 0 and is 0
 guillaume@ubuntu:~/0x01$ ./1-last_digit.py
 Last digit of 5169 is 9 and is greater than 5
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -192,7 +190,6 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 ```
 guillaume@ubuntu:~/0x01$ ./2-print_alphabet.py
 abcdefghijklmnopqrstuvwxyzguillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -216,7 +213,6 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 ```
 guillaume@ubuntu:~/0x01$ ./3-print_alphabt.py
 abcdfghijklmnoprstuvwxyzguillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -262,7 +258,6 @@ guillaume@ubuntu:~/0x01$ ./4-print_hexa.py
 97 = 0x61
 98 = 0x62
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -289,7 +284,6 @@ Write a program that prints numbers from `0` to `99`.
 guillaume@ubuntu:~/0x01$ ./5-print_comb2.py
 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -319,7 +313,6 @@ Write a program that prints all possible different combinations of two digits.
 guillaume@ubuntu:~/0x01$ ./6-print_comb3.py
 01, 02, 03, 04, 05, 06, 07, 08, 09, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 34, 35, 36, 37, 38, 39, 45, 46, 47, 48, 49, 56, 57, 58, 59, 67, 68, 69, 78, 79, 89
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -339,7 +332,7 @@ Write a function that checks for lowercase character.
 -   Returns `False` otherwise
 -   You are not allowed to import any module
 -   You are not allowed to use `str.upper()` and `str.isupper()`
--   [Tips: ord()](https://alx-intranet.hbtn.io/rltoken/WglAv9ep-gg2wwo49DYfKg "Tips: ord()")
+-   [Tips: ord()](https://docs.python.org/3.4/library/functions.html?highlight=ord#ord "Tips: ord()")
 
 You don't need to understand `__import__`
 
@@ -361,7 +354,6 @@ A is upper
 3 is upper
 g is lower
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -381,7 +373,7 @@ Write a function that prints a string in uppercase followed by a new line.
 -   You can only use one loop in your code
 -   You are not allowed to import any module
 -   You are not allowed to use `str.upper()` and `str.isupper()`
--   [Tips: ord()](https://alx-intranet.hbtn.io/rltoken/WglAv9ep-gg2wwo49DYfKg "Tips: ord()")
+-   [Tips: ord()](https://docs.python.org/3.4/library/functions.html?highlight=ord#ord "Tips: ord()")
 
 You don't need to understand `__import__`
 
@@ -397,7 +389,6 @@ guillaume@ubuntu:~/0x01$ ./8-main.py
 BEST
 BEST SCHOOL 98 BATTERY STREET
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -431,7 +422,6 @@ print(r)
 guillaume@ubuntu:~/0x01$ ./9-main.py
 8044
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -466,7 +456,6 @@ guillaume@ubuntu:~/0x01$ ./10-main.py
 98
 98
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -505,7 +494,6 @@ guillaume@ubuntu:~/0x01$ ./11-main.py
 0.0001
 -1024
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -539,7 +527,6 @@ print("")
 guillaume@ubuntu:~/0x01$ ./12-main.py | cat -e
 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 Buzz Fizz 97 98 Fizz Buzz $
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -588,7 +575,6 @@ void free_listint(listint_t *head);
 listint_t *insert_node(listint_t **head, int number);
 
 #endif /* LISTS_H */
-
 ```
 
 ```
@@ -667,7 +653,6 @@ void free_listint(listint_t *head)
         free(current);
     }
 }
-
 ```
 
 ```
@@ -707,7 +692,6 @@ int main(void)
 
     return (0);
 }
-
 ```
 
 ```
@@ -732,7 +716,6 @@ carrie@ubuntu:0x01$ ./insert
 402
 1024
 carrie@ubuntu:0x01$
-
 ```
 
 **Repo:**
@@ -740,3 +723,25 @@ carrie@ubuntu:0x01$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x01-python-if_else_loops_functions`
 -   File: `13-insert_number.c, lists.h`
+
+### 14\. Smile in the mirror
+
+#advanced
+
+Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (`z` in lowercase and `Y` in uppercase) , not followed by a new line.
+
+-   You can only use one `print` function with string format
+-   You can only use one loop in your code
+-   You are not allowed to store characters in a variable
+-   You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x01$ ./100-print_tebahpla.py
+zYxWvUtSrQpOnMlKjIhGfEdCbAguillaume@ubuntu:~/0x01$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x01-python-if_else_loops_functions`
+-   File: `100-print_tebahpla.py`
