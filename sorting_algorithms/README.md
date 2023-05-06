@@ -485,7 +485,7 @@ alex@/tmp/sort$
 
  Done? Help Check your code Ask for a new correction QA Review
 
-### 4\. Quick sort
+### 4\. Shell sort - Knuth Sequence
 
 #advanced
 
@@ -498,6 +498,7 @@ Write a function that sorts an array of integers in ascending order using the [S
     -   `n+1 = n * 3 + 1`
     -   `1, 4, 13, 40, 121, ...`
 -   You’re expected to print the `array` each time you decrease the interval (See example below).
+
 **No big O notations of the time complexity of the Shell sort (Knuth sequence) algorithm needed - as the complexity is dependent on the size of array and gap**
 
 ```
@@ -541,13 +542,14 @@ alex@/tmp/sort$
 
  [Done?] [Help] [Check your code] [QA Review]
 
-### 5\. Quick sort
+
+### 5\. Cocktail shaker sort
 
 #advanced
 
 Score: 0.00% (Checks completed: 0.00%)
 
-Write a function that sorts a doubly linked list of integers in ascending order using the Cocktail shaker sort algorithm
+Write a function that sorts a doubly linked list of integers in ascending order using the [Cocktail shaker sort](https://en.wikipedia.org/wiki/Cocktail_shaker_sort "Cocktail shaker sort") algorithm
 
 -   Prototype: `void cocktail_sort_list(listint_t **list);`
 -   You are not allowed to modify the integer `n` of a node. You have to swap the nodes themselves.
@@ -654,7 +656,7 @@ alex@/tmp/sort$
 
 [Done?] [Help] [Check your code] [QA Review]
 
-### 6\. Quick sort
+### 6\. Counting sort
 
 #advanced
 
@@ -715,7 +717,7 @@ alex@/tmp/sort$
 [Done?] [Help] [Check your code] [QA Review]
 
 
-### 7\. Quick sort
+### 7\. Merge sort
 
 #advanced
 
@@ -813,7 +815,7 @@ alex@/tmp/sort$
 [Done?] [Help] [Check your code] [QA Review]
 
 
-### 8\. Quick sort
+### 8\. Heap sort
 
 #advanced
 
@@ -898,7 +900,7 @@ alex@/tmp/sort$
 [Done?] [Help] [Check your code] [QA Review]
 
 
-### 9\. Quick sort
+### 9\. Radix sort
 
 #advanced
 
@@ -954,7 +956,7 @@ alex@/tmp/sort$
 [Done?] [Help] [Check your code] [QA Review]
 
 
-### 10\. Quick sort
+### 10\. Bitonic sort
 
 #advanced
 
@@ -1074,3 +1076,254 @@ alex@/tmp/sort$
 [Done?] [Help] [Check your code] [QA Review]
 
 
+### 11\. Quick Sort - Hoare Partition scheme
+
+#advanced
+
+Score: 0.00% (Checks completed: 0.00%)
+
+Write a function that sorts an array of integers in ascending order using the [Quick sort](https://en.wikipedia.org/wiki/Quicksort "Quick sort") algorithm
+
+-   Prototype: `void quick_sort_hoare(int *array, size_t size);`
+-   You must implement the `Hoare` partition scheme.
+-   The pivot should always be the last element of the partition being sorted.
+-   You’re expected to print the `array` after each time you swap two elements (See example below)
+
+Write in the file `107-O`, the big O notations of the time complexity of the Quick sort algorithm, with 1 notation per line:
+
+-   in the best case
+-   in the average case
+-   in the worst case
+
+```
+alex@/tmp/sort$ cat 107-main.c
+#include <stdio.h>
+#include <stdlib.h>
+#include "sort.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
+    size_t n = sizeof(array) / sizeof(array[0]);
+
+    print_array(array, n);
+    printf("\n");
+    quick_sort_hoare(array, n);
+    printf("\n");
+    print_array(array, n);
+    return (0);
+}
+alex@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 107-main.c 107-quick_sort_hoare.c print_array.c -o quick
+alex@/tmp/sort$ ./quick
+19, 48, 99, 71, 13, 52, 96, 73, 86, 7
+
+7, 48, 99, 71, 13, 52, 96, 73, 86, 19
+7, 19, 99, 71, 13, 52, 96, 73, 86, 48
+7, 19, 13, 71, 99, 52, 96, 73, 86, 48
+7, 13, 19, 71, 99, 52, 96, 73, 86, 48
+7, 13, 19, 48, 99, 52, 96, 73, 86, 71
+7, 13, 19, 48, 71, 52, 96, 73, 86, 99
+7, 13, 19, 48, 52, 71, 96, 73, 86, 99
+7, 13, 19, 48, 52, 71, 86, 73, 96, 99
+7, 13, 19, 48, 52, 71, 73, 86, 96, 99
+
+7, 13, 19, 48, 52, 71, 73, 86, 96, 99
+alex@/tmp/sort$
+```
+Another example of output:
+```
+alex@/tmp/sort$ ./quick_2
+87, 65, 28, 63, 93, 52, 39, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 11, 16, 21, 75, 36, 71, 8, 45, 38
+
+38, 65, 28, 63, 93, 52, 39, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 11, 16, 21, 75, 36, 71, 8, 45, 87
+38, 8, 28, 63, 93, 52, 39, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 11, 16, 21, 75, 36, 71, 65, 45, 87
+38, 8, 28, 36, 93, 52, 39, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 11, 16, 21, 75, 63, 71, 65, 45, 87
+38, 8, 28, 36, 21, 52, 39, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 11, 16, 93, 75, 63, 71, 65, 45, 87
+38, 8, 28, 36, 21, 16, 39, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 11, 52, 93, 75, 63, 71, 65, 45, 87
+38, 8, 28, 36, 21, 16, 11, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+38, 8, 28, 36, 21, 16, 11, 26, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+38, 8, 28, 36, 21, 16, 11, 26, 27, 30, 24, 6, 69, 62, 13, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+38, 8, 28, 36, 21, 16, 11, 26, 27, 30, 24, 6, 13, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+13, 8, 28, 36, 21, 16, 11, 26, 27, 30, 24, 6, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+13, 8, 6, 36, 21, 16, 11, 26, 27, 30, 24, 28, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+13, 8, 6, 11, 21, 16, 36, 26, 27, 30, 24, 28, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+11, 8, 6, 13, 21, 16, 36, 26, 27, 30, 24, 28, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+6, 8, 11, 13, 21, 16, 36, 26, 27, 30, 24, 28, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+6, 8, 11, 13, 21, 16, 28, 26, 27, 30, 24, 36, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+6, 8, 11, 13, 21, 16, 28, 26, 27, 24, 30, 36, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+6, 8, 11, 13, 21, 16, 24, 26, 27, 28, 30, 36, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 62, 69, 83, 88, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 87
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 62, 69, 83, 87, 58, 92, 59, 42, 39, 52, 93, 75, 63, 71, 65, 45, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 62, 69, 83, 87, 58, 45, 59, 42, 39, 52, 93, 75, 63, 71, 65, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 62, 69, 83, 87, 58, 45, 59, 42, 39, 52, 65, 75, 63, 71, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 62, 69, 71, 87, 58, 45, 59, 42, 39, 52, 65, 75, 63, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 62, 69, 71, 63, 58, 45, 59, 42, 39, 52, 65, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 62, 65, 71, 63, 58, 45, 59, 42, 39, 52, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 62, 65, 52, 63, 58, 45, 59, 42, 39, 71, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 65, 52, 63, 58, 45, 59, 42, 62, 71, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 62, 52, 63, 58, 45, 59, 42, 65, 71, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 62, 52, 42, 58, 45, 59, 63, 65, 71, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 59, 52, 42, 58, 45, 62, 63, 65, 71, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 45, 52, 42, 58, 59, 62, 63, 65, 71, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 45, 42, 52, 58, 59, 62, 63, 65, 71, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 42, 45, 52, 58, 59, 62, 63, 65, 71, 69, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 42, 45, 52, 58, 59, 62, 63, 65, 69, 71, 75, 87, 83, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 42, 45, 52, 58, 59, 62, 63, 65, 69, 71, 75, 83, 87, 93, 92, 88
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 42, 45, 52, 58, 59, 62, 63, 65, 69, 71, 75, 83, 87, 88, 92, 93
+
+6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 42, 45, 52, 58, 59, 62, 63, 65, 69, 71, 75, 83, 87, 88, 92, 93
+alex@/tmp/sort$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `sorting_algorithms`
+-   File: `107-quick_sort_hoare.c, 107-O`
+
+[Done?] [Help] [Check your code] [QA Review]
+
+
+### 12\. Dealer
+
+#advanced
+
+Score: 0.00% (Checks completed: 0.00%)
+[![You&#39;re Second Best](https://img.youtube.com/vi/_HJlGWXzlLA/maxresdefault.jpg)](https://youtu.be/_HJlGWXzlLA)
+
+Write a function that sorts a deck of cards.
+
+-   Prototype: `void sort_deck(deck_node_t **deck);`
+-   You are allowed to use the C standard library function `qsort`
+-   Please use the following data structures:
+```
+typedef enum kind_e
+{
+    SPADE = 0,
+    HEART,
+    CLUB,
+    DIAMOND
+} kind_t;
+
+/**
+ * struct card_s - Playing card
+ *
+ * @value: Value of the card
+ * From "Ace" to "King"
+ * @kind: Kind of the card
+ */
+typedef struct card_s
+{
+    const char *value;
+    const kind_t kind;
+} card_t;
+
+/**
+ * struct deck_node_s - Deck of card
+ *
+ * @card: Pointer to the card of the node
+ * @prev: Pointer to the previous node of the list
+ * @next: Pointer to the next node of the list
+ */
+typedef struct deck_node_s
+{
+    const card_t *card;
+    struct deck_node_s *prev;
+    struct deck_node_s *next;
+} deck_node_t;
+```
+-   You have to push you `deck.h` header file, containing the previous data structures definition
+-   Each node of the doubly linked list contains a card that you cannot modify. You have to swap the nodes.
+-   You can assume there is exactly `52` elements in the doubly linked list.
+-   You are free to use the sorting algorithm of your choice
+-   The deck must be ordered:
+    -   From `Ace` to `King`
+    -   From Spades to Diamonds
+    -   See example below
+```
+alex@/tmp/sort$ cat 1000-main.c
+#include <stdlib.h>
+#include <stdio.h>
+#include "deck.h"
+
+void print_deck(const deck_node_t *deck)
+{
+    size_t i;
+    char kinds[4] = {'S', 'H', 'C', 'D'};
+
+    i = 0;
+    while (deck)
+    {
+        if (i)
+            printf(", ");
+        printf("{%s, %c}", deck->card->value, kinds[deck->card->kind]);
+        if (i == 12)
+            printf("\n");
+        i = (i + 1) % 13;
+        deck = deck->next;
+    }
+}
+
+deck_node_t *init_deck(const card_t cards[52])
+{
+    deck_node_t *deck;
+    deck_node_t *node;
+    size_t i;
+
+    i = 52;
+    deck = NULL;
+    while (i--)
+    {
+        node = malloc(sizeof(*node));
+        if (!node)
+            return (NULL);
+        node->card = &cards[i];
+        node->next = deck;
+        node->prev = NULL;
+        if (deck)
+            deck->prev = node;
+        deck = node;
+    }
+    return (deck);
+}
+
+int main(void)
+{
+    card_t cards[52] = {
+        {"Jack", CLUB}, {"4", HEART}, {"3", HEART}, {"3", DIAMOND}, {"Queen", HEART}, {"5", HEART}, {"5", SPADE}, {"10", HEART}, {"6", HEART}, {"5", DIAMOND}, {"6", SPADE}, {"9", HEART}, {"7", DIAMOND}, {"Jack", SPADE}, {"Ace", DIAMOND}, {"9", CLUB}, {"Jack", DIAMOND}, {"7", SPADE}, {"King", DIAMOND}, {"10", CLUB}, {"King", SPADE}, {"8", CLUB}, {"9", SPADE}, {"6", CLUB}, {"Ace", CLUB}, {"3", SPADE}, {"8", SPADE}, {"9", DIAMOND}, {"2", HEART}, {"4", DIAMOND}, {"6", DIAMOND}, {"3", CLUB}, {"Queen", CLUB}, {"10", SPADE}, {"8", DIAMOND}, {"8", HEART}, {"Ace", SPADE}, {"Jack", HEART}, {"2", CLUB}, {"4", SPADE}, {"2", SPADE}, {"2", DIAMOND}, {"King", CLUB}, {"Queen", SPADE}, {"Queen", DIAMOND}, {"7", CLUB}, {"7", HEART}, {"5", CLUB}, {"10", DIAMOND}, {"4", CLUB}, {"King", HEART}, {"Ace", HEART},
+    };
+    deck_node_t *deck;
+
+    deck = init_deck(cards);
+    print_deck(deck);
+    printf("\n");
+    sort_deck(&deck);
+    printf("\n");
+    print_deck(deck);
+    return (0);
+}
+alex@/tmp/sort$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 1000-main.c 1000-sort_deck.c -o deck
+alex@/tmp/sort$ ./deck
+{Jack, C}, {4, H}, {3, H}, {3, D}, {Queen, H}, {5, H}, {5, S}, {10, H}, {6, H}, {5, D}, {6, S}, {9, H}, {7, D}
+{Jack, S}, {Ace, D}, {9, C}, {Jack, D}, {7, S}, {King, D}, {10, C}, {King, S}, {8, C}, {9, S}, {6, C}, {Ace, C}, {3, S}
+{8, S}, {9, D}, {2, H}, {4, D}, {6, D}, {3, C}, {Queen, C}, {10, S}, {8, D}, {8, H}, {Ace, S}, {Jack, H}, {2, C}
+{4, S}, {2, S}, {2, D}, {King, C}, {Queen, S}, {Queen, D}, {7, C}, {7, H}, {5, C}, {10, D}, {4, C}, {King, H}, {Ace, H}
+
+
+{Ace, S}, {2, S}, {3, S}, {4, S}, {5, S}, {6, S}, {7, S}, {8, S}, {9, S}, {10, S}, {Jack, S}, {Queen, S}, {King, S}
+{Ace, H}, {2, H}, {3, H}, {4, H}, {5, H}, {6, H}, {7, H}, {8, H}, {9, H}, {10, H}, {Jack, H}, {Queen, H}, {King, H}
+{Ace, C}, {2, C}, {3, C}, {4, C}, {5, C}, {6, C}, {7, C}, {8, C}, {9, C}, {10, C}, {Jack, C}, {Queen, C}, {King, C}
+{Ace, D}, {2, D}, {3, D}, {4, D}, {5, D}, {6, D}, {7, D}, {8, D}, {9, D}, {10, D}, {Jack, D}, {Queen, D}, {King, D}
+alex@/tmp/sort$
+```
+
+**Repo:**
+
+-   GitHub repository: `sorting_algorithms`
+-   File: `1000-sort_deck.c, deck.h`
+
+[Done?] [Help] [Check your code] [QA Review]
