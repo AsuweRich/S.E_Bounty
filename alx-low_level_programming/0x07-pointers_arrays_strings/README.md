@@ -10,6 +10,31 @@ Concepts
 
 -   [Pointers and arrays](https://alx-intranet.hbtn.io/concepts/60)
 
+    ![image](https://user-images.githubusercontent.com/106776383/236620111-6df9c973-a694-4e03-98ec-3e3699ae0d10.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620147-74c4170f-418a-4166-ab22-427aeda15e40.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620180-de3f48a9-6686-409c-bfb4-5b276f2c75e3.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620214-d2375b29-d796-4c5b-9410-5371ad7c5510.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620241-f109248a-11bc-420e-a42e-cd49c7668fca.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620268-a4373ec3-ba0f-42c7-acd0-698379ab8d67.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620297-07586218-6839-4e02-96ae-7a82613c2f04.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620325-bbe065f5-3517-4c54-837e-b304d07f184b.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620341-856c0c97-4e58-4e6a-a178-c6ff5c2fd30f.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620368-3eaf2ff0-994b-483e-987b-1b1e5ff4b2ce.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620388-115874b1-7852-4eb8-82aa-362f0c2f42fd.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236620414-71613166-e0e8-4cba-b896-4c538df65152.png)
+
+
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/218/58fe6b229144b7fe5ebe88afe9ff5cabe2dd0863e1e79b2d02b4103c30b465dd.jpg)
 
 Resources
