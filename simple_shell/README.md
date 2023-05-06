@@ -10,6 +10,37 @@ Concepts
 *For this project, students are expected to look at these concepts:*
 
 -   [Everything you need to know to start coding your own shell](https://alx-intranet.hbtn.io/concepts/64)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619393-3c5f4fd8-96aa-47bd-8215-1a1fc70ae690.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619440-6ae184e8-1003-4490-9fac-5cba452d5f4c.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619493-0f348aa5-9052-4931-9058-aa158057d94a.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619516-8740bc51-7283-4cd1-a3aa-f6c49dbe6d43.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619559-14731a8d-b5db-4e4f-b0cc-21502efe8781.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619591-fd6f63d7-35a8-4f2e-831b-8767853df22e.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619614-130e0a5b-c93f-41c8-9acb-a974887aea8d.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619644-52c78672-47dc-416d-96c8-1e67e8c8b14b.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619669-69a32766-ed0c-417f-b8af-aca70a563dde.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619707-884108ca-e9a7-43be-9026-4d996a494517.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619748-4832bcd2-20f4-4330-8bfd-285340b01300.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619777-6bd0cefa-c833-4472-a994-7a64a5f2fe50.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619801-1bd12429-9cef-4f1a-b4fa-bb9ad881cf67.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619832-138c5f08-7e5a-475d-9977-ae4f0c5d79a3.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236619844-6f1b4fcc-6a37-4736-9b0f-1da3589b86de.png)
+
 -   [Approaching a Project](https://alx-intranet.hbtn.io/concepts/350)
 
 ![image](https://user-images.githubusercontent.com/106776383/236330106-9851e6dd-c113-4614-ab92-476eb9f565ba.png)
