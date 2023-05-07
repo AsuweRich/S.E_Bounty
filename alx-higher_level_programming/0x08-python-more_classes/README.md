@@ -790,7 +790,7 @@ guillaume@ubuntu:~/0x08$
 Score: 0.00% (Checks completed: 0.00%)
 
 ![](http://www.crestbook.com/files/Judit-photo1_602x433.jpg)\
-Chess grandmaster [Judit Polgár](https://alx-intranet.hbtn.io/rltoken/bsRwbt64OvYjWaClriv0jg "Judit Polgár"), the strongest female chess player of all time
+Chess grandmaster [Judit Polgár](https://en.wikipedia.org/wiki/Judit_Polg%C3%A1r "Judit Polgár"), the strongest female chess player of all time
 
 The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
 
@@ -805,7 +805,7 @@ The N queens puzzle is the challenge of placing N non-attacking queens on an N×
     -   You don't have to print the solutions in a specific order
 -   You are only allowed to import the `sys` module
 
-Read: [Queen](https://alx-intranet.hbtn.io/rltoken/dAQmi8RxMnLH-iHBzkz-lw "Queen"), [Backtracking](https://alx-intranet.hbtn.io/rltoken/TGXZXdY2Awg8m4mSjlrjjA "Backtracking")
+Read: [Queen](https://en.wikipedia.org/wiki/Queen_%28chess%29 "Queen"), [Backtracking](https://en.wikipedia.org/wiki/Backtracking "Backtracking")
 
 ```
 julien@ubuntu:~/0x08. N Queens$ ./101-nqueens.py 4
