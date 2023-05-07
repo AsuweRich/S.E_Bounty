@@ -8,13 +8,13 @@ Resources
 
 **Read or watch**:
 
--   [Errors and Exceptions](https://alx-intranet.hbtn.io/rltoken/Yj7sDOzmKwICSHr7WEAW3A "Errors and Exceptions")
--   [Learn to Program 11 Static & Exception Handling](https://alx-intranet.hbtn.io/rltoken/xASzXarhF1sBhzYkJ14LvQ "Learn to Program 11 Static & Exception Handling") (*starting at minute 7*)
+-   [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html "Errors and Exceptions")
+-   [Learn to Program 11 Static & Exception Handling](https://www.youtube.com/watch?v=7vbgD-3s-w4 "Learn to Program 11 Static & Exception Handling") (*starting at minute 7*)
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/ER6JIfkhcpsfFWZNN_BBvg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -82,7 +82,6 @@ nb_print: 5
 12345
 nb_print: 5
 guillaume@ubuntu:~/0x05$
-
 ```
 
 **Repo:**
@@ -132,7 +131,6 @@ guillaume@ubuntu:~/0x05$ ./1-main.py
 -89
 School is not an integer
 guillaume@ubuntu:~/0x05$
-
 ```
 
 **Repo:**
@@ -188,7 +186,6 @@ nb_print: 5
     print("{:d}".format(my_list[i]), end="")
 IndexError: list index out of range
 guillaume@ubuntu:~/0x05$
-
 ```
 
 **Repo:**
@@ -232,7 +229,6 @@ Inside result: 6.0
 Inside result: None
 12 / 0 = None
 guillaume@ubuntu:~/0x05$
-
 ```
 
 **Repo:**
@@ -286,7 +282,6 @@ wrong type
 out of range
 [5.0, 0, 0, 2.0, 0]
 guillaume@ubuntu:~/0x05$
-
 ```
 
 **Repo:**
@@ -317,7 +312,6 @@ except TypeError as te:
 guillaume@ubuntu:~/0x05$ ./5-main.py
 Exception raised
 guillaume@ubuntu:~/0x05$
-
 ```
 
 **Repo:**
@@ -348,7 +342,6 @@ except NameError as ne:
 guillaume@ubuntu:~/0x05$ ./6-main.py
 C is fun
 guillaume@ubuntu:~/0x05$
-
 ```
 
 **Repo:**
@@ -356,3 +349,306 @@ guillaume@ubuntu:~/0x05$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x05-python-exceptions`
 -   File: `6-raise_exception_msg.py`
+
+### 7\. Safe integer print with error message
+#advanced
+
+Write a function that prints an integer.
+
+-   Prototype: `def safe_print_integer_err(value):`
+-   `value` can be any type (integer, string, etc.)
+-   The integer should be printed followed by a new line
+-   Returns `True` if `value` has been correctly printed (it means the `value` is an integer)
+-   Otherwise, returns `False` and prints in `stderr` the error precede by `Exception:`
+-   You have to use `try: / except:`
+-   You have to use `"{:d}".format()` to print as integer
+-   You are not allowed to use `type()`
+
+```
+guillaume@ubuntu:~/0x05$ cat 100-main.py
+#!/usr/bin/python3
+safe_print_integer_err = \
+    __import__('100-safe_print_integer_err').safe_print_integer_err
+
+value = 89
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
+
+value = -89
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
+
+value = "School"
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
+
+guillaume@ubuntu:~/0x05$ ./100-main.py
+89
+-89
+Exception: Unknown format code 'd' for object of type 'str'
+School is not an integer
+guillaume@ubuntu:~/0x05$ ./100-main.py 2> /dev/null
+89
+-89
+School is not an integer
+guillaume@ubuntu:~/0x05$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x05-python-exceptions`
+-   File: `100-safe_print_integer_err.py`
+
+### 8\. Safe function
+#advanced
+
+Write a function that executes a function safely.
+
+-   Prototype: `def safe_function(fct, *args):`
+-   You can assume `fct` will be always a pointer to a function
+-   Returns the result of the function,
+-   Otherwise, returns `None` if something happens during the function and prints in `stderr` the error precede by `Exception:`
+-   You have to use `try: / except:`
+
+```
+guillaume@ubuntu:~/0x05$ cat 101-main.py
+#!/usr/bin/python3
+safe_function = __import__('101-safe_function').safe_function
+
+
+def my_div(a, b):
+    return a / b
+
+result = safe_function(my_div, 10, 2)
+print("result of my_div: {}".format(result))
+
+result = safe_function(my_div, 10, 0)
+print("result of my_div: {}".format(result))
+
+
+def print_list(my_list, len):
+    i = 0
+    while i < len:
+        print(my_list[i])
+        i += 1
+    return len
+
+result = safe_function(print_list, [1, 2, 3, 4], 10)
+print("result of print_list: {}".format(result))
+
+guillaume@ubuntu:~/0x05$ ./101-main.py
+result of my_div: 5.0
+Exception: division by zero
+result of my_div: None
+1
+2
+3
+4
+Exception: list index out of range
+result of print_list: None
+guillaume@ubuntu:~/0x05$ ./101-main.py 2> /dev/null
+result of my_div: 5.0
+result of my_div: None
+1
+2
+3
+4
+result of print_list: None
+guillaume@ubuntu:~/0x05$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x05-python-exceptions`
+-   File: `101-safe_function.py`
+
+### 9\. ByteCode -> Python #4
+#advanced
+
+Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
+
+```
+3           0 LOAD_CONST               1 (0)
+              3 STORE_FAST               2 (result)
+
+  4           6 SETUP_LOOP              94 (to 103)
+              9 LOAD_GLOBAL              0 (range)
+             12 LOAD_CONST               2 (1)
+             15 LOAD_CONST               3 (3)
+             18 CALL_FUNCTION            2 (2 positional, 0 keyword pair)
+             21 GET_ITER
+        >>   22 FOR_ITER                77 (to 102)
+             25 STORE_FAST               3 (i)
+
+  5          28 SETUP_EXCEPT            49 (to 80)
+
+  6          31 LOAD_FAST                3 (i)
+             34 LOAD_FAST                0 (a)
+             37 COMPARE_OP               4 (>)
+             40 POP_JUMP_IF_FALSE       58
+
+  7          43 LOAD_GLOBAL              1 (Exception)
+             46 LOAD_CONST               4 ('Too far')
+             49 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             52 RAISE_VARARGS            1
+             55 JUMP_FORWARD            18 (to 76)
+
+  9     >>   58 LOAD_FAST                2 (result)
+             61 LOAD_FAST                0 (a)
+             64 LOAD_FAST                1 (b)
+             67 BINARY_POWER
+             68 LOAD_FAST                3 (i)
+             71 BINARY_TRUE_DIVIDE
+             72 INPLACE_ADD
+             73 STORE_FAST               2 (result)
+        >>   76 POP_BLOCK
+             77 JUMP_ABSOLUTE           22
+
+ 10     >>   80 POP_TOP
+             81 POP_TOP
+             82 POP_TOP
+
+ 11          83 LOAD_FAST                1 (b)
+             86 LOAD_FAST                0 (a)
+             89 BINARY_ADD
+             90 STORE_FAST               2 (result)
+
+ 12          93 BREAK_LOOP
+             94 POP_EXCEPT
+             95 JUMP_ABSOLUTE           22
+             98 END_FINALLY
+             99 JUMP_ABSOLUTE           22
+        >>  102 POP_BLOCK
+
+ 13     >>  103 LOAD_FAST                2 (result)
+            106 RETURN_VALUE
+```
+-   Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html "Python bytecode")
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x05-python-exceptions`
+-   File: `102-magic_calculation.py`
+
+### 10\. CPython #2: PyFloatObject
+#advanced
+
+Create three C functions that print some basic info about Python lists, Python bytes an Python float objects.
+
+![image](https://user-images.githubusercontent.com/106776383/236684303-42246396-3a85-4ac2-b7ba-85d1636f0ef0.png)
+
+Python lists:
+
+-   Prototype: `void print_python_list(PyObject *p);`
+-   Format: see example
+-   If `p` is not a valid `PyListObject`, print an error message (see example)
+
+Python bytes:
+
+-   Prototype: `void print_python_bytes(PyObject *p);`
+-   Format: see example
+-   Line `“first X bytes”:` print a maximum of 10 bytes
+-   If `p` is not a valid `PyBytesObject`, print an error message (see example)
+
+Python float:
+
+-   Prototype: `void print_python_float(PyObject *p);`
+-   Format: see example
+-   If `p` is not a valid `PyFloatObject`, print an error message (see example)
+-   Read `/usr/include/python3.4/floatobject.h`
+
+About:
+
+-   Python version: 3.4
+-   You are allowed to use the C standard library
+-   Your shared library will be compiled with this command line: `gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c`
+-   You are not allowed to use the following macros/functions:
+    -   `Py_SIZE`
+    -   `Py_TYPE`
+    -   `PyList_Size`
+    -   `PyList_GetItem`
+    -   `PyBytes_AS_STRING`
+    -   `PyBytes_GET_SIZE`
+    -   `PyBytes_AsString`
+    -   `PyBytes_AsStringAndSize`
+    -   `PyFloat_AS_DOUBLE`
+    -   `PySequence_GetItem`
+    -   `PySequence_Fast_GET_SIZE`
+    -   `PySequence_Fast_GET_ITEM`
+    -   `PySequence_ITEM`
+    -   `PySequence_Fast_ITEMS`
+
+NOTE:
+
+-   The python script will be launched using the `-u` option (Force `stdout` to be unbuffered).
+-   It is strongly advised to either use `setbuf(stdout, NULL)`; or `fflush(stdout)` in your C functions IF you choose to use printf. The reason to that is that Python`s`printand `libC`s `printf` don’t share the same buffer, and the output can appear disordered.
+
+```
+3           0 LOAD_CONST               1 (0)
+              3 STORE_FAST               2 (result)
+
+  4           6 SETUP_LOOP              94 (to 103)
+              9 LOAD_GLOBAL              0 (range)
+             12 LOAD_CONST               2 (1)
+             15 LOAD_CONST               3 (3)
+             18 CALL_FUNCTION            2 (2 positional, 0 keyword pair)
+             21 GET_ITER
+        >>   22 FOR_ITER                77 (to 102)
+             25 STORE_FAST               3 (i)
+
+  5          28 SETUP_EXCEPT            49 (to 80)
+
+  6          31 LOAD_FAST                3 (i)
+             34 LOAD_FAST                0 (a)
+             37 COMPARE_OP               4 (>)
+             40 POP_JUMP_IF_FALSE       58
+
+  7          43 LOAD_GLOBAL              1 (Exception)
+             46 LOAD_CONST               4 ('Too far')
+             49 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+             52 RAISE_VARARGS            1
+             55 JUMP_FORWARD            18 (to 76)
+
+  9     >>   58 LOAD_FAST                2 (result)
+             61 LOAD_FAST                0 (a)
+             64 LOAD_FAST                1 (b)
+             67 BINARY_POWER
+             68 LOAD_FAST                3 (i)
+             71 BINARY_TRUE_DIVIDE
+             72 INPLACE_ADD
+             73 STORE_FAST               2 (result)
+        >>   76 POP_BLOCK
+             77 JUMP_ABSOLUTE           22
+
+ 10     >>   80 POP_TOP
+             81 POP_TOP
+             82 POP_TOP
+
+ 11          83 LOAD_FAST                1 (b)
+             86 LOAD_FAST                0 (a)
+             89 BINARY_ADD
+             90 STORE_FAST               2 (result)
+
+ 12          93 BREAK_LOOP
+             94 POP_EXCEPT
+             95 JUMP_ABSOLUTE           22
+             98 END_FINALLY
+             99 JUMP_ABSOLUTE           22
+        >>  102 POP_BLOCK
+
+ 13     >>  103 LOAD_FAST                2 (result)
+            106 RETURN_VALUE
+```
+-   Tip: [Python bytecode](https://docs.python.org/3.4/library/dis.html "Python bytecode")
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x05-python-exceptions`
+-   File: `102-magic_calculation.py`
