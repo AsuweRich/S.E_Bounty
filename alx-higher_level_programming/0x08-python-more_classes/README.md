@@ -6,31 +6,22 @@
 -   By Guillaume
 -   Weight: 1
 
-
-#### In a nutshell...
-
--   **Auto QA review:** 0.0/106 mandatory & 0.0/15 optional
--   **Altogether:**  **0.0%**
-    -   Mandatory: 0.0%
-    -   Optional: 0.0%
-    -   Calculation:  0.0% + (0.0% * 0.0%)  == **0.0%**
-
 Resources
 ---------
 
 **Read or watch**:
 
--   [Object Oriented Programming](https://alx-intranet.hbtn.io/rltoken/M-MFweENpRdEfRto_Gzlvg "Object Oriented Programming") (*Read everything until the paragraph "Inheritance" (excluded)*)
--   [Object-Oriented Programming](https://alx-intranet.hbtn.io/rltoken/_Awd8Gn4SBdq2FRd_bY8KA "Object-Oriented Programming") (*Please be careful: in most of the following paragraphs, the author shows the way you should not use or write a class, in order to help you better understand some concepts and how everything works in Python 3. Make sure you read only the following paragraphs: "General Introduction," "First-class Everything," "A Minimal Class in Python," "Attributes," "Methods," "The `__init__` Method," "Data Abstraction, Data Encapsulation, and Information Hiding," "`__str__`- and `__repr__`-Methods," "Public- Protected- and Private Attributes," & "Destructor"*)
--   [Class and Instance Attributes](https://alx-intranet.hbtn.io/rltoken/SGQIevRxW6lTgr4jGDzXbw "Class and Instance Attributes")
--   [classmethods and staticmethods](https://alx-intranet.hbtn.io/rltoken/Ij1EnTg02gtIknOkNv4xGA "classmethods and staticmethods")
--   [Properties vs. Getters and Setters](https://alx-intranet.hbtn.io/rltoken/xjpk-jUNe0uGEzcNXbwIHQ "Properties vs. Getters and Setters") (*Mainly the last part "Public instead of Private Attributes"*)
--   [str vs repr](https://alx-intranet.hbtn.io/rltoken/iu1ILT-t6FMuZvk7vRvfuQ "str vs repr")
+-   [Object Oriented Programming](https://python.swaroopch.com/oop.html "Object Oriented Programming") (*Read everything until the paragraph "Inheritance" (excluded)*)
+-   [Object-Oriented Programming](https://python-course.eu/oop/object-oriented-programming.php "Object-Oriented Programming") (*Please be careful: in most of the following paragraphs, the author shows the way you should not use or write a class, in order to help you better understand some concepts and how everything works in Python 3. Make sure you read only the following paragraphs: "General Introduction," "First-class Everything," "A Minimal Class in Python," "Attributes," "Methods," "The `__init__` Method," "Data Abstraction, Data Encapsulation, and Information Hiding," "`__str__`- and `__repr__`-Methods," "Public- Protected- and Private Attributes," & "Destructor"*)
+-   [Class and Instance Attributes](https://python-course.eu/oop/class-instance-attributes.php "Class and Instance Attributes")
+-   [classmethods and staticmethods](https://www.youtube.com/watch?v=rq8cL2XMM5M "classmethods and staticmethods")
+-   [Properties vs. Getters and Setters](https://python-course.eu/oop/properties-vs-getters-and-setters.php "Properties vs. Getters and Setters") (*Mainly the last part "Public instead of Private Attributes"*)
+-   [str vs repr](https://shipit.dev/posts/python-str-vs-repr.html "str vs repr")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/hOViVT2nJU8jeBxvw52bjw "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -106,7 +97,6 @@ guillaume@ubuntu:~/0x08$ ./0-main.py
 <class '0-rectangle.Rectangle'>
 {}
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -158,7 +148,6 @@ guillaume@ubuntu:~/0x08$ ./1-main.py
 {'_Rectangle__height': 4, '_Rectangle__width': 2}
 {'_Rectangle__height': 3, '_Rectangle__width': 10}
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -216,7 +205,6 @@ Area: 8 - Perimeter: 12
 --
 Area: 30 - Perimeter: 26
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -288,7 +276,6 @@ Area: 8 - Perimeter: 12
 ##########
 <3-rectangle.Rectangle object at 0x7f92a75a2eb8>
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **Object address can be different**
@@ -393,7 +380,6 @@ Rectangle(2, 4)
 False
 True
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -456,7 +442,6 @@ Area: 8 - Perimeter: 12
 Bye rectangle...
 [NameError] name 'my_rectangle' is not defined
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -523,7 +508,6 @@ Bye rectangle...
 Bye rectangle...
 0 instances of Rectangle
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -630,7 +614,6 @@ Bye rectangle...
 Bye rectangle...
 Bye rectangle...
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -713,7 +696,6 @@ my_rectangle_2 is bigger than my_rectangle_1
 Bye rectangle...
 Bye rectangle...
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -789,7 +771,6 @@ Area: 25 - Perimeter: 20
 #####
 Bye rectangle...
 guillaume@ubuntu:~/0x08$
-
 ```
 
 **No test cases needed**
@@ -836,7 +817,6 @@ julien@ubuntu:~/0x08. N Queens$ ./101-nqueens.py 6
 [[0, 3], [1, 0], [2, 4], [3, 1], [4, 5], [5, 2]]
 [[0, 4], [1, 2], [2, 0], [3, 5], [4, 3], [5, 1]]
 julien@ubuntu:~/0x08. N Queens$
-
 ```
 
 **Repo:**
