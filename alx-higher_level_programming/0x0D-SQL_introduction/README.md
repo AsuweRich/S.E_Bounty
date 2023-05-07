@@ -99,7 +99,6 @@ $ cat my_script.sql
 -- because Batch 3 is the best!
 SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
 $
-
 ```
 
 ### Install MySQL 8.0 on Ubuntu 20.04 LTS
@@ -111,7 +110,6 @@ $ sudo apt install mysql-server
 $ mysql --version
 mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
 $
-
 ```
 
 Connect to your MySQL server:
@@ -134,7 +132,6 @@ mysql>
 mysql> quit
 Bye
 $
-
 ```
 
 ### Use "container-on-demand" to run MySQL
@@ -157,7 +154,6 @@ mysql
 performance_schema
 sys
 $
-
 ```
 
 **In the container, credentials are `root/root`**
@@ -186,7 +182,6 @@ mysql
 performance_schema
 sys
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -219,7 +214,6 @@ performance_schema
 guillaume@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
 Enter password:
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -258,7 +252,6 @@ mysql
 performance_schema
 sys
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -317,7 +310,6 @@ time_zone_transition
 time_zone_transition_type
 user
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -349,7 +341,6 @@ Enter password:
 Tables_in_hbtn_0c_0
 first_table
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -375,7 +366,6 @@ Enter password:
 Table   Create Table
 first_table     CREATE TABLE `first_table` (\n  `id` int DEFAULT NULL,\n  `name` varchar(256) DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -399,7 +389,6 @@ Write a script that lists all rows of the table `first_table` from the databas
 guillaume@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password:
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -439,7 +428,6 @@ id  name
 89  Best School
 89  Best School
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -463,7 +451,6 @@ guillaume@ubuntu:~/$ cat 8-count_89.sql | mysql -hlocalhost -uroot -p hbtn_0c_0 
 Enter password:
 3
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -497,7 +484,6 @@ Write a script that creates a table `second_table` in the database `hbtn_0c_0
 guillaume@ubuntu:~/$ cat 9-full_creation.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password:
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -527,7 +513,6 @@ score   name
 8   George
 3   Alex
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -555,7 +540,6 @@ score   name
 14  Bob
 10  John
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -586,7 +570,6 @@ score   name
 8   George
 3   Alex
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -615,7 +598,6 @@ score   name
 10  Bob
 8   George
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -641,7 +623,6 @@ Enter password:
 average
 9.3333
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -671,7 +652,6 @@ score   number
 10  2
 8   1
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -704,7 +684,6 @@ score   name
 10  John
 10  Bob
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -733,7 +712,6 @@ Enter password:
 Table   Create Table
 first_table CREATE TABLE `first_table` (\n  `id` int(11) DEFAULT NULL,\n  `name` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -776,7 +754,6 @@ Naperville  68.1029
 Tempe   67.0441
 Peoria  66.5392
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -803,7 +780,6 @@ Naperville  76.9412
 San Diego   73.7941
 Sunnyvale   73.2353
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -830,7 +806,6 @@ AZ  110
 CA  110
 IL  110
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
