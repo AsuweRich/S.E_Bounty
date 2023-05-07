@@ -3,16 +3,7 @@
 
 -   By Guillaume
 -   Weight: 1
--   Ongoing second chance project - started 02-02-2022, must end by 02-04-2022 (in about 19 hours) - you're done with 53% of tasks.
--   QA review fully automated.
-
-#### In a nutshell...
-
--   **Auto QA review:** 0.0/104 mandatory & 0.0/24 optional
--   **Altogether:**  **0.0%**
-    -   Mandatory: 0.0%
-    -   Optional: 0.0%
-    -   Calculation:  0.0% + (0.0% * 0.0%)  == **0.0%**
+-  
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/66988091.jpg)
 
@@ -21,30 +12,30 @@ Resources
 
 **Read or watch**:
 
--   [How To Create a New User and Grant Permissions in MySQL](https://alx-intranet.hbtn.io/rltoken/RniBKj48bnIN8xpXhGl1yA "How To Create a New User and Grant Permissions in MySQL")
--   [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://alx-intranet.hbtn.io/rltoken/FIiEIvA6IN_hSKM5TvgyxQ "How To Use MySQL GRANT Statement To Grant Privileges To a User")
--   [MySQL constraints](https://alx-intranet.hbtn.io/rltoken/LrovGa6N-OE2ID_tpWZRaQ "MySQL constraints")
--   [SQL technique: subqueries](https://alx-intranet.hbtn.io/rltoken/kR71h5zjkPtx4kBoVf7q0g "SQL technique: subqueries")
--   [Basic query operation: the join](https://alx-intranet.hbtn.io/rltoken/rNMJeQ1jbNTCljbvCSjf6w "Basic query operation: the join")
--   [SQL technique: multiple joins and the distinct keyword](https://alx-intranet.hbtn.io/rltoken/HhZ6TJ1q5S0aR4lhfpKdOQ "SQL technique: multiple joins and the distinct keyword")
--   [SQL technique: join types](https://alx-intranet.hbtn.io/rltoken/T6FZUQdsMzr8hgNInBzudA "SQL technique: join types")
--   [SQL technique: union and minus](https://alx-intranet.hbtn.io/rltoken/Nd-sdM8QUpf0YKIlXzVv4w "SQL technique: union and minus")
--   [MySQL Cheat Sheet](https://alx-intranet.hbtn.io/rltoken/xP00kJWWi0SzvK-Lt8YdLQ "MySQL Cheat Sheet")
--   [The Seven Types of SQL Joins](https://alx-intranet.hbtn.io/rltoken/-plhBsra0N7BOuFoEg--zg "The Seven Types of SQL Joins")
--   [MySQL Tutorial](https://alx-intranet.hbtn.io/rltoken/I4Lws_eQrIrNTbkZvvk-oQ "MySQL Tutorial")
--   [SQL Style Guide](https://alx-intranet.hbtn.io/rltoken/051eAEP_rePBU7jeh879GA "SQL Style Guide")
--   [MySQL 8.0 SQL Statement Syntax](https://alx-intranet.hbtn.io/rltoken/YavbYiraYFr8oTukT_N6eQ "MySQL 8.0 SQL Statement Syntax")
+-   [How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql "How To Create a New User and Grant Permissions in MySQL")
+-   [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://www.mysqltutorial.org/mysql-grant.aspx "How To Use MySQL GRANT Statement To Grant Privileges To a User")
+-   [MySQL constraints](https://zetcode.com/mysql/constraints/ "MySQL constraints")
+-   [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php "SQL technique: subqueries")
+-   [Basic query operation: the join](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/join.php "Basic query operation: the join")
+-   [SQL technique: multiple joins and the distinct keyword](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/multijoin.php "SQL technique: multiple joins and the distinct keyword")
+-   [SQL technique: join types](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/jointypes.php "SQL technique: join types")
+-   [SQL technique: union and minus](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/setops.php "SQL technique: union and minus")
+-   [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf?US "MySQL Cheat Sheet")
+-   [The Seven Types of SQL Joins](https://tableplus.com/blog/2018/09/a-beginners-guide-to-seven-types-of-sql-joins.html "The Seven Types of SQL Joins")
+-   [MySQL Tutorial](https://www.youtube.com/watch?v=yPu6qV5byu4 "MySQL Tutorial")
+-   [SQL Style Guide](https://www.sqlstyle.guide/ "SQL Style Guide")
+-   [MySQL 8.0 SQL Statement Syntax](https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html "MySQL 8.0 SQL Statement Syntax")
 
 Extra resources around relational database model design:
 
--   [Design](https://alx-intranet.hbtn.io/rltoken/EWLRPeqr5sQ9AqfoG_KXxw "Design")
--   [Normalization](https://alx-intranet.hbtn.io/rltoken/mqBhYoSYbhH5ZZrhDcY0kA "Normalization")
--   [ER Modeling](https://alx-intranet.hbtn.io/rltoken/R0exkJmf-2ddKjGfa8D0dA "ER Modeling")
+-   [Design](https://www.guru99.com/database-design.html "Design")
+-   [Normalization](https://www.guru99.com/database-normalization.html "Normalization")
+-   [ER Modeling](https://www.guru99.com/er-modeling.html "ER Modeling")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/0qci3VdIVdKJXldEZ6zAjA "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -82,7 +73,6 @@ $ cat my_script.sql
 -- because Batch 3 is the best!
 SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
 $
-
 ```
 
 ### Install MySQL 8.0 on Ubuntu 20.04 LTS
@@ -94,7 +84,6 @@ $ sudo apt install mysql-server
 $ mysql --version
 mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
 $
-
 ```
 
 Connect to your MySQL server:
@@ -117,7 +106,6 @@ mysql>
 mysql> quit
 Bye
 $
-
 ```
 
 ### Use "container-on-demand" to run MySQL
@@ -140,7 +128,6 @@ mysql
 performance_schema
 sys
 $
-
 ```
 
 **In the container, credentials are `root/root`**
@@ -164,7 +151,6 @@ id  name
 7   Suspense
 8   Thriller
 $
-
 ```
 
 ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/bc2575fee3303b731031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220203T073325Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1c869cf52460f590a5a8b8f024731b1ca0361fd2845c272b5ac11d80ec284581)
@@ -201,7 +187,6 @@ GRANT SELECT, INSERT, UPDA..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`
 GRANT APPLICATION_PASSWORD_ADMIN,AUDIT...,XA_RECOVER_ADMIN ON *.* TO `user_0d_1`@`localhost`
 ERROR 1141 (42000) at line 4: There is no such grant defined for user 'user_0d_2' on host 'localhost'
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -234,7 +219,6 @@ GRANT SELECT, INSERT..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`
 GRANT APPLICATION_PASSWORD_ADMIN,...,XA_RECOVER_ADMIN ON *.* TO `user_0d_1`@`localhost`
 ERROR 1141 (42000) at line 4: There is no such grant defined for user 'user_0d_2' on host 'localhost'
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -270,7 +254,6 @@ Grants for user_0d_2@localhost
 GRANT USAGE ON *.* TO `user_0d_2`@`localhost`
 GRANT SELECT ON `hbtn_0d_2`.* TO `user_0d_2`@`localhost`
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -312,7 +295,6 @@ Enter password:
 id  name
 89  Best School
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -354,7 +336,6 @@ id  name
 89  Best School
 1   Best
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -395,8 +376,7 @@ guillaume@ubuntu:~/$ echo 'SELECT * FROM unique_id;' | mysql -hlocalhost -uroot 
 Enter password:
 id  name
 89  Best School
-guillaume@ubuntu:~/$
-
+guillaume@ubunt
 ```
 
 **Repo:**
@@ -433,7 +413,6 @@ id  name
 2   Arizona
 3   Texas
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -476,7 +455,6 @@ Enter password:
 id  state_id    name
 1   1   San Francisco
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -523,7 +501,6 @@ id  name
 1   San Francisco
 2   San Jose
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -574,7 +551,6 @@ id  name    name
 7   Houston Texas
 8   Dallas  Texas
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -624,7 +600,6 @@ The Big Bang Theory 5
 The Last Man on Earth   1
 The Last Man on Earth   5
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -677,7 +652,6 @@ The Big Bang Theory 5
 The Last Man on Earth   1
 The Last Man on Earth   5
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -710,7 +684,6 @@ title   genre_id
 Better Call Saul    NULL
 Homeland    NULL
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -752,7 +725,6 @@ Thriller    2
 Adventure   1
 Fantasy 1
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -789,7 +761,6 @@ Mystery
 Suspense
 Thriller
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -825,7 +796,6 @@ Silicon Valley
 The Big Bang Theory
 The Last Man on Earth
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -878,7 +848,6 @@ The Big Bang Theory Comedy
 The Last Man on Earth   Comedy
 The Last Man on Earth   Drama
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
