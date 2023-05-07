@@ -3,16 +3,6 @@
 
 -   By Guillaume
 -   Weight: 1
--   Project over - took place from 12-14-2021 to 12-15-2021 - you're done with 10% of tasks.
--   QA review fully automated.
-
-#### In a nutshell...
-
--   **Auto QA review:** 0.0/94 mandatory & 0.0/59 optional
--   **Altogether:**  **0.0%**
-    -   Mandatory: 0.0%
-    -   Optional: 0.0%
-    -   Calculation:  0.0% + (0.0% * 0.0%)  == **0.0%**
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/252/r_208403_QPSN8.jpg)
 
@@ -62,17 +52,17 @@ Resources
 
 **Read or watch**:
 
--   [9.10. Objects and values](https://alx-intranet.hbtn.io/rltoken/MrtBogRzYETxnSKG97E7Sg "9.10. Objects and values")
--   [9.11. Aliasing](https://alx-intranet.hbtn.io/rltoken/Ro-7kVXtmWyAeOXEw7RhSg "9.11. Aliasing")
--   [Immutable vs mutable types](https://alx-intranet.hbtn.io/rltoken/X1lEmkwQRWI3fP4W7bq_qw "Immutable vs mutable types")
--   [Mutation](https://alx-intranet.hbtn.io/rltoken/HpKOdgDg6GIoBoG0UPOgPA "Mutation") (*Only this chapter*)
--   [9.12. Cloning lists](https://alx-intranet.hbtn.io/rltoken/-Gi4PX4srBYFKpZ5Er6sqA "9.12. Cloning lists")
--   [Python tuples: immutable but potentially changing](https://alx-intranet.hbtn.io/rltoken/NZIom4L-tS0HjpY_uEVr9A "Python tuples: immutable but potentially changing")
+-   [9.10. Objects and values](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#objects-and-values "9.10. Objects and values")
+-   [9.11. Aliasing](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#aliasing "9.11. Aliasing")
+-   [Immutable vs mutable types](https://stackoverflow.com/questions/8056130/immutable-vs-mutable-types "Immutable vs mutable types")
+-   [Mutation](http://composingprograms.com/pages/24-mutable-data.html#sequence-objects "Mutation") (*Only this chapter*)
+-   [9.12. Cloning lists](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#cloning-lists "9.12. Cloning lists")
+-   [Python tuples: immutable but potentially changing](http://radar.oreilly.com/2014/10/python-tuples-immutable-but-potentially-changing.html "Python tuples: immutable but potentially changing")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/J02m-YVaLqu3rtRDGfg5NQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -184,7 +174,6 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 ```
 >>> a = 89
 >>> b = 89
-
 ```
 
 **Repo:**
@@ -204,7 +193,6 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 ```
 >>> a = 89
 >>> b = a
-
 ```
 
 **Repo:**
@@ -224,7 +212,6 @@ In the following code, do `a` and `b` point to the same object? Answer with `Yes
 ```
 >>> a = 89
 >>> b = a + 1
-
 ```
 
 **Repo:**
@@ -245,7 +232,6 @@ What do these 3 lines print?
 >>> s1 = "Best School"
 >>> s2 = s1
 >>> print(s1 == s2)
-
 ```
 
 **Repo:**
@@ -266,7 +252,6 @@ What do these 3 lines print?
 >>> s1 = "Best"
 >>> s2 = s1
 >>> print(s1 is s2)
-
 ```
 
 **Repo:**
@@ -287,7 +272,6 @@ What do these 3 lines print?
 >>> s1 = "Best School"
 >>> s2 = "Best School"
 >>> print(s1 == s2)
-
 ```
 
 **Repo:**
@@ -308,7 +292,6 @@ What do these 3 lines print?
 >>> s1 = "Best School"
 >>> s2 = "Best School"
 >>> print(s1 is s2)
-
 ```
 
 **Repo:**
@@ -329,7 +312,6 @@ What do these 3 lines print?
 >>> l1 = [1, 2, 3]
 >>> l2 = [1, 2, 3]
 >>> print(l1 == l2)
-
 ```
 
 **Repo:**
@@ -350,7 +332,6 @@ What do these 3 lines print?
 >>> l1 = [1, 2, 3]
 >>> l2 = [1, 2, 3]
 >>> print(l1 is l2)
-
 ```
 
 **Repo:**
@@ -371,7 +352,6 @@ What do these 3 lines print?
 >>> l1 = [1, 2, 3]
 >>> l2 = l1
 >>> print(l1 == l2)
-
 ```
 
 **Repo:**
@@ -392,7 +372,6 @@ What do these 3 lines print?
 >>> l1 = [1, 2, 3]
 >>> l2 = l1
 >>> print(l1 is l2)
-
 ```
 
 **Repo:**
@@ -414,7 +393,6 @@ l1 = [1, 2, 3]
 l2 = l1
 l1.append(4)
 print(l2)
-
 ```
 
 **Repo:**
@@ -436,7 +414,6 @@ l1 = [1, 2, 3]
 l2 = l1
 l1 = l1 + [4]
 print(l2)
-
 ```
 
 **Repo:**
@@ -460,7 +437,6 @@ def increment(n):
 a = 1
 increment(a)
 print(a)
-
 ```
 
 **Repo:**
@@ -484,7 +460,6 @@ def increment(n):
 l = [1, 2, 3]
 increment(l)
 print(l)
-
 ```
 
 **Repo:**
@@ -509,7 +484,6 @@ l1 = [1, 2, 3]
 l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
-
 ```
 
 **Repo:**
@@ -555,7 +529,6 @@ False
 guillaume@ubuntu:~/0x09$ wc -l 19-copy_list.py
 3 19-copy_list.py
 guillaume@ubuntu:~/0x09$
-
 ```
 
 **No test cases needed**
@@ -574,7 +547,6 @@ Score: 0.00% (Checks completed: 0.00%)
 
 ```
 a = ()
-
 ```
 
 Is `a` a tuple? Answer with `Yes` or `No`.
@@ -593,7 +565,6 @@ Score: 0.00% (Checks completed: 0.00%)
 
 ```
 a = (1, 2)
-
 ```
 
 Is `a` a tuple? Answer with `Yes` or `No`.
@@ -612,7 +583,6 @@ Score: 0.00% (Checks completed: 0.00%)
 
 ```
 a = (1)
-
 ```
 
 Is `a` a tuple? Answer with `Yes` or `No`.
@@ -631,7 +601,6 @@ Score: 0.00% (Checks completed: 0.00%)
 
 ```
 a = (1, )
-
 ```
 
 Is `a` a tuple? Answer with `Yes` or `No`.
@@ -654,7 +623,6 @@ What does this script print?
 a = (1)
 b = (1)
 a is b
-
 ```
 
 **Repo:**
@@ -675,7 +643,6 @@ What does this script print?
 a = (1, 2)
 b = (1, 2)
 a is b
-
 ```
 
 **Repo:**
@@ -696,7 +663,6 @@ What does this script print?
 a = ()
 b = ()
 a is b
-
 ```
 
 **Repo:**
@@ -718,7 +684,6 @@ Score: 0.00% (Checks completed: 0.00%)
 [1, 2, 3, 4]
 >>> a = a + [5]
 >>> id(a)
-
 ```
 
 Will the last line of this script print `139926795932424`? Answer with `Yes` or `No`.
@@ -742,7 +707,6 @@ Score: 0.00% (Checks completed: 0.00%)
 139926795932424
 >>> a += [4]
 >>> id(a)
-
 ```
 
 Will the last line of this script print `139926795932424`? Answer with `Yes` or `No`.
@@ -787,7 +751,6 @@ BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestSchool, BestScho
 guillaume@ubuntu:~/0x09$ wc -l 100-magic_string.py
 4 100-magic_string.py
 guillaume@ubuntu:~/0x09$
-
 ```
 
 **No test cases needed**
@@ -823,7 +786,6 @@ except Exception as e:
 guillaume@ubuntu:~/0x09$ ./101-main.py
 [AttributeError] 'LockedClass' object has no attribute 'last_name'
 guillaume@ubuntu:~/0x09$
-
 ```
 
 **No test cases needed**
@@ -845,7 +807,6 @@ julien@ubuntu:/python3$ cat int.py
 a = 1
 b = 1
 julien@ubuntu:/python3$
-
 ```
 
 Assuming we are using a CPython implementation of Python3 with default options/configuration:
@@ -873,7 +834,6 @@ del a
 del b
 c = 1024
 julien@ubuntu:/python3$
-
 ```
 
 Assuming we are using a CPython implementation of Python3 with default options/configuration:
@@ -902,7 +862,6 @@ print("I")
 print("Love")
 print("Python")
 julien@ubuntu:/tmp/so$
-
 ```
 
 Assuming we are using a CPython implementation of Python3 with default options/configuration:
@@ -934,7 +893,6 @@ del a
 del b
 c = "SCHL"
 guillaume@ubuntu:/python3$
-
 ```
 
 Assuming we are using a CPython implementation of Python3 with default options/configuration (For answers with numbers use integers, don't spell out the word):
