@@ -19,17 +19,17 @@ Resources
 
 **Read or watch**:
 
--   [Object Oriented Programming](https://alx-intranet.hbtn.io/rltoken/i49z6HxrBGRNnixo7ZWbEQ "Object Oriented Programming") (*Read everything until the paragraph "Inheritance" excluded. You do NOT have to learn about class attributes, `classmethod` and `staticmethod` yet*)
--   [Object-Oriented Programming](https://alx-intranet.hbtn.io/rltoken/qz3KSn154ia4H2DPaabOzg "Object-Oriented Programming") (*Please **be careful**: in most of the following paragraphs, the author shows things the way you should not use or write a class in order to help you better understand some concepts and how everything works in Python 3. Make sure you read everything in the following paragraphs: General Introduction, First-class Everything, A Minimal Class in Python, Attributes (You DON'T have to learn about class attributes), Methods, The `__init__` Method, "Data Abstraction, Data Encapsulation, and Information Hiding," "Public, Protected, and Private Attributes"*)
--   [Properties vs. Getters and Setters](https://alx-intranet.hbtn.io/rltoken/Wy2djWXK5b4rnnYlAq_wlA "Properties vs. Getters and Setters")
--   [Learn to Program 9 : Object Oriented Programming](https://alx-intranet.hbtn.io/rltoken/MxIOanLf5vG5QeCWek2nqQ "Learn to Program 9 : Object Oriented Programming")
--   [Python Classes and Objects](https://alx-intranet.hbtn.io/rltoken/AoLH4xp5StrQST-Cu0Fg8w "Python Classes and Objects")
--   [Object Oriented Programming](https://alx-intranet.hbtn.io/rltoken/-vVnWzwR3a3X0H8Oia78Ug "Object Oriented Programming")
+-   [Object Oriented Programming](https://python.swaroopch.com/oop.html "Object Oriented Programming") (*Read everything until the paragraph "Inheritance" excluded. You do NOT have to learn about class attributes, `classmethod` and `staticmethod` yet*)
+-   [Object-Oriented Programming](https://python-course.eu/oop/object-oriented-programming.php "Object-Oriented Programming") (*Please **be careful**: in most of the following paragraphs, the author shows things the way you should not use or write a class in order to help you better understand some concepts and how everything works in Python 3. Make sure you read everything in the following paragraphs: General Introduction, First-class Everything, A Minimal Class in Python, Attributes (You DON'T have to learn about class attributes), Methods, The `__init__` Method, "Data Abstraction, Data Encapsulation, and Information Hiding," "Public, Protected, and Private Attributes"*)
+-   [Properties vs. Getters and Setters](https://python-course.eu/oop/properties-vs-getters-and-setters.php "Properties vs. Getters and Setters")
+-   [Learn to Program 9 : Object Oriented Programming](https://www.youtube.com/watch?v=1AGyBuVCTeE& "Learn to Program 9 : Object Oriented Programming")
+-   [Python Classes and Objects](https://www.youtube.com/watch?v=apACNr7DC_s "Python Classes and Objects")
+-   [Object Oriented Programming](https://www.youtube.com/watch?v=-DP1i2ZU9gk "Object Oriented Programming")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/WxAcwZ7gFDS8MKYqhB9Gzw "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -106,7 +106,6 @@ guillaume@ubuntu:~/0x06$ ./0-main.py
 <class '0-square.Square'>
 {}
 guillaume@ubuntu:~/0x06$
-
 ```
 
 **Repo:**
@@ -158,7 +157,6 @@ guillaume@ubuntu:~/0x06$ ./1-main.py
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
 guillaume@ubuntu:~/0x06$
-
 ```
 
 **Repo:**
@@ -281,7 +279,6 @@ Area: 9
 'Square' object has no attribute '__size'
 Area: 25
 guillaume@ubuntu:~/0x06$
-
 ```
 
 **Repo:**
@@ -336,7 +333,6 @@ Area: 7921 for size: 89
 Area: 9 for size: 3
 size must be an integer
 guillaume@ubuntu:~/0x06$
-
 ```
 
 **Repo:**
