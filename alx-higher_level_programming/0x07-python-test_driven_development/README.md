@@ -162,7 +162,6 @@ guillaume@ubuntu:~/0x07$ python3 -c 'print(__import__("0-add_integer").__doc__)'
 guillaume@ubuntu:~/0x07$ python3 -c 'print(__import__("0-add_integer").add_integer.__doc__)' | wc -l
 3
 guillaume@ubuntu:~/0x07$
-
 ```
 
 **Repo:**
@@ -207,7 +206,6 @@ guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/2-matrix_divided.txt | ta
 5 passed and 0 failed.
 Test passed.
 guillaume@ubuntu:~/0x07$
-
 ```
 
 Note: you might have a different number of tests than in the above example. As usual, your tests should cover all possible cases.
@@ -252,7 +250,6 @@ guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/3-say_my_name.txt | tail 
 5 passed and 0 failed.
 Test passed.
 guillaume@ubuntu:~/0x07$
-
 ```
 
 Note: you might have a different number of tests than in the above example. As usual, your tests should cover all possible cases.
@@ -320,7 +317,6 @@ size must be >= 0
 
 guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/4-print_square.txt
 guillaume@ubuntu:~/0x07$
-
 ```
 
 **Repo:**
@@ -387,7 +383,6 @@ $
 Utinam quidem dicerent alium alio beatiorem! Iam ruinas videresguillaume@ubuntu:~/0x07$
 guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/5-text_indentation.txt
 guillaume@ubuntu:~/0x07$
-
 ```
 
 **Repo:**
@@ -457,7 +452,6 @@ max_integer = __import__('6-max_integer').max_integer
 
 class TestMaxInteger(unittest.TestCase):
 guillaume@ubuntu:~/0x07$
-
 ```
 
 **Repo:**
@@ -465,3 +459,95 @@ guillaume@ubuntu:~/0x07$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x07-python-test_driven_development`
 -   File: `tests/6-max_integer_test.py`
+
+### 6\. Matrix multiplication
+
+#advanced
+
+Write a function that multiplies 2 matrices:
+
+-   Read: [Matrix multiplication - only Matrix product (two matrices)](https://en.wikipedia.org/wiki/Matrix_multiplication "Matrix multiplication - only Matrix product (two matrices)")
+
+-   Prototype: def `matrix_mul(m_a, m_b):`
+
+-   `m_a` and `m_b` must be validated with these requirements in this order
+
+-   `m_a` and `m_b` must be an list of lists of integers or floats:
+
+    -   if `m_a` or `m_b` is not a list: raise a `TypeError` exception with the message `m_a must be a list` or `m_b must be a list`
+    -   if `m_a` or `m_b` is not a list of lists: raise a `TypeError` exception with the message `m_a must be a list of lists` or `m_b must be a list of lists`
+    -   if `m_a` or `m_b` is empty (it means: `= []` or `= [[]]`): raise a `ValueError` exception with the message `m_a can't be empty` or `m_b can't be empty`
+    -   if one element of those list of lists is not an integer or a float: raise a `TypeError` exception with the message `m_a should contain only integers or floats` or `m_b should contain only integers or floats`
+    -   if `m_a` or `m_b` is not a rectangle (all ‘rows’ should be of the same size): raise a `TypeError` exception with the message `each row of m_a must be of the same size` or `each row of m_b must be of the same size`
+-   If `m_a` and `m_b` can’t be multiplied: raise a `ValueError` exception with the message `m_a and m_b can't be multiplied`
+
+-   You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x07$ cat 100-main.py
+#!/usr/bin/python3
+matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+
+guillaume@ubuntu:~/0x07$ ./100-main.py 
+[[7, 10], [15, 22]]
+[[13, 16]]
+guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/100-matrix_mul.txt | tail -2
+6 passed and 0 failed.
+Test passed.
+guillaume@ubuntu:~/0x07$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x07-python-test_driven_development`
+-   File: `100-matrix_mul.py, tests/100-matrix_mul.txt`
+
+### 7\. Matrix multiplication
+
+#advanced
+
+Write a function that multiplies 2 matrices:
+
+-   Read: [Matrix multiplication - only Matrix product (two matrices)](https://en.wikipedia.org/wiki/Matrix_multiplication "Matrix multiplication - only Matrix product (two matrices)")
+
+-   Prototype: def `matrix_mul(m_a, m_b):`
+
+-   `m_a` and `m_b` must be validated with these requirements in this order
+
+-   `m_a` and `m_b` must be an list of lists of integers or floats:
+
+    -   if `m_a` or `m_b` is not a list: raise a `TypeError` exception with the message `m_a must be a list` or `m_b must be a list`
+    -   if `m_a` or `m_b` is not a list of lists: raise a `TypeError` exception with the message `m_a must be a list of lists` or `m_b must be a list of lists`
+    -   if `m_a` or `m_b` is empty (it means: `= []` or `= [[]]`): raise a `ValueError` exception with the message `m_a can't be empty` or `m_b can't be empty`
+    -   if one element of those list of lists is not an integer or a float: raise a `TypeError` exception with the message `m_a should contain only integers or floats` or `m_b should contain only integers or floats`
+    -   if `m_a` or `m_b` is not a rectangle (all ‘rows’ should be of the same size): raise a `TypeError` exception with the message `each row of m_a must be of the same size` or `each row of m_b must be of the same size`
+-   If `m_a` and `m_b` can’t be multiplied: raise a `ValueError` exception with the message `m_a and m_b can't be multiplied`
+
+-   You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x07$ cat 100-main.py
+#!/usr/bin/python3
+matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+print(matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
+
+guillaume@ubuntu:~/0x07$ ./100-main.py 
+[[7, 10], [15, 22]]
+[[13, 16]]
+guillaume@ubuntu:~/0x07$ python3 -m doctest -v ./tests/100-matrix_mul.txt | tail -2
+6 passed and 0 failed.
+Test passed.
+guillaume@ubuntu:~/0x07$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x07-python-test_driven_development`
+-   File: `100-matrix_mul.py, tests/100-matrix_mul.txt`
