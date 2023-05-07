@@ -2,10 +2,7 @@
 ======================================
 
 -   By Guillaume
--   Weight: 1
--   Ongoing project - started 12-09-2021, must end by 12-15-2021 (in 5 days) - you're done with 0% of tasks.
--   Checker will be released at 12-15-2021 06:00 AM
--   QA review fully automated.
+
 
 Concepts
 --------
@@ -13,6 +10,38 @@ Concepts
 *For this project, students are expected to look at this concept:*
 
 -   [Never forget a test](https://alx-intranet.hbtn.io/concepts/47)
+
+    ![image](https://user-images.githubusercontent.com/106776383/236691247-bfac4537-6001-4b6e-924a-13564d9e3009.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691325-0a24967f-c186-4b3d-9451-67a2bdf86e16.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691373-f4189916-8b7d-44ef-9c38-52d5ce2ec07e.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691396-4e0818ea-cda3-409f-a04b-4aacfa10e93c.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691439-238ebbd0-db40-454a-a9a2-55def7afcdb3.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691464-29a59447-4c5a-47e9-ab66-a83ea55a4ce6.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691497-358fd065-aa1e-445f-977b-a94c54979192.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691531-5d2fde89-3b51-4665-bf29-c92ce094d82f.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691574-af5880b1-f3b6-4c1f-a28d-38849fd6fa1f.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691612-90cd78f6-d2dd-40e7-a5ff-e58aa6b6c902.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691643-746514fb-5bd3-468f-afb3-0504a36ff0bf.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691690-46bb77f6-359b-418f-97a4-eef4b3a394d2.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691733-0586e2b1-a324-469e-af4f-d9722c3054c2.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691879-19949f0c-79e4-4884-a804-3c3357c65380.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691924-f969b745-d433-4dd8-85d5-756a62dae009.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236691975-5301f72c-ef6b-4a9d-bf65-e746d058670f.png)
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/246/giphy-4.gif)
 
@@ -33,14 +62,16 @@ Resources
 
 **Read or watch**:
 
--   [doctest --- Test interactive Python examples](https://alx-intranet.hbtn.io/rltoken/BwZJVq2MQ1_Vg_3gphoitQ "doctest --- Test interactive Python examples") (*until "26.2.3.7. Warnings" included*)
--   [doctest -- Testing through documentation](https://alx-intranet.hbtn.io/rltoken/96kLRRIOHzsn3VDDXT21HA "doctest -- Testing through documentation")
--   [Unit Tests in Python](https://alx-intranet.hbtn.io/rltoken/wfuUl81Q3Nku1qCzdDHAfA "Unit Tests in Python")
+-   [doctest --- Test interactive Python examples](https://docs.python.org/3.4/library/doctest.html "doctest --- Test interactive Python examples") (*until "26.2.3.7. Warnings" included*)
+-   [doctest -- Testing through documentation](https://pymotw.com/3/doctest/ "doctest -- Testing through documentation")
+-   [Unit Tests in Python](https://www.youtube.com/watch?v=1Lfv5tUGsn8 "Unit Tests in Python")
+-   [Unittest module](https://www.youtube.com/watch?v=6tNS--WetLI "Unittest module")
+-   [Interactive and Non-interactive tests](https://mattermost.com/blog/testing-python-understanding-doctest-and-unittest/ "Interactive and Non-interactive tests")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/tYtzLvssHW_9zR6SZQlNrQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
