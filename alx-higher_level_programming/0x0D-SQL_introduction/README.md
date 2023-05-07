@@ -3,9 +3,6 @@
 
 -   By Guillaume
 -   Weight: 1
--   Ongoing project - started 02-01-2022, must end by 02-02-2022 (in about 16 hours) - you're done with 0% of tasks.
--   Checker was released at 02-01-2022 12:00 PM
--   QA review fully automated.
 
 Concepts
 --------
@@ -13,6 +10,31 @@ Concepts
 *For this project, students are expected to look at these concepts:*
 
 -   [Databases](https://alx-intranet.hbtn.io/concepts/37)
+
+    ![image](https://user-images.githubusercontent.com/106776383/236700431-0c1244ff-c4ce-4bbb-a4c1-dc3001efb2ad.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700521-9945d11b-3df2-48ac-8f68-d15f7ea20c7b.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700556-bf347f47-c864-4099-8adc-659c1a413fd5.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700583-459907ea-6790-4227-97e3-a1be7f891376.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700644-46ade838-d6e7-4f32-8101-1a636dc513ea.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700671-136cb3ce-2a48-4898-8dbc-d797a6b1f125.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700764-04a0cb64-21e3-4b47-954d-a0017bd0f7ba.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700797-dfd46432-c1fb-48ae-83bf-f19e6e2696ce.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700847-f38f0143-73c7-4fab-b65f-8f612b32b9ac.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700890-1d9e0e7b-4d5e-4c94-a489-c55a43de05f4.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700916-87290c44-13aa-41b1-ac30-a639ea72815e.png)
+    
+    ![image](https://user-images.githubusercontent.com/106776383/236700945-178ca81f-13ca-404e-9156-5f2846746aaa.png)
+
 -   [Databases](https://alx-intranet.hbtn.io/concepts/556)
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/rtcwz.jpg)
@@ -22,20 +44,21 @@ Resources
 
 **Read or watch**:
 
--   [What is Database & SQL?](https://alx-intranet.hbtn.io/rltoken/yyRKTEdRkYEVlRgZPbasjw "What is Database & SQL?")
--   [A Basic MySQL Tutorial](https://alx-intranet.hbtn.io/rltoken/suwJc4APi5piulNQKHKCcg "A Basic MySQL Tutorial")
--   [Basic SQL statements: DDL and DML](https://alx-intranet.hbtn.io/rltoken/IUKo4-UaRZSKPvXr5u9oBw "Basic SQL statements: DDL and DML") (*no need to read the chapter "Privileges"*)
--   [Basic queries: SQL and RA](https://alx-intranet.hbtn.io/rltoken/rXKvu2u7vg1Hj6bnX7UgMg "Basic queries: SQL and RA")
--   [SQL technique: functions](https://alx-intranet.hbtn.io/rltoken/-Riv_dzSYsJyvy-LlaO6Mg "SQL technique: functions")
--   [SQL technique: subqueries](https://alx-intranet.hbtn.io/rltoken/QpIXoR--8eBIaidgSWYsBQ "SQL technique: subqueries")
--   [What makes the big difference between a backtick and an apostrophe?](https://alx-intranet.hbtn.io/rltoken/Gt0nFJPJRwW2Y0izzwbVrw "What makes the big difference between a backtick and an apostrophe?")
--   [MySQL Cheat Sheet](https://alx-intranet.hbtn.io/rltoken/wLQZvDtRCG9eQ69c8jvYVA "MySQL Cheat Sheet")
--   [MySQL 8.0 SQL Statement Syntax](https://alx-intranet.hbtn.io/rltoken/HmdmLiYBM0Q34iCYPWd9XQ "MySQL 8.0 SQL Statement Syntax")
+-   [What is Database & SQL?](https://www.youtube.com/watch?v=FR4QIeZaPeM "What is Database & SQL?")
+-   [A Basic MySQL Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04 "A Basic MySQL Tutorial")
+-   [Basic SQL statements: DDL and DML](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/ddldml.php "Basic SQL statements: DDL and DML") (*no need to read the chapter "Privileges"*)
+-   [Basic queries: SQL and RA](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/queries.php "Basic queries: SQL and RA")
+-   [SQL technique: functions](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/functions.php "SQL technique: functions")
+-   [SQL technique: subqueries](https://web.csulb.edu/colleges/coe/cecs/dbdesign/dbdesign.php?page=sql/subqueries.php "SQL technique: subqueries")
+-   [What makes the big difference between a backtick and an apostrophe?](https://stackoverflow.com/questions/29402361/what-makes-the-big-difference-between-a-backtick-and-an-apostrophe/29402458 "What makes the big difference between a backtick and an apostrophe?")
+-   [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf?US "MySQL Cheat Sheet")
+-   [MySQL 8.0 SQL Statement Syntax](https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html "MySQL 8.0 SQL Statement Syntax")
+-   [installing MySQL in Ubuntu 20.04](https://phoenixnap.com/kb/install-mysql-ubuntu-20-04 "installing MySQL in Ubuntu 20.04")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/-zY4kpQMjYkkbqlEb9W37A "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
