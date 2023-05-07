@@ -3,10 +3,6 @@
 
 -   By Guillaume
 -   Weight: 1
--   Ongoing project - started 12-23-2021, must end by 01-04-2022 (in 11 days) - you're done with 0% of tasks.
--   Checker will be released at 01-03-2022 01:12 AM
--   **Manual QA review must be done** (request it when you are done with the project)
--   QA review fully automated.
 
 Background Context
 ------------------
@@ -37,15 +33,15 @@ Resources
 
 **Read or watch**:
 
--   [args/kwargs](https://alx-intranet.hbtn.io/rltoken/7gc6UzxSL81HcuAwklUbuQ "args/kwargs")
--   [JSON encoder and decoder](https://alx-intranet.hbtn.io/rltoken/rGVU9mt57rVURGnjK6n4_Q "JSON encoder and decoder")
--   [unittest module](https://alx-intranet.hbtn.io/rltoken/soictNXCPE18ASL3INoeew "unittest module")
--   [Python test cheatsheet](https://alx-intranet.hbtn.io/rltoken/uI9iskBCcNo5pc7j9Vy86A "Python test cheatsheet")
+-   [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/ "args/kwargs")
+-   [JSON encoder and decoder](https://docs.python.org/3/library/json.html "JSON encoder and decoder")
+-   [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest "unittest module")
+-   [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html "Python test cheatsheet")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/SBdRhGGBuqzWcwcuKyapSQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -79,7 +75,7 @@ Requirements
 -   Allowed editors: `vi`, `vim`, `emacs`
 -   All your files should end with a new line
 -   All your test files should be inside a folder `tests`
--   You have to use the [unittest module](https://alx-intranet.hbtn.io/rltoken/soictNXCPE18ASL3INoeew "unittest module")
+-   You have to use the [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest "unittest module")
 -   All your test files should be python files (extension: `.py`)
 -   All your test files and folders should start with `test_`
 -   Your file organization in the tests folder should be the same as your project: ex: for `models/base.py`, unit tests must be in: `tests/test_models/test_base.py`
@@ -106,7 +102,6 @@ Ran 189 tests in 13.135s
 
 OK
 guillaume@ubuntu:~/$
-
 ```
 
 *Note that this is just an example. The number of tests you create can be different from the above example.*
@@ -167,7 +162,6 @@ guillaume@ubuntu:~/$ ./0-main.py
 12
 4
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -221,7 +215,6 @@ guillaume@ubuntu:~/$ ./1-main.py
 2
 12
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -278,7 +271,6 @@ guillaume@ubuntu:~/$ ./2-main.py
 [TypeError] x must be an integer
 [ValueError] y must be >= 0
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -317,7 +309,6 @@ guillaume@ubuntu:~/$ ./3-main.py
 20
 56
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -361,7 +352,6 @@ guillaume@ubuntu:~/$ ./4-main.py
 ##
 ##
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -396,7 +386,6 @@ guillaume@ubuntu:~/$ ./5-main.py
 [Rectangle] (12) 2/1 - 4/6
 [Rectangle] (1) 1/0 - 5/5
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -439,7 +428,6 @@ $
  ###$
  ###$
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -498,7 +486,6 @@ guillaume@ubuntu:~/$ ./7-main.py
 [Rectangle] (89) 4/10 - 2/3
 [Rectangle] (89) 4/5 - 2/3
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -552,7 +539,6 @@ guillaume@ubuntu:~/$ ./8-main.py
 [Rectangle] (89) 3/1 - 2/1
 [Rectangle] (89) 1/3 - 4/2
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -627,7 +613,6 @@ guillaume@ubuntu:~/$ ./9-main.py
  ###
  ###
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -672,7 +657,6 @@ guillaume@ubuntu:~/$ ./10-main.py
 [Square] (1) 0/0 - 10
 [TypeError] width must be an integer
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -740,7 +724,6 @@ guillaume@ubuntu:~/$ ./11-main.py
 [Square] (1) 12/1 - 7
 [Square] (89) 12/1 - 7
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -793,7 +776,6 @@ guillaume@ubuntu:~/$ ./12-main.py
 [Rectangle] (1) 1/9 - 10/2
 False
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -845,7 +827,6 @@ guillaume@ubuntu:~/$ ./13-main.py
 [Square] (1) 2/1 - 10
 False
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -891,7 +872,6 @@ guillaume@ubuntu:~/$ ./14-main.py
 [{"x": 2, "width": 10, "id": 1, "height": 7, "y": 8}]
 <class 'str'>
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -932,7 +912,6 @@ if __name__ == "__main__":
 guillaume@ubuntu:~/$ ./15-main.py
 [{"y": 8, "x": 2, "id": 1, "width": 10, "height": 7}, {"y": 0, "x": 0, "id": 2, "width": 2, "height": 4}]
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -976,7 +955,6 @@ guillaume@ubuntu:~/$ ./16-main.py
 [<class 'str'>] [{"height": 4, "width": 10, "id": 89}, {"height": 7, "width": 1, "id": 7}]
 [<class 'list'>] [{'height': 4, 'width': 10, 'id': 89}, {'height': 7, 'width': 1, 'id': 7}]
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -1023,7 +1001,6 @@ guillaume@ubuntu:~/$ ./17-main.py
 False
 False
 guillaume@ubuntu:~/$
-
 ```
 
 **Repo:**
@@ -1103,8 +1080,133 @@ guillaume@ubuntu:~/$ ./18-main.py
 [139785911764976] [Square] (5) 0/0 - 5
 [139785911765032] [Square] (6) 9/1 - 7
 guillaume@ubuntu:~/$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0C-python-almost_a_circle`
+-   File: `models/base.py`
+
+ Done?
+
+### 20\. JSON ok, but CSV?
+
+#advanced
+
+Update the class `Base` by adding the class methods `def save_to_file_csv(cls, list_objs):` and `def load_from_file_csv(cls):` that serializes and deserializes in CSV:
+
+-   The filename must be: `<Class name>.csv` - example: `Rectangle.csv`
+-   Has the same behavior as the JSON serialization/deserialization
+-   Format of the CSV:
+    -   Rectangle: `<id>,<width>,<height>,<x>,<y>`
+    -   Square: `<id>,<size>,<x>,<y>`
 
 ```
+guillaume@ubuntu:~/$ cat 100-main.py
+#!/usr/bin/python3
+""" 100-main """
+from models.rectangle import Rectangle
+from models.square import Square
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(10, 7, 2, 8)
+    r2 = Rectangle(2, 4)
+    list_rectangles_input = [r1, r2]
+
+    Rectangle.save_to_file_csv(list_rectangles_input)
+
+    list_rectangles_output = Rectangle.load_from_file_csv()
+
+    for rect in list_rectangles_input:
+        print("[{}] {}".format(id(rect), rect))
+
+    print("---")
+
+    for rect in list_rectangles_output:
+        print("[{}] {}".format(id(rect), rect))
+
+    print("---")
+    print("---")
+
+    s1 = Square(5)
+    s2 = Square(7, 9, 1)
+    list_squares_input = [s1, s2]
+
+    Square.save_to_file_csv(list_squares_input)
+
+    list_squares_output = Square.load_from_file_csv()
+
+    for square in list_squares_input:
+        print("[{}] {}".format(id(square), square))
+
+    print("---")
+
+    for square in list_squares_output:
+        print("[{}] {}".format(id(square), square))
+
+guillaume@ubuntu:~/$ ./100-main.py
+[140268695797600] [Rectangle] (1) 2/8 - 10/7
+[140268695797656] [Rectangle] (2) 0/0 - 2/4
+---
+[140268695529008] [Rectangle] (1) 2/8 - 10/7
+[140268695528952] [Rectangle] (2) 0/0 - 2/4
+---
+---
+[140268695822520] [Square] (5) 0/0 - 5
+[140268695826328] [Square] (6) 9/1 - 7
+---
+[140268695529232] [Square] (5) 0/0 - 5
+[140268695529176] [Square] (6) 9/1 - 7
+guillaume@ubuntu:~/$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0C-python-almost_a_circle`
+-   File: `models/`
+
+ Done?
+
+### 21\. Let's draw it
+
+#advanced
+
+Update the class `Base` by adding the static method `def draw(list_rectangles, list_squares):` that opens a window and draws all the `Rectangles` and `Squares`:
+
+-   You must use the [Turtle graphics module](https://docs.python.org/3.0/library/turtle.html "Turtle graphics module")
+-   To install it: `sudo apt-get install python3-tk`
+-   To make the GUI available outside your vagrant machine, add this line in your Vagrantfile: `config.ssh.forward_x11 = true`
+-   No constraints for color, shape etc… be creative!
+
+```
+guillaume@ubuntu:~/$ cat 101-main.py
+#!/usr/bin/python3
+""" 101-main """
+from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
+
+if __name__ == "__main__":
+
+    list_rectangles = [Rectangle(100, 40), Rectangle(90, 110, 30, 10), Rectangle(20, 25, 110, 80)]
+    list_squares = [Square(35), Square(15, 70, 50), Square(80, 30, 70)]
+
+    Base.draw(list_rectangles, list_squares)
+
+guillaume@ubuntu:~/$ ./101-main.py
+....
+```
+-   Uncommented line in `/etc/ssh/ssh_config` that said `# ForwardX11 no` and change `no` to `yes`.
+-   Then added line `config.ssh.forward_agent = true` to my Vagrantfile in addition to `config.ssh.forward_x11 = true`.
+-   Halted my vm with `vagrant halt` and started it back up with `vagrant up --provision` then `vagrant ssh`.
+-   If you get an error that looks like `/usr/bin/xauth: timeout in locking authority file /home/vagrant/.Xauthority`, then enter `rm .Xauthority` (you may have to `sudo`).
+-   Logout and restart the vm with `vagrant up --provision`.
+-   Test with `xeyes`. If Xquartz is installed on the Mac OS it should open in an Xquartz window.
+
+**It is your responsibility to request a review for this task from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.**
 
 **Repo:**
 
