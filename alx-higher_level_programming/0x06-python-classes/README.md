@@ -75,7 +75,7 @@ Requirements
 More Info
 ---------
 
-**Documentation is now mandatory!** Each module, class, and method must contain docstring as comments. [Example Google Style Python Docstrings](https://alx-intranet.hbtn.io/rltoken/dOO785g5EQYkRU2E1wri0g "Example Google Style Python Docstrings")
+**Documentation is now mandatory!** Each module, class, and method must contain docstring as comments. [Example Google Style Python Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html "Example Google Style Python Docstrings")
 
 Quiz questions
 --------------
