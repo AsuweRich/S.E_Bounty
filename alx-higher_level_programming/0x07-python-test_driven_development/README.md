@@ -544,6 +544,8 @@ guillaume@ubuntu:~/0x07$
 
 #advanced
 
+![image](https://user-images.githubusercontent.com/106776383/236693713-392316bc-185f-4f08-8773-38116fb92bb6.png)
+
 ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/2c4f2b92514745519f833afdf5bc5f3eaff8c6ca.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230507%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230507T164701Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=0fda0afe6593f003253548c09aaa4dc666312d26123b2c67eba34be548b601d2)
 
 Create a function that prints Python strings.
