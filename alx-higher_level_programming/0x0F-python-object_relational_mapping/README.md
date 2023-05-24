@@ -7,7 +7,7 @@
 Before you start...
 -----------------
 
-**Please make sure your MySQL server is in 8.0** -> [How to install MySQL 8.0 in Ubuntu 20.04](https://alx-intranet.hbtn.io/rltoken/paGukker_0KoG3D9FqymNQ "How to install MySQL 8.0 in Ubuntu 20.04")
+**Please make sure your MySQL server is in 8.0** -> [How to install MySQL 8.0 in Ubuntu 20.04](https://phoenixnap.com/kb/install-mysql-ubuntu-20-04 "How to install MySQL 8.0 in Ubuntu 20.04")
 
 Background Context
 ------------------
@@ -58,23 +58,23 @@ Resources
 
 **Read or watch**:
 
--   [Object-relational mappers](https://alx-intranet.hbtn.io/rltoken/a8DUOWhXpNX3TEwgyT-U8A "Object-relational mappers")
--   [mysqlclient/MySQLdb documentation](https://alx-intranet.hbtn.io/rltoken/JtFaKjnqxudr6Hi05Us1Lw "mysqlclient/MySQLdb documentation") (*please don't pay attention to `_mysql`*)
--   [MySQLdb tutorial](https://alx-intranet.hbtn.io/rltoken/TdUSYFNGbXJG1WjCEoq5FA "MySQLdb tutorial")
--   [SQLAlchemy tutorial](https://alx-intranet.hbtn.io/rltoken/YyL5hsscviNH04XGW-XpfA "SQLAlchemy tutorial")
--   [SQLAlchemy](https://alx-intranet.hbtn.io/rltoken/j9azWF2Db_2rNolTxOF3SA "SQLAlchemy")
--   [mysqlclient/MySQLdb](https://alx-intranet.hbtn.io/rltoken/0zLhY9KqKjn-zmdb7X598Q "mysqlclient/MySQLdb")
--   [Introduction to SQLAlchemy](https://alx-intranet.hbtn.io/rltoken/pw50Bl1Bj84wksxm018dwA "Introduction to SQLAlchemy")
--   [Flask SQLAlchemy](https://alx-intranet.hbtn.io/rltoken/B-xIdMtGvpus8vHxAIRrPg "Flask SQLAlchemy")
--   [10 common stumbling blocks for SQLAlchemy newbies](https://alx-intranet.hbtn.io/rltoken/deIzPMrfK8Ixqm-AboFHWg "10 common stumbling blocks for SQLAlchemy newbies")
--   [Python SQLAlchemy Cheatsheet](https://alx-intranet.hbtn.io/rltoken/dZfUNK3lJicGMK5PU0bE7Q "Python SQLAlchemy Cheatsheet")
--   [SQLAlchemy ORM Tutorial for Python Developers](https://alx-intranet.hbtn.io/rltoken/hNxBKC8lHge5XjsRO8ksHQ "SQLAlchemy ORM Tutorial for Python Developers") (***Warning:** This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL*)
--   [SQLAlchemy Tutorial](https://alx-intranet.hbtn.io/rltoken/5G_R2NmQRFqiZb84qxYERQ "SQLAlchemy Tutorial")
+-   [Object-relational mappers](https://www.fullstackpython.com/object-relational-mappers-orms.html "Object-relational mappers")
+-   [mysqlclient/MySQLdb documentation](https://mysqlclient.readthedocs.io "mysqlclient/MySQLdb documentation") (*please don't pay attention to `_mysql`*)
+-   [MySQLdb tutorial](https://www.mikusa.com/python-mysql-docs/index.html "MySQLdb tutorial")
+-   [SQLAlchemy tutorial](https://docs.sqlalchemy.org/en/13/orm/tutorial.html "SQLAlchemy tutorial")
+-   [SQLAlchemy](https://docs.sqlalchemy.org/en/13/ "SQLAlchemy")
+-   [mysqlclient/MySQLdb](https://github.com/PyMySQL/mysqlclient "mysqlclient/MySQLdb")
+-   [Introduction to SQLAlchemy](https://www.youtube.com/watch?v=woKYyhLCcnU "Introduction to SQLAlchemy")
+-   [Flask SQLAlchemy](https://www.youtube.com/playlist?list=PLXmMXHVSvS-BlLA5beNJojJLlpE0PJgCW "Flask SQLAlchemy")
+-   [10 common stumbling blocks for SQLAlchemy newbies](http://alextechrants.blogspot.com/2013/11/10-common-stumbling-blocks-for.html "10 common stumbling blocks for SQLAlchemy newbies")
+-   [Python SQLAlchemy Cheatsheet](https://www.pythonsheets.com/notes/python-sqlalchemy.html "Python SQLAlchemy Cheatsheet")
+-   [SQLAlchemy ORM Tutorial for Python Developers](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/ "SQLAlchemy ORM Tutorial for Python Developers") (***Warning:** This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL*)
+-   [SQLAlchemy Tutorial](https://overiq.com/sqlalchemy-101/ "SQLAlchemy Tutorial")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/vPPdh3HKg3t23YFxUqHpFg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -111,7 +111,7 @@ More Info
 
 ### Install `MySQLdb` module version `2.0.x`
 
-For installing `MySQLdb`, you need to have `MySQL` installed: [How to install MySQL 8.0 in Ubuntu 20.04](https://alx-intranet.hbtn.io/rltoken/paGukker_0KoG3D9FqymNQ "How to install MySQL 8.0 in Ubuntu 20.04")
+For installing `MySQLdb`, you need to have `MySQL` installed: [How to install MySQL 8.0 in Ubuntu 20.04](https://phoenixnap.com/kb/install-mysql-ubuntu-20-04 "How to install MySQL 8.0 in Ubuntu 20.04")
 
 ```
 $ sudo apt-get install python3-dev
