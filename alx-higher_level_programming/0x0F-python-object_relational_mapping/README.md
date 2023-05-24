@@ -480,7 +480,7 @@ guillaume@ubuntu:~/0x0F$
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f84fe6edb9436c8560996c6d72e17ea51dab28e1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220303%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220303T161831Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a3638749d990d0ff2227922fecc85a0380e4a69c9c0f696428a5a716cd1aeb49)
+![image](https://github.com/AsuweRich/S.E_Bounty/assets/106776383/5a02c654-5639-4ce1-949c-3c6b512959cd)
 
 Write a python file that contains the class definition of a `State` and an instance `Base = declarative_base()`:
 
