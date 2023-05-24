@@ -292,8 +292,8 @@ mandatory
 
 Write a class `BaseGeometry` (based on `5-base_geometry.py`).
 
-Public instance method: `def area(self):` that raises an `Exception` with the message `area() is not implemented`
-You are not allowed to import any module
+-   Public instance method: `def area(self):` that raises an `Exception` with the message `area() is not implemented`
+-   You are not allowed to import any module
 
 ```
 guillaume@ubuntu:~/0x0A$ cat 6-main.py
@@ -318,3 +318,134 @@ guillaume@ubuntu:~/0x0A$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x0A-python-inheritance`
 -   File: `6-base_geometry.py`
+
+### 7\. Integer validator
+
+mandatory
+
+Write a class `BaseGeometry` (based on `6-base_geometry.py`).
+
+-   Public instance method: `def area(self):` that raises an `Exception` with the message `area() is not implemented`
+-   Public instance method: `def integer_validator(self, name, value):` that validates `value`:
+    -   you can assume `name` is always a string
+    -   if `value` is not an integer: raise a `TypeError` exception, with the message `<name> must be an integer`
+    -   if `value` is less or equal to 0: raise a `ValueError` exception with the message `<name> must be greater than 0`
+-   You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0A$ cat 7-main.py
+#!/usr/bin/python3
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+bg = BaseGeometry()
+
+bg.integer_validator("my_int", 12)
+bg.integer_validator("width", 89)
+
+try:
+    bg.integer_validator("name", "John")
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+try:
+    bg.integer_validator("age", 0)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+try:
+    bg.integer_validator("distance", -4)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+guillaume@ubuntu:~/0x0A$ ./7-main.py
+[TypeError] name must be an integer
+[ValueError] age must be greater than 0
+[ValueError] distance must be greater than 0
+guillaume@ubuntu:~/0x0A$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0A-python-inheritance`
+-   File: `7-base_geometry.py, tests/7-base_geometry.txt`
+
+### 8\. Rectangle
+
+mandatory
+
+Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`).
+
+-   Instantiation with width and height: `def __init__(self, width, height):`
+    -   `width` and `height` must be private. No getter or setter
+    -   `width` and `height` must be positive integers, validated by `integer_validator`
+
+```
+guillaume@ubuntu:~/0x0A$ cat 8-main.py
+#!/usr/bin/python3
+Rectangle = __import__('8-rectangle').Rectangle
+
+r = Rectangle(3, 5)
+
+print(r)
+print(dir(r))
+
+try:
+    print("Rectangle: {} - {}".format(r.width, r.height))
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+try:
+    r2 = Rectangle(4, True)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+guillaume@ubuntu:~/0x0A$ ./8-main.py
+<8-rectangle.Rectangle object at 0x7f6f488f7eb8>
+['_Rectangle__height', '_Rectangle__width', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'area', 'integer_validator']
+[AttributeError] 'Rectangle' object has no attribute 'width'
+[TypeError] height must be an integer
+guillaume@ubuntu:~/0x0A$
+```
+**No test cases needed**
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0A-python-inheritance`
+-   File: `8-rectangle.py`
+
+### 9\. Full rectangle
+
+mandatory
+
+Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`). (task based on `8-rectangle.py`)
+
+-   Instantiation with `width` and `height`: `def __init__(self, width, height):`:
+    -   `width` and `height` must be private. No getter or setter
+    -   `width` and `height` must be positive integers validated by `integer_validator`
+-   the `area()` method must be implemented
+-   `print()` should print, and `str()` should return, the following rectangle description: `[Rectangle] <width>/<height>`
+
+```
+guillaume@ubuntu:~/0x0A$ cat 9-main.py
+#!/usr/bin/python3
+Rectangle = __import__('9-rectangle').Rectangle
+
+r = Rectangle(3, 5)
+
+print(r)
+print(r.area())
+
+guillaume@ubuntu:~/0x0A$ ./9-main.py
+[Rectangle] 3/5
+15
+guillaume@ubuntu:~/0x0A$
+```
+**No test cases needed**
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0A-python-inheritance`
+-   File: `9-rectangle.py`
