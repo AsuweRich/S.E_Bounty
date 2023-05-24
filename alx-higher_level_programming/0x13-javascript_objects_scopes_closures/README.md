@@ -100,7 +100,6 @@ guillaume@ubuntu:~/0x13$ ./0-main.js
 Rectangle {}
 [Function: Rectangle]
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -153,7 +152,6 @@ Rectangle { width: 2, height: undefined }
 2
 undefined
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -215,7 +213,6 @@ Rectangle {}
 undefined
 undefined
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -260,7 +257,6 @@ XXXXXXXXXX
 XXXXXXXXXX
 XXXXXXXXXX
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -321,7 +317,6 @@ XXXXXX
 XXXXXX
 XXXXXX
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -366,7 +361,6 @@ XXXXXXXX
 XXXXXXXX
 XXXXXXXX
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -407,7 +401,6 @@ CCCC
 CCCC
 CCCC
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -440,7 +433,6 @@ guillaume@ubuntu:~/0x13$ ./7-main.js
 4
 2
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -472,7 +464,6 @@ guillaume@ubuntu:~/0x13$ ./8-main.js
 [ 5, 4, 3, 2, 1 ]
 [ 'String', { id: 12 }, 89, 'School' ]
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -506,7 +497,6 @@ guillaume@ubuntu:~/0x13$ ./9-main.js
 1: Best
 2: School
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -552,7 +542,6 @@ guillaume@ubuntu:~/0x13$ ./10-main.js
 c
 59
 guillaume@ubuntu:~/0x13$
-
 ```
 
 **Repo:**
@@ -560,3 +549,92 @@ guillaume@ubuntu:~/0x13$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x13-javascript_objects_scopes_closures`
 -   File: `10-converter.js`
+
+### 11\. Factor index
+
+#advanced
+
+Write a script that imports an array and computes a new array.
+
+-   Your script must import `list` from the file `100-data.js`
+-   You must use a `map`. [Tips](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control "Tips")
+-   A new list must be created with each value equal to the value of the initial list, multipled by the index in the list
+-   Print both the initial list and the new list
+
+```
+guillaume@ubuntu:~/0x13$ cat 100-data.js
+#!/usr/bin/node
+exports.list = [1, 2, 3, 4, 5];
+guillaume@ubuntu:~/0x13$ ./100-map.js 
+[ 1, 2, 3, 4, 5 ]
+[ 0, 2, 6, 12, 20 ]
+guillaume@ubuntu:~/0x13$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x13-javascript_objects_scopes_closures`
+-   File: `100-map.js`
+
+### 12\. Sorted occurences
+
+#advanced
+
+Write a script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
+
+-   Your script must import `dict` from the file `101-data.js`
+-   In the new dictionary:
+    -   A key is a number of occurrences
+    -   A value is the list of user ids
+-   Print the new dictionary at the end
+
+```
+guillaume@ubuntu:~/0x13$ cat 101-data.js
+#!/usr/bin/node
+exports.dict = {
+  89: 1,
+  90: 2,
+  91: 1,
+  92: 3,
+  93: 1,
+  94: 2
+};
+guillaume@ubuntu:~/0x13$ ./101-sorted.js 
+{ '1': [ '89', '91', '93' ], '2': [ '90', '94' ], '3': [ '92' ] }
+guillaume@ubuntu:~/0x13$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x13-javascript_objects_scopes_closures`
+-   File: `101-sorted.js`
+
+### 13\. Concat files
+
+#advanced
+
+Write a script that concats 2 files.
+
+-   The first argument is the file path of the first source file
+-   The second argument is the file path of the second source file
+-   The third argument is the file path of the destination
+
+```
+guillaume@ubuntu:~/0x13$ cat fileA
+C is fun!
+guillaume@ubuntu:~/0x13$ cat fileB
+Python is Cool!!!
+guillaume@ubuntu:~/0x13$ ./102-concat.js fileA fileB fileC
+guillaume@ubuntu:~/0x13$ cat fileC
+C is fun!
+Python is Cool!!!
+guillaume@ubuntu:~/0x13$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x13-javascript_objects_scopes_closures`
+-   File: `102-concat.js`
