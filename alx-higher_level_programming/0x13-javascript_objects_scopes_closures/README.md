@@ -9,21 +9,21 @@ Resources
 
 **Read or watch**:
 
--   [JavaScript object basics](https://alx-intranet.hbtn.io/rltoken/dsSkBB-Cj0tqUFL8eOZLLQ "JavaScript object basics")
--   [Object-oriented JavaScript](https://alx-intranet.hbtn.io/rltoken/qqgqdyHPzUZkKQ5UMnw2MQ "Object-oriented JavaScript") (***read all examples!***)
--   [Class - ES6](https://alx-intranet.hbtn.io/rltoken/NEm-UViCThD5hfq_3Lj9Hg "Class - ES6")
--   [super - ES6](https://alx-intranet.hbtn.io/rltoken/_cxdVKsdqPWbbp2cHtQSbQ "super - ES6")
--   [extends - ES6](https://alx-intranet.hbtn.io/rltoken/6wdl6Bc5yjBplpiZKmr6Zw "extends - ES6")
--   [Object prototypes](https://alx-intranet.hbtn.io/rltoken/NiBbDiOlfhfUf4eIigglIw "Object prototypes")
--   [Inheritance in JavaScript](https://alx-intranet.hbtn.io/rltoken/qqgqdyHPzUZkKQ5UMnw2MQ "Inheritance in JavaScript")
--   [Closures](https://alx-intranet.hbtn.io/rltoken/CybTMKEDNdTdU99kx_OXgQ "Closures")
--   [this/self](https://alx-intranet.hbtn.io/rltoken/XcOkisoKPud4faDDkLMABw "this/self")
--   [Modern JS](https://alx-intranet.hbtn.io/rltoken/rU_q2J3qGWfvTYNllW8JnA "Modern JS")
+-   [JavaScript object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics "JavaScript object basics")
+-   [Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript "Object-oriented JavaScript") (***read all examples!***)
+-   [Class - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes "Class - ES6")
+-   [super - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super "super - ES6")
+-   [extends - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends "extends - ES6")
+-   [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes "Object prototypes")
+-   [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript "Inheritance in JavaScript")
+-   [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures "Closures")
+-   [this/self](https://alistapart.com/article/getoutbindingsituations/ "this/self")
+-   [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet "Modern JS")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/Eo6JxX0bkDywq4IxT8wRew "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -46,7 +46,7 @@ Requirements
 -   All your files should end with a new line
 -   The first line of all your files should be exactly `#!/usr/bin/node`
 -   A `README.md` file, at the root of the folder of the project, is mandatory
--   Your code should be `semistandard` compliant. [Rules of Standard](https://alx-intranet.hbtn.io/rltoken/CAKkGG6pUDtpu3T2rn4MXw "Rules of Standard") + [semicolons on top](https://alx-intranet.hbtn.io/rltoken/oc1-9XTUtCiIyZkdAFvoUQ "semicolons on top"). Also as reference: [AirBnB style](https://alx-intranet.hbtn.io/rltoken/JvqqQQrEPtGjP-57CZSEaQ "AirBnB style")
+-   Your code should be `semistandard` compliant (version 16.x.x). [Rules of Standard](https://standardjs.com/rules.html "Rules of Standard") + [semicolons on top](https://github.com/standard/semistandard "semicolons on top"). Also as reference: [AirBnB style](https://github.com/airbnb/javascript "AirBnB style")
 -   All your files must be executable
 -   The length of your files will be tested using `wc`
 -   You are not allowed to use `var`
