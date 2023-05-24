@@ -182,3 +182,139 @@ guillaume@ubuntu:~/0x0A$
 -   GitHub repository: `alx-higher_level_programming`
 -   Directory: `0x0A-python-inheritance`
 -   File: `2-is_same_class.py`
+
+### 3\. Same class or inherit from
+
+mandatory
+
+Write a function that returns  `True` if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise `False`.
+
+-   Prototype: `def is_kind_of_class(obj, a_class):`
+-   You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0A$ cat 3-main.py
+#!/usr/bin/python3
+is_kind_of_class = __import__('3-is_kind_of_class').is_kind_of_class
+
+a = 1
+if is_kind_of_class(a, int):
+    print("{} comes from {}".format(a, int.__name__))
+if is_kind_of_class(a, float):
+    print("{} comes from {}".format(a, float.__name__))
+if is_kind_of_class(a, object):
+    print("{} comes from {}".format(a, object.__name__))
+
+guillaume@ubuntu:~/0x0A$ ./3-main.py
+1 comes from int
+1 comes from object
+guillaume@ubuntu:~/0x0A$ 
+```
+**No test cases needed**
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0A-python-inheritance`
+-   File: `3-is_kind_of_class.py`
+
+### 4\. Only sub class of
+
+mandatory
+
+Write a function that returns `True` if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise `False`.
+
+-   Prototype: `def inherits_from(obj, a_class):`
+-   You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0A$ cat 4-main.py
+#!/usr/bin/python3
+inherits_from = __import__('4-inherits_from').inherits_from
+
+a = True
+if inherits_from(a, int):
+    print("{} inherited from class {}".format(a, int.__name__))
+if inherits_from(a, bool):
+    print("{} inherited from class {}".format(a, bool.__name__))
+if inherits_from(a, object):
+    print("{} inherited from class {}".format(a, object.__name__))
+
+guillaume@ubuntu:~/0x0A$ ./4-main.py
+True inherited from class int
+True inherited from class object
+guillaume@ubuntu:~/0x0A$ 
+```
+**No test cases needed**
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0A-python-inheritance`
+-   File: `4-inherits_from.py`
+
+### 5\. Geometry module
+
+mandatory
+
+Write an empty class `BaseGeometry`.
+
+-   You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0A$ cat 5-main.py
+#!/usr/bin/python3
+BaseGeometry = __import__('5-base_geometry').BaseGeometry
+
+bg = BaseGeometry()
+
+print(bg)
+print(dir(bg))
+print(dir(BaseGeometry))
+
+guillaume@ubuntu:~/0x0A$ ./5-main.py
+<5-base_geometry.BaseGeometry object at 0x7f2050c69208>
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__']
+guillaume@ubuntu:~/0x0A$ 
+```
+**No test cases needed**
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0A-python-inheritance`
+-   File: `5-base_geometry.py`
+
+### 6\. Improve Geometry
+
+mandatory
+
+Write a class `BaseGeometry` (based on `5-base_geometry.py`).
+
+Public instance method: `def area(self):` that raises an `Exception` with the message `area() is not implemented`
+You are not allowed to import any module
+
+```
+guillaume@ubuntu:~/0x0A$ cat 6-main.py
+#!/usr/bin/python3
+BaseGeometry = __import__('6-base_geometry').BaseGeometry
+
+bg = BaseGeometry()
+
+try:
+    print(bg.area())
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+guillaume@ubuntu:~/0x0A$ ./6-main.py
+[Exception] area() is not implemented
+guillaume@ubuntu:~/0x0A$ 
+```
+**No test cases needed**
+
+**Repo:**
+
+-   GitHub repository: `alx-higher_level_programming`
+-   Directory: `0x0A-python-inheritance`
+-   File: `6-base_geometry.py`
