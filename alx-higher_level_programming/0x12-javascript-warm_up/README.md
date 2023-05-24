@@ -21,24 +21,24 @@ Resources
 
 **Read or watch**:
 
--   [Writing JavaScript Code](https://alx-intranet.hbtn.io/rltoken/3HLjEesLsmyWfRUWnxgUGg "Writing JavaScript Code")
--   [Variables](https://alx-intranet.hbtn.io/rltoken/zgOWmcpVLZFEmFlmuwayyg "Variables")
--   [Data Types](https://alx-intranet.hbtn.io/rltoken/VPd6JWaLrwOBzjAeXNAEqg "Data Types")
--   [Operators](https://alx-intranet.hbtn.io/rltoken/3HLjEesLsmyWfRUWnxgUGg "Operators")
--   [Operator Precedence](https://alx-intranet.hbtn.io/rltoken/PHtcJJk30gBNmlFQ9R4RVg "Operator Precedence")
--   [Controlling Program Flow](https://alx-intranet.hbtn.io/rltoken/tsreKcNh_KmTmLPHsfvJRw "Controlling Program Flow")
--   [Functions](https://alx-intranet.hbtn.io/rltoken/e3EfHIxICdIncGBwwIDbXQ "Functions")
--   [Objects and Arrays](https://alx-intranet.hbtn.io/rltoken/jg7IbvJpV2oLIKgqOAQH1g "Objects and Arrays")
--   [Intrinsic Objects](https://alx-intranet.hbtn.io/rltoken/jg7IbvJpV2oLIKgqOAQH1g "Intrinsic Objects")
--   [Module patterns](https://alx-intranet.hbtn.io/rltoken/g-MgvO09Ur02RhM63gVyXw "Module patterns")
--   [var, let and const](https://alx-intranet.hbtn.io/rltoken/gJi61GeJTRX0g-M0Rx-0Iw "var, let and const")
--   [JavaScript Tutorial](https://alx-intranet.hbtn.io/rltoken/Y8hkOcy5jO22lQGyF6_NiA "JavaScript Tutorial")
--   [Modern JS](https://alx-intranet.hbtn.io/rltoken/NZawtiBjWUpiojnrtVywNw "Modern JS")
+-   [Writing JavaScript Code](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics "Writing JavaScript Code")
+-   [Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables "Variables")
+-   [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures "Data Types")
+-   [Operators](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics "Operators")
+-   [Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence "Operator Precedence")
+-   [Controlling Program Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling "Controlling Program Flow")
+-   [Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions "Functions")
+-   [Objects and Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects "Objects and Arrays")
+-   [Intrinsic Objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects "Intrinsic Objects")
+-   [Module patterns](http://darrenderidder.github.io/talks/ModulePatterns/#/ "Module patterns")
+-   [var, let and const](https://www.youtube.com/watch?v=sjyJBL5fkp8 "var, let and const")
+-   [JavaScript Tutorial](https://www.youtube.com/watch?v=vZBCTc9zHtI "JavaScript Tutorial")
+-   [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet "Modern JS")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/UFSXQvb7c_45LRd6SdzFTg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -69,7 +69,7 @@ Requirements
 -   All your files should end with a new line
 -   The first line of all your files should be exactly `#!/usr/bin/node`
 -   A `README.md` file, at the root of the folder of the project, is mandatory
--   Your code should be `semistandard` compliant (version 16.x.x). [Rules of Standard](https://alx-intranet.hbtn.io/rltoken/1T1yg1vOAChRN20Yyz8crw "Rules of Standard") + [semicolons on top](https://alx-intranet.hbtn.io/rltoken/35q5Pc6A6KWPyd3kGeRQFg "semicolons on top"). Also as reference: [AirBnB style](https://alx-intranet.hbtn.io/rltoken/ilo9MmB3u0utJZjZat-W3Q "AirBnB style")
+-   Your code should be `semistandard` compliant (version 16.x.x). [Rules of Standard](https://standardjs.com/rules.html "Rules of Standard") + [semicolons on top](https://github.com/standard/semistandard "semicolons on top"). Also as reference: [AirBnB style](https://github.com/airbnb/javascript "AirBnB style")
 -   All your files must be executable
 -   The length of your files will be tested using `wc`
 
@@ -81,16 +81,14 @@ More Info
 ```
 $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
-
 ```
 
 ### Install semi-standard
 
-[Documentation](https://alx-intranet.hbtn.io/rltoken/35q5Pc6A6KWPyd3kGeRQFg "Documentation")
+[Documentation](https://github.com/standard/semistandard "Documentation")
 
 ```
 $ sudo npm install semistandard --global
-
 ```
 
 Quiz questions
@@ -117,7 +115,6 @@ JavaScript is amazing
 guillaume@ubuntu:~/0x12$
 guillaume@ubuntu:~/0x12$ semistandard ./0-javascript_is_amazing.js
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -146,7 +143,6 @@ C is fun
 Python is cool
 JavaScript is amazing
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -169,7 +165,7 @@ Write a script that prints a message depending of the number of arguments passed
 -   You must use `console.log(...)` to print all output
 -   You are not allowed to use `var`
 
-Reference: [process.argv](https://alx-intranet.hbtn.io/rltoken/5kTYi3rxb6KM1_pivm-tXg "process.argv")
+Reference: [process.argv](https://nodejs.org/api/process.html#process_process_argv "process.argv")
 
 ```
 guillaume@ubuntu:~/0x12$ ./2-arguments.js
@@ -179,7 +175,6 @@ Argument found
 guillaume@ubuntu:~/0x12$ ./2-arguments.js Best School
 Arguments found
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -207,7 +202,6 @@ No argument
 guillaume@ubuntu:~/0x12$ ./3-value_argument.js School
 School
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -235,7 +229,6 @@ c is undefined
 guillaume@ubuntu:~/0x12$ ./4-concat.js
 undefined is undefined
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -269,7 +262,6 @@ My number: 89
 guillaume@ubuntu:~/0x12$ ./5-to_integer.js School
 Not a number
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -301,7 +293,6 @@ C is fun
 Python is cool
 JavaScript is amazing
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -339,7 +330,6 @@ guillaume@ubuntu:~/0x12$ ./7-multi_c.js
 Missing number of occurrences
 guillaume@ubuntu:~/0x12$ ./7-multi_c.js -3
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -380,7 +370,6 @@ XXXXXX
 XXXXXX
 guillaume@ubuntu:~/0x12$ ./8-square.js -3
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -413,7 +402,6 @@ guillaume@ubuntu:~/0x12$ ./9-add.js 1 7
 guillaume@ubuntu:~/0x12$ ./9-add.js 13 89
 102
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -447,7 +435,6 @@ guillaume@ubuntu:~/0x12$ ./10-factorial.js 89
 guillaume@ubuntu:~/0x12$ ./10-factorial.js 333
 Infinity
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -478,7 +465,6 @@ guillaume@ubuntu:~/0x12$ ./11-second_biggest.js 1
 guillaume@ubuntu:~/0x12$ ./11-second_biggest.js 4 2 5 3 0 -3
 4
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -514,7 +500,6 @@ guillaume@ubuntu:~/0x12$ ./12-object.js
 { type: 'object', value: 12 }
 { type: 'object', value: 89 }
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -535,7 +520,7 @@ Write a function that returns the addition of 2 integers.
 -   The name of the function must be `add`
 -   You are not allowed to use `var`
 
-[Tip](https://alx-intranet.hbtn.io/rltoken/1k6VPdLchwtGubOfPyGL1Q "Tip")
+[Tip](http://51elliot.blogspot.com/2012/01/simple-intro-to-nodejs-module-scope.html "Tip")
 
 ```
 guillaume@ubuntu:~/0x12$ cat 13-main.js
@@ -545,7 +530,6 @@ console.log(add(3, 5));
 guillaume@ubuntu:~/0x12$ ./13-main.js
 8
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -573,7 +557,6 @@ console.log(myVar);
 guillaume@ubuntu:~/0x12$ ./100-main.js
 333
 guillaume@ubuntu:~/0x12$
-
 ```
 
 ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4ae30fb44f708dbb3abc211b784db614e615ca21.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220301%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220301T121514Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a1f02cfa1a04eae1b926f44e9a5b754a0ebf8e706a6b5f5be7f2445959cc4c4f)
@@ -616,7 +599,6 @@ C is fun
 C is fun
 C is fun
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -649,7 +631,6 @@ addMeMaybe(4, function (nb) {
 guillaume@ubuntu:~/0x12$ ./102-main.js
 New value: 5
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
@@ -694,7 +675,6 @@ guillaume@ubuntu:~/0x12$ ./103-object_fct.js
 { type: 'object', value: 14, incr: [Function] }
 { type: 'object', value: 15, incr: [Function] }
 guillaume@ubuntu:~/0x12$
-
 ```
 
 **Repo:**
