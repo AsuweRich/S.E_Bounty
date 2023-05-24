@@ -303,7 +303,7 @@ guillaume@ubuntu:~/0x0F$
 
 What? Empty?
 
-Yes, it's an [SQL injection](https://alx-intranet.hbtn.io/rltoken/qzLjdkHPTue2U1isMj5fJA "SQL injection") to delete all records of a table...
+Yes, it's an [SQL injection](https://en.wikipedia.org/wiki/SQL_injection "SQL injection") to delete all records of a table...
 
 Once again, write a script that takes in arguments and displays all values in the `states` table of `hbtn_0e_0_usa` where `name` matches the argument. But this time, write one that is safe from MySQL injections!
 
