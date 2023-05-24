@@ -64,7 +64,7 @@ $ sudo apt-get install -y nodejs
 
 ### Install semi-standard
 
-[Documentation](https://alx-intranet.hbtn.io/rltoken/oc1-9XTUtCiIyZkdAFvoUQ "Documentation")
+[Documentation](https://github.com/standard/semistandard "Documentation")
 
 ```
 $ sudo npm install semistandard --global
