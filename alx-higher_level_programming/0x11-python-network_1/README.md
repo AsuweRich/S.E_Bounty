@@ -9,14 +9,15 @@ Resources
 
 **Read or watch**:
 
--   [Quickstart with Requests package](https://alx-intranet.hbtn.io/rltoken/KoRrs5dVWsb-B82e-M1TQQ "HOWTO Fetch Internet Resources Using <code>urllib</code> Package" target="_blank">HOWTO Fetch Internet Resources Using <code>urllib</code> Package</a> </li>
+-   [Quickstart with Requests package](https://docs.python.org/3/howto/urllib2.html "HOWTO Fetch Internet Resources Using <code>urllib</code> Package" target="_blank">HOWTO Fetch Internet Resources Using <code>urllib</code> Package</a> </li>
     <li><a href=")
--   [Requests package](https://alx-intranet.hbtn.io/rltoken/82yOuRsJgpxlGFPmRBDqxQ "Requests package")
+-   [Quickstart with Requests package](https://requests.readthedocs.io/en/latest/ "Quickstart with Requests package")
+-   [Requests package](https://pypi.org/project/requests/ "Requests package")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/kn48lNAWMEoi1DysNqM6bg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
