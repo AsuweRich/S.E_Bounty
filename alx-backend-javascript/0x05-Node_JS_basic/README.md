@@ -6,24 +6,24 @@ Back-end JavaScript ES6 NodeJS ExpressJS
 -   By: Johann Kerbrat, Engineering Manager at Uber Works
 -   Weight: 1
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/1/82692897e15d9f03256f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220809%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220809T195501Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=43b4a8b5bdaf5cb33711d5acc543430bc22f2a0a5354406c81d145a57b6abe44)
+![image](https://github.com/AsuweRich/alx-backend-javascript/assets/106776383/eb2a82fc-7da6-42b6-b5fc-0e79c1b9022c)
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [Node JS getting started](https://alx-intranet.hbtn.io/rltoken/zIYhQPHfn37Hlk3I9gfPGw "Node JS getting started")
--   [Process API doc](https://alx-intranet.hbtn.io/rltoken/Wt69QV2xygB4GEqob26AjQ "Process API doc")
--   [Child process](https://alx-intranet.hbtn.io/rltoken/IS4y9rRCblX71W_oeXpymw "Child process")
--   [Express getting started](https://alx-intranet.hbtn.io/rltoken/XsfrhG9NRLuuaTpVZlZv_g "Express getting started")
--   [Mocha documentation](https://alx-intranet.hbtn.io/rltoken/EBGDj1FwLrK_y4kgxp8hfg "Mocha documentation")
--   [Nodemon documentation](https://alx-intranet.hbtn.io/rltoken/vnDSbLsicMDdxcf5YUSXIg "Nodemon documentation")
+-   [Node JS getting started](htthttps://nodejs.org/en/docs/guides/getting-started-guide "Node JS getting started")
+-   [Process API doc](https://node.readthedocs.io/en/latest/api/process/ "Process API doc")
+-   [Child process](https://nodejs.org/api/child_process.html "Child process")
+-   [Express getting started](https://expressjs.com/en/starter/installing.html "Express getting started")
+-   [Mocha documentation](https://mochajs.org/ "Mocha documentation")
+-   [Nodemon documentation](https://github.com/remy/nodemon#nodemon "Nodemon documentation")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/vXmxtc5JH_CeIWReMTNhDA "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   run javascript using NodeJS
 -   use NodeJS modules
@@ -65,20 +65,105 @@ Joseph,Crisou,34,SWE
 Paul,Schneider,60,SWE
 Tommy,Schoul,32,SWE
 Katie,Shirou,21,CS
-
 ```
 
 ### `package.json`
 
 Click to show/hide file contents
+```
+{
+  "name": "node_js_basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "test": "./node_modules/mocha/bin/mocha --require babel-register --exit",
+    "dev": "nodemon --exec babel-node --presets babel-preset-env ./server.js ./database.csv"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.2",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "request": "^2.88.0",
+    "sinon": "^7.5.0"
+  }
+}
+```
 
 ### `babel.config.js`
 
 Click to show/hide file contents
+```
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+};
+```
 
 ### `.eslintrc.js`
 
 Click to show/hide file contents
+```
+module.exports = {
+  env: {
+    browser: false,
+    es6: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:jest/all',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['jest'],
+  rules: {
+    'max-classes-per-file': 'off',
+    'no-underscore-dangle': 'off',
+    'no-console': 'off',
+    'no-shadow': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  },
+  overrides:[
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
+};
+```
 
 ### and...
 
@@ -102,7 +187,6 @@ displayMessage("Hello NodeJS!");
 bob@dylan:~$ node 0-main.js
 Hello NodeJS!
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -139,7 +223,6 @@ Welcome to Holberton School, what is your name?
 Your name is: John
 This important software is now closing
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -187,7 +270,6 @@ Number of students: 10
 Number of students in CS: 6. List: Johann, Arielle, Jonathan, Emmanuel, Guillaume, Katie
 Number of students in SWE: 4. List: Guillaume, Joseph, Paul, Tommy
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -247,7 +329,6 @@ Number of students in CS: 6. List: Johann, Arielle, Jonathan, Emmanuel, Guillaum
 Number of students in SWE: 4. List: Guillaume, Joseph, Paul, Tommy
 Done!
 bob@dylan:~$
-
 ```
 
 **Tips:**
@@ -277,7 +358,6 @@ In terminal 1:
 ```
 bob@dylan:~$ node 4-http.js
 ...
-
 ```
 
 In terminal 2:
@@ -289,7 +369,6 @@ bob@dylan:~$
 bob@dylan:~$ curl localhost:1245/any_endpoint && echo ""
 Hello Holberton School!
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -318,7 +397,6 @@ Terminal 1:
 ```
 bob@dylan:~$ node 5-http.js database.csv
 ...
-
 ```
 
 In terminal 2:
@@ -333,7 +411,6 @@ Number of students: 10
 Number of students in CS: 6. List: Johann, Arielle, Jonathan, Emmanuel, Guillaume, Katie
 Number of students in SWE: 4. List: Guillaume, Joseph, Paul, Tommy
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -359,7 +436,6 @@ In terminal 1:
 ```
 bob@dylan:~$ node 6-http_express.js
 ...
-
 ```
 
 In terminal 2:
@@ -380,7 +456,6 @@ bob@dylan:~$ curl localhost:1245/any_endpoint && echo ""
 </body>
 </html>
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -396,3 +471,75 @@ bob@dylan:~$
 mandatory
 
 In a file named `7-http_express.js`, recreate the small HTTP server using `Express`:
+
+-   It should be assigned to the variable app and this one must be exported
+-   HTTP server should listen on port 1245
+-   It should return plain text
+-   When the URL path is `/`, it should display `Hello Holberton School!` in the page body
+-   When the URL path is `/students`, it should display `This is the list of our students` followed by the same content as the file `3-read_file_async.js` (with and without the database) - the name of the database must be passed as argument of the file
+-   CSV file can contain empty lines (at the end) - and they are not a valid student!
+
+Terminal 1:
+```
+bob@dylan:~$ node 7-http_express.js database.csv
+...
+```
+In terminal 2:
+```
+bob@dylan:~$ curl localhost:1245 && echo ""
+Hello Holberton School!
+bob@dylan:~$ 
+bob@dylan:~$ curl localhost:1245/students && echo ""
+This is the list of our students
+Number of students: 10
+Number of students in CS: 6. List: Johann, Arielle, Jonathan, Emmanuel, Guillaume, Katie
+Number of students in SWE: 4. List: Guillaume, Joseph, Paul, Tommy
+bob@dylan:~$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-backend-javascript`
+-   Directory: `0x05-Node_JS_basic`
+-   File: `7-http_express.js`
+
+ Done? Help Check your code Get a sandbox
+
+### 8\. Create a more complex HTTP server using Express
+
+mandatory
+
+In a file named `7-http_express.js`, recreate the small HTTP server using `Express`:
+
+-   It should be assigned to the variable app and this one must be exported
+-   HTTP server should listen on port 1245
+-   It should return plain text
+-   When the URL path is `/`, it should display `Hello Holberton School!` in the page body
+-   When the URL path is `/students`, it should display `This is the list of our students` followed by the same content as the file `3-read_file_async.js` (with and without the database) - the name of the database must be passed as argument of the file
+-   CSV file can contain empty lines (at the end) - and they are not a valid student!
+
+Terminal 1:
+```
+bob@dylan:~$ node 7-http_express.js database.csv
+...
+```
+In terminal 2:
+```
+bob@dylan:~$ curl localhost:1245 && echo ""
+Hello Holberton School!
+bob@dylan:~$ 
+bob@dylan:~$ curl localhost:1245/students && echo ""
+This is the list of our students
+Number of students: 10
+Number of students in CS: 6. List: Johann, Arielle, Jonathan, Emmanuel, Guillaume, Katie
+Number of students in SWE: 4. List: Guillaume, Joseph, Paul, Tommy
+bob@dylan:~$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-backend-javascript`
+-   Directory: `0x05-Node_JS_basic`
+-   File: `7-http_express.js`
+
+ Done? Help Check your code Get a sandbox
