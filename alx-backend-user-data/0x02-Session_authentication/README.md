@@ -114,7 +114,6 @@ bob@dylan:~$
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -152,7 +151,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" -H "Authorization: Basic
   "updated_at": "2017-09-25 01:55:17"
 }
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -185,7 +183,6 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -211,7 +208,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
   "error": "Forbidden"
 }
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -280,7 +276,6 @@ abcde => 61997a1b-3f8a-4b0f-87f6-19d5cafee63f: {'61997a1b-3f8a-4b0f-87f6-19d5caf
 fghij => 69e45c25-ec89-4563-86ab-bc192dcc3b4f: {'61997a1b-3f8a-4b0f-87f6-19d5cafee63f': 'abcde', '69e45c25-ec89-4563-86ab-bc192dcc3b4f': 'fghij'}
 abcde => 02079cb4-6847-48aa-924e-0514d82a43f4: {'61997a1b-3f8a-4b0f-87f6-19d5cafee63f': 'abcde', '02079cb4-6847-48aa-924e-0514d82a43f4': 'abcde', '69e45c25-ec89-4563-86ab-bc192dcc3b4f': 'fghij'}
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -374,7 +369,6 @@ abcde => 5d2930ba-f6d6-4a23-83d2-4f0abc8b8eee: {'a159ee3f-214e-4e91-9546-ca3ce87
 5d2930ba-f6d6-4a23-83d2-4f0abc8b8eee => abcde
 8647f981-f503-4638-af23-7bb4a9e4b53f => abcde
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -422,7 +416,6 @@ if __name__ == "__main__":
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id ./main_3.py
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -440,7 +433,6 @@ bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000" --cookie "_my_session_id_fake"
 Cookie value: None
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -466,7 +458,6 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -496,7 +487,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
   "error": "Forbidden"
 }
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -565,7 +555,6 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=
 User with ID: cf3ddee1-ff24-49e4-a40b-2540333fe992 has a Session ID: 9d1648aa-da79-4692-8236-5f9d7f9e9485
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -580,7 +569,6 @@ bob@dylan:~$
 bob@dylan:~$ curl "http://0.0.0.0:5000/" --cookie "_my_session_id=9d1648aa-da79-4692-8236-5f9d7f9e9485"
 User found: cf3ddee1-ff24-49e4-a40b-2540333fe992
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -620,7 +608,6 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -704,7 +691,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
   "updated_at": "2017-10-16 04:23:04"
 }
 bob@dylan:~$
-
 ```
 
 Now you have an authentication based on a Session ID stored in cookie, perfect for a website (browsers love cookies).
@@ -742,7 +728,6 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=session_auth SESSION_NAME=_my_session_id python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -804,7 +789,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users/me" --cookie "_my_session_id
   "error": "Forbidden"
 }
 bob@dylan:~$
-
 ```
 
 Login, logout... what's else?
