@@ -12,22 +12,22 @@ Background Context
 
 In this project, you will implement a **Session Authentication**. You are not allowed to install any other module.
 
-In the industry, you should **not** implement your own Session authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-HTTPAuth](https://alx-intranet.hbtn.io/rltoken/_ZTQTaMKjx1S_xATshexkA "Flask-HTTPAuth")). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
+In the industry, you should **not** implement your own Session authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-HTTPAuth](https://flask-httpauth.readthedocs.io/en/latest/ "Flask-HTTPAuth")). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [REST API Authentication Mechanisms - Only the session auth part](https://alx-intranet.hbtn.io/rltoken/oofk0VhuS0ZFZTNTVrQeaQ "REST API Authentication Mechanisms - Only the session auth part")
--   [HTTP Cookie](https://alx-intranet.hbtn.io/rltoken/peLV8xuJ4PDJMOVFqk-d2g "HTTP Cookie")
--   [Flask](https://alx-intranet.hbtn.io/rltoken/AI1tFR5XriGfR8Tz7YTYQA "Flask")
--   [Flask Cookie](https://alx-intranet.hbtn.io/rltoken/QYfI5oW6OHUmHDzwKV1Qsw "Flask Cookie")
+-   [REST API Authentication Mechanisms - Only the session auth part](https://www.youtube.com/watch?v=501dpx2IjGY "REST API Authentication Mechanisms - Only the session auth part")
+-   [HTTP Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie "HTTP Cookie")
+-   [Flask](https://palletsprojects.com/p/flask/ "Flask")
+-   [Flask Cookie](https://flask.palletsprojects.com/en/1.1.x/quickstart/#cookies "Flask Cookie")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/uWXp4VcY3Dd9UzTtc9N5_A "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
