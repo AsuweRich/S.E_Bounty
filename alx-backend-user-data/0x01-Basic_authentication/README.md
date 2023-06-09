@@ -12,25 +12,25 @@ Background Context
 
 In this project, you will learn what the authentication process means and implement a **Basic Authentication** on a simple API.
 
-In the industry, you should **not** implement your own Basic authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-HTTPAuth](https://alx-intranet.hbtn.io/rltoken/rpsPy0M3_FJuCLGNPUbmvg "Flask-HTTPAuth")). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
+In the industry, you should **not** implement your own Basic authentication system and use a module or framework that doing it for you (like in Python-Flask: [Flask-HTTPAuth](https://flask-httpauth.readthedocs.io/en/latest/ "Flask-HTTPAuth")). Here, for the learning purpose, we will walk through each step of this mechanism to understand it by doing.
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/5/6ccb363443a8f301bc2bc38d7a08e9650117de7c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220726%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220726T221959Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=18755348be0728564d9be216af879f27bca940e7734b01f4be19a329ef1a2bf8)
+![image](https://github.com/AsuweRich/alx-backend-user-data/assets/106776383/529734b9-deca-473b-bfe3-5de4a9f1c19c)
 
 Resources
 ---------
 
 **Read or watch**:
 
--   [REST API Authentication Mechanisms](https://alx-intranet.hbtn.io/rltoken/ssg5umgsMk5jKM8WRHk2Ug "REST API Authentication Mechanisms")
--   [Base64 in Python](https://alx-intranet.hbtn.io/rltoken/RpaPRyKx1rdHgRSUyuPfeg "Base64 in Python")
--   [HTTP header Authorization](https://alx-intranet.hbtn.io/rltoken/WlARq8tQPUGQq5VphLKM4w "HTTP header Authorization")
--   [Flask](https://alx-intranet.hbtn.io/rltoken/HG5WXgSja5kMa29fbMd9Aw "Flask")
--   [Base64 - concept](https://alx-intranet.hbtn.io/rltoken/br6Rp4iMaOce6EAC-JQnOw "Base64 - concept")
+-   [REST API Authentication Mechanisms](https://www.youtube.com/watch?v=501dpx2IjGY "REST API Authentication Mechanisms")
+-   [Base64 in Python](https://docs.python.org/3.7/library/base64.html "Base64 in Python")
+-   [HTTP header Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization "HTTP header Authorization")
+-   [Flask](https://palletsprojects.com/p/flask/ "Flask")
+-   [Base64 - concept](https://en.wikipedia.org/wiki/Base64 "Base64 - concept")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/swiIZazfz7mspY1vjuy_Zg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -78,7 +78,6 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
  * Serving Flask app "app" (lazy loading)
 ...
 bob@dylan:~$
-
 ```
 
 #### Use the API *(in another tab or in your browser)*
@@ -104,7 +103,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status" -vvv
 {"status":"OK"}
 * Closing connection 0
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -140,7 +138,6 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -172,7 +169,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/unauthorized" -vvv
 }
 * Closing connection 0
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -209,7 +205,6 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -241,7 +236,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/forbidden" -vvv
 }
 * Closing connection 0
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -289,7 +283,6 @@ False
 None
 None
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -339,7 +332,6 @@ False
 True
 True
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -384,7 +376,6 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=auth python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -410,7 +401,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
   "error": "Forbidden"
 }
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -440,7 +430,6 @@ In the first terminal:
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -466,7 +455,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
   "error": "Forbidden"
 }
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -516,7 +504,6 @@ SG9sYmVydG9u
 SG9sYmVydG9uIFNjaG9vbA==
 None
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -563,7 +550,6 @@ Holberton
 Holberton School
 Holberton School
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -610,7 +596,6 @@ bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 ./main_4.py
 ('Holberton', 'School')
 ('bob@gmail.com', 'toto1234')
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -681,7 +666,6 @@ None
 None
 Bob Dylan
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -739,7 +723,6 @@ bob@dylan:~$
 bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ....
-
 ```
 
 In a second terminal:
@@ -777,7 +760,6 @@ bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic Ym
   }
 ]
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -785,3 +767,109 @@ bob@dylan:~$
 -   GitHub repository: `alx-backend-user-data`
 -   Directory: `0x01-Basic_authentication`
 -   File: `api/v1/auth/basic_auth.py`
+
+### 12\. Basic - Allow password with ":"
+
+#advanced
+
+Improve the method `def extract_user_credentials(self, decoded_base64_authorization_header)` to allow password with `:`.
+
+In the first terminal:
+```
+bob@dylan:~$ cat main_100.py
+#!/usr/bin/env python3
+""" Main 100
+"""
+import base64
+from api.v1.auth.basic_auth import BasicAuth
+from models.user import User
+
+""" Create a user test """
+user_email = "bob100@hbtn.io"
+user_clear_pwd = "H0lberton:School:98!"
+
+user = User()
+user.email = user_email
+user.password = user_clear_pwd
+print("New user: {}".format(user.id))
+user.save()
+
+basic_clear = "{}:{}".format(user_email, user_clear_pwd)
+print("Basic Base64: {}".format(base64.b64encode(basic_clear.encode('utf-8')).decode("utf-8")))
+
+bob@dylan:~$ 
+bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 ./main_100.py 
+New user: 5891469b-d2d5-4d33-b05d-02617d665368
+Basic Base64: Ym9iMTAwQGhidG4uaW86SDBsYmVydG9uOlNjaG9vbDo5OCE=
+bob@dylan:~$
+bob@dylan:~$ API_HOST=0.0.0.0 API_PORT=5000 AUTH_TYPE=basic_auth python3 -m api.v1.app
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+....
+```
+In a second terminal:
+```
+bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/status"
+{
+  "status": "OK"
+}
+bob@dylan:~$
+bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users"
+{
+  "error": "Unauthorized"
+}
+bob@dylan:~$ 
+bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Test"
+{
+  "error": "Forbidden"
+}
+bob@dylan:~$
+bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic test"
+{
+  "error": "Forbidden"
+}
+bob@dylan:~$
+bob@dylan:~$ curl "http://0.0.0.0:5000/api/v1/users" -H "Authorization: Basic Ym9iMTAwQGhidG4uaW86SDBsYmVydG9uOlNjaG9vbDo5OCE="
+[
+  {
+    "created_at": "2017-09-25 01:55:17", 
+    "email": "bob@hbtn.io", 
+    "first_name": null, 
+    "id": "9375973a-68c7-46aa-b135-29f79e837495", 
+    "last_name": null, 
+    "updated_at": "2017-09-25 01:55:17"
+  },
+  {
+    "created_at": "2017-09-25 01:59:42", 
+    "email": "bob100@hbtn.io", 
+    "first_name": null, 
+    "id": "5891469b-d2d5-4d33-b05d-02617d665368", 
+    "last_name": null, 
+    "updated_at": "2017-09-25 01:59:42"
+  }
+]
+bob@dylan:~$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-backend-user-data`
+-   Directory: `0x01-Basic_authentication`
+-   File: `api/v1/auth/basic_auth.py`
+
+### 13\. Require auth with stars
+
+#advanced
+
+Improve `def require_auth(self, path, excluded_paths)` by allowing `*` at the end of excluded paths.
+
+Example for `excluded_paths = ["/api/v1/stat*"]`:
+
+-   `/api/v1/users` will return `True`
+-   `/api/v1/status` will return `False`
+-   `/api/v1/stats` will return `False`
+
+**Repo:**
+
+-   GitHub repository: `alx-backend-user-data`
+-   Directory: `0x01-Basic_authentication`
+-   File: `api/v1/auth/auth.py`
