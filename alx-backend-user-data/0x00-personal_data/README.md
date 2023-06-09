@@ -12,22 +12,22 @@ Back-endAuthentification
 
 -   [User management](https://alx-intranet.hbtn.io/concepts/558)
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/5c48d4f6d4dd8081eb48.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220721%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220721T055115Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=664bd64231f905664b6a384a5e542e1dd870712de41ea4f3383d563285559471)
+![image](https://github.com/AsuweRich/alx-backend-user-data/assets/106776383/fbec2a18-80e1-4d1a-8225-497ae6936218)
 
 Resources
 ---------
 
 **Read or watch:**
 
--   [What Is PII, non-PII, and Personal Data?](https://alx-intranet.hbtn.io/rltoken/jf71oYqiETchcVhPzQVnyg "What Is PII, non-PII, and Personal Data?")
--   [logging documentation](https://alx-intranet.hbtn.io/rltoken/W2JiHD6cbJY1scJORyLqnw "logging documentation")
--   [bcrypt package](https://alx-intranet.hbtn.io/rltoken/41oaQXfzwnF1i-wT8W0vHw "bcrypt package")
--   [Logging to Files, Setting Levels, and Formatting](https://alx-intranet.hbtn.io/rltoken/XCpI9uvguxlTCsAeRCW6SA "Logging to Files, Setting Levels, and Formatting")
+-   [What Is PII, non-PII, and Personal Data?](https://piwik.pro/blog/what-is-pii-personal-data/ "What Is PII, non-PII, and Personal Data?")
+-   [logging documentation](https://docs.python.org/3/library/logging.html "logging documentation")
+-   [bcrypt package](https://docs.python.org/3/library/logging.html "bcrypt package")
+-   [Logging to Files, Setting Levels, and Formatting](https://www.youtube.com/watch?v=-ARI4Cz-awo "Logging to Files, Setting Levels, and Formatting")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/yiowzem5NkzxawDmImXy8Q "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   Examples of Personally Identifiable Information (PII)
 -   How to implement a log filter that will obfuscate PII fields
@@ -87,7 +87,6 @@ bob@dylan:~$ ./main.py
 name=egg;email=eggmin@eggsample.com;password=xxx;date_of_birth=xxx;
 name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -120,7 +119,6 @@ class RedactingFormatter(logging.Formatter):
 
     def format(self, record: logging.LogRecord) -> str:
         NotImplementedError
-
 ```
 
 Update the class to accept a list of strings `fields` constructor argument.
@@ -150,7 +148,6 @@ bob@dylan:~$
 bob@dylan:~$ ./main.py
 [HOLBERTON] my_logger INFO 2019-11-19 18:24:25,105: name=Bob; email=***; ssn=***; password=***;
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -198,7 +195,6 @@ bob@dylan:~$ ./main.py
 <class 'logging.Logger'>
 PII_FIELDS: 5
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -270,7 +266,6 @@ bob@dylan:~$
 bob@dylan:~$ PERSONAL_DATA_DB_USERNAME=root PERSONAL_DATA_DB_PASSWORD=root PERSONAL_DATA_DB_HOST=localhost PERSONAL_DATA_DB_NAME=my_db ./main.py
 2
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -341,7 +336,6 @@ bob@dylan:~$ PERSONAL_DATA_DB_USERNAME=root PERSONAL_DATA_DB_PASSWORD=root PERSO
 [HOLBERTON] user_data INFO 2019-11-19 18:37:59,596: name=***; email=***; phone=***; ssn=***; password=***; ip=60ed:c396:2ff:244:bbd0:9208:26f2:93ea; last_login=2019-11-14 06:14:24; user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36;
 [HOLBERTON] user_data INFO 2019-11-19 18:37:59,621: name=***; email=***; phone=***; ssn=***; password=***; ip=f724:c5d1:a14d:c4c5:bae2:9457:3769:1969; last_login=2019-11-14 06:16:19; user_agent=Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; GT-I9100 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30;
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -380,7 +374,6 @@ bob@dylan:~$ ./main.py
 b'$2b$12$Fnjf6ew.oPZtVksngJjh1.vYCnxRjPm2yt18kw6AuprMRpmhJVxJO'
 b'$2b$12$xSAw.bxfSTAlIBglPMXeL.SJnzme3Gm0E7eOEKOVV2OhqOakyUN5m'
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -424,7 +417,6 @@ bob@dylan:~$ ./main.py
 b'$2b$12$Fnjf6ew.oPZtVksngJjh1.vYCnxRjPm2yt18kw6AuprMRpmhJVxJO'
 True
 bob@dylan:~$
-
 ```
 
 **Repo:**
