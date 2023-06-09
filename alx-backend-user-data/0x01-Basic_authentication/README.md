@@ -128,7 +128,7 @@ Edit `api/v1/app.py`:
 For testing this new error handler, add a new endpoint in `api/v1/views/index.py`:
 
 -   Route: `GET /api/v1/unauthorized`
--   This endpoint must raise a 401 error by using `abort` - [Custom Error Pages](https://alx-intranet.hbtn.io/rltoken/RH0gY_XQuSB75Q-JbI-fdg "Custom Error Pages")
+-   This endpoint must raise a 401 error by using `abort` - [Custom Error Pages](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/ "Custom Error Pages")
 
 By calling `abort(401)`, the error handler for 401 will be executed.
 
@@ -195,7 +195,7 @@ Edit `api/v1/app.py`:
 For testing this new error handler, add a new endpoint in `api/v1/views/index.py`:
 
 -   Route: `GET /api/v1/forbidden`
--   This endpoint must raise a 403 error by using `abort` - [Custom Error Pages](https://alx-intranet.hbtn.io/rltoken/RH0gY_XQuSB75Q-JbI-fdg "Custom Error Pages")
+-   This endpoint must raise a 403 error by using `abort` - [Custom Error Pages](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/ "Custom Error Pages")
 
 By calling `abort(403)`, the error handler for 403 will be executed.
 
@@ -362,7 +362,7 @@ Update the file `api/v1/app.py`:
         -   import `Auth` from `api.v1.auth.auth`
         -   create an instance of `Auth` and assign it to the variable `auth`
 
-Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request](https://alx-intranet.hbtn.io/rltoken/kzBrJT9aaokbD6aWYyQzXg "before_request")
+Now the biggest piece is the filtering of each request. For that you will use the Flask method [before_request](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Blueprint.before_request "before_request")
 
 -   Add a method in `api/v1/app.py` to handler `before_request`
     -   if `auth` is `None`, do nothing
