@@ -12,20 +12,24 @@ Back-end
 
 -   [Back-end concepts](https://alx-intranet.hbtn.io/concepts/557)
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/3646eb02de6527ca5d83.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220709%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220709T120201Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=f7de581aeb1eab7f2158274123c0315890bfc0f06e394514436e8d908bf403ff) ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/746187b76bea1f46030e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220709%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220709T120201Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=f52bb33e4c7773095f0b4e9a7aa62b8f2d63f13db20a4d09225837d91fb944c0) ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/665ce871c2ecc66a8e71.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220709%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220709T120201Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ba97b20e4725605cde543ba9ac70b6b6cf7ed70c9b220e0943c4ec5c33fa11cc)
+![image](https://github.com/AsuweRich/alx-backend/assets/106776383/82df135b-c186-4a2d-b6d5-6bf5b32d42fc)
+
+![image](https://github.com/AsuweRich/alx-backend/assets/106776383/7edc8282-5c0b-48ad-8882-b5f792e2f06b)
+
+![image](https://github.com/AsuweRich/alx-backend/assets/106776383/57cb0d7e-7450-4c32-8c26-2f52eaa493e5)
 
 Resources
 ---------
 
 **Read or watch:**
 
--   [REST API Design: Pagination](https://alx-intranet.hbtn.io/rltoken/7Kdzi9CH1LdSfNQ4RaJUQw "REST API Design: Pagination")
--   [HATEOAS](https://alx-intranet.hbtn.io/rltoken/tfzcEbTSdMYSYxsspJH_oA "HATEOAS")
+-   [REST API Design: Pagination](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/#pagination "REST API Design: Pagination")
+-   [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS "HATEOAS")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/zQ78qQVUjaPExupXQpAaHw "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   How to paginate a dataset with simple page and page_size parameters
 -   How to paginate a dataset with hypermedia metadata
@@ -86,7 +90,6 @@ bob@dylan:~$ ./0-main.py
 <class 'tuple'>
 (30, 45)
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -129,7 +132,6 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
             pass
-
 ```
 
 Implement a method named `get_page` that takes two integer arguments `page` with default value 1 and `page_size` with default value 10.
@@ -193,7 +195,6 @@ AssertionError raised when page and/or page_size are not ints
 [['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Emily', '99', '4'], ['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Mia', '79', '5']]
 []
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -252,7 +253,6 @@ bob@dylan:~$ ./2-main.py
 ---
 {'page_size': 0, 'page': 3000, 'data': [], 'next_page': None, 'prev_page': 2999, 'total_pages': 195}
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -314,7 +314,6 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
             pass
-
 ```
 
 Implement a `get_hyper_index` method with two integer arguments: `index` with a `None` default value and `page_size` with default value of 10.
@@ -381,7 +380,6 @@ Nb items: 19417
 {'index': 3, 'data': [['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Emily', '99', '4'], ['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Mia', '79', '5']], 'page_size': 2, 'next_index': 6}
 {'index': 5, 'data': [['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Mia', '79', '5'], ['2016', 'FEMALE', 'ASIAN AND PACIFIC ISLANDER', 'Charlotte', '59', '6']], 'page_size': 2, 'next_index': 7}
 bob@dylan:~$
-
 ```
 
 **Repo:**
