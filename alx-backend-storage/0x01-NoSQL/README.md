@@ -11,19 +11,19 @@ Resources
 
 **Read or watch**:
 
--   [NoSQL Databases Explained](https://alx-intranet.hbtn.io/rltoken/wweK7dOY4pf8haCqv9Iv6Q "NoSQL Databases Explained")
--   [What is NoSQL ?](https://alx-intranet.hbtn.io/rltoken/QqqNmgzgwopHBv305ki6bg "What is NoSQL ?")
--   [MongoDB with Python Crash Course - Tutorial for Beginners](https://alx-intranet.hbtn.io/rltoken/RyyP9OH1EMBWWYpTs4TqoA "MongoDB with Python Crash Course - Tutorial for Beginners")
--   [MongoDB Tutorial 2 : Insert, Update, Remove, Query](https://alx-intranet.hbtn.io/rltoken/9__3tR-NimgXlmjPQwTF-Q "MongoDB Tutorial 2 : Insert, Update, Remove, Query")
--   [Aggregation](https://alx-intranet.hbtn.io/rltoken/ziEDeniRobC6owPE1_avAQ "Aggregation")
--   [Introduction to MongoDB and Python](https://alx-intranet.hbtn.io/rltoken/axwwF4CjO7FnK8Ecochqnw "Introduction to MongoDB and Python")
--   [mongo Shell Methods](https://alx-intranet.hbtn.io/rltoken/lUqnLwOHbbp9FK39ijNmDQ "mongo Shell Methods")
--   [The mongo Shell](https://alx-intranet.hbtn.io/rltoken/bffQMLcTB4cg1bKqgBW3jw "The mongo Shell")
+-   [NoSQL Databases Explained](https://riak.com/resources/nosql-databases/ "NoSQL Databases Explained")
+-   [What is NoSQL ?](https://www.youtube.com/watch?v=qUV2j3XBRHc "What is NoSQL ?")
+-   [MongoDB with Python Crash Course - Tutorial for Beginners](https://www.youtube.com/watch?v=E-1xI85Zog8 "MongoDB with Python Crash Course - Tutorial for Beginners")
+-   [MongoDB Tutorial 2 : Insert, Update, Remove, Query](https://www.youtube.com/watch?v=CB9G5Dvv-EE "MongoDB Tutorial 2 : Insert, Update, Remove, Query")
+-   [Aggregation](https://www.mongodb.com/docs/manual/aggregation/ "Aggregation")
+-   [Introduction to MongoDB and Python](https://realpython.com/introduction-to-mongodb-and-python/ "Introduction to MongoDB and Python")
+-   [mongo Shell Methods](https://www.mongodb.com/docs/manual/reference/method/ "mongo Shell Methods")
+-   [The mongo Shell](https://www.mongodb.com/docs/manual/program/mongod/ "The mongo Shell")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/9u20uNESC1dnTNowO5waNQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -65,7 +65,7 @@ More Info
 
 ### Install MongoDB 4.2 in Ubuntu 18.04
 
-[Official installation guide](https://alx-intranet.hbtn.io/rltoken/8p4x14Ddn1UxKXZ5nPt3zA "Official installation guide")
+[Official installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/ "Official installation guide")
 
 ```
 $ wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add -
@@ -91,14 +91,12 @@ $ python3
 >>> import pymongo
 >>> pymongo.__version__
 '3.10.1'
-
 ```
 
-Potential issue if documents creation doesn't work or this error: `Data directory /data/db not found., terminating` ([source](https://alx-intranet.hbtn.io/rltoken/as8vd5VBnj4VDz5EINszMg "source") and [source](https://alx-intranet.hbtn.io/rltoken/9Df5v1NcWFFCn_sRNgsJUg "source"))
+Potential issue if documents creation doesn't work or this error: `Data directory /data/db not found., terminating` ([source](https://bryantson.medium.com/fixing-data-db-not-found-error-in-macos-x-when-starting-mongodb-d7b82abb2479 "source") and [source](https://stackoverflow.com/questions/37702957/mongodb-data-db-not-found "source"))
 
 ```
 $ sudo mkdir -p /data/db
-
 ```
 
 Or if `/etc/init.d/mongod` is missing, please find here an example of the file:
@@ -126,7 +124,6 @@ config  0.000GB
 local   0.000GB
 bye
 $
-
 ```
 
 Tasks
@@ -149,7 +146,6 @@ local        0.000GB
 logs         0.005GB
 bye
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -184,7 +180,6 @@ MongoDB server version: 3.6.3
 switched to db my_db
 bye
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -212,7 +207,6 @@ MongoDB server version: 3.6.3
 WriteResult({ "nInserted" : 1 })
 bye
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -239,7 +233,6 @@ MongoDB server version: 3.6.3
 { "_id" : ObjectId("5a8fad532b69437b63252406"), "name" : "Holberton school" }
 bye
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -266,7 +259,6 @@ MongoDB server version: 3.6.3
 { "_id" : ObjectId("5a8fad532b69437b63252406"), "name" : "Holberton school" }
 bye
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -293,7 +285,6 @@ MongoDB server version: 3.6.3
 1
 bye
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -329,7 +320,6 @@ MongoDB server version: 3.6.3
 { "_id" : ObjectId("5a8fad532b69437b63252406"), "name" : "Holberton school", "address" : "972 Mission street" }
 bye
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -362,7 +352,6 @@ connecting to: mongodb://127.0.0.1:27017/my_db
 MongoDB server version: 3.6.3
 bye
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -402,7 +391,6 @@ guillaume@ubuntu:~/0x01$ ./8-main.py
 [5a8f60cfd4321e1403ba7ab9] Holberton school
 [5a8f60cfd4321e1403ba7aba] UCSD
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -448,7 +436,6 @@ New school created: 5a8f60cfd4321e1403ba7abb
 [5a8f60cfd4321e1403ba7aba] UCSD
 [5a8f60cfd4321e1403ba7abb] UCSF 505 Parnassus Ave
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -502,7 +489,6 @@ guillaume@ubuntu:~/0x01$ ./10-main.py
 [5a8f60cfd4321e1403ba7aba] UCSD
 [5a8f60cfd4321e1403ba7ab9] Holberton school ['iOS']
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -555,7 +541,6 @@ guillaume@ubuntu:~/0x01$ ./11-main.py
 [5a90731fd4321e1e5a3f53e3] Holberton school ['Algo', 'C', 'Python', 'React']
 [5a90731fd4321e1e5a3f53e5] UCLA ['C', 'Python']
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -624,7 +609,6 @@ Methods:
     method DELETE: 0
 47415 status check
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -632,3 +616,131 @@ guillaume@ubuntu:~/0x01$
 -   GitHub repository: `alx-backend-storage`
 -   Directory: `0x01-NoSQL`
 -   File: `12-log_stats.py`
+
+### 13\. Regex filter
+
+**#advanced**
+
+Write a script that lists all documents with `name` starting by `Holberton` in the collection `school`:
+
+-   The database name will be passed as option of `mongo` command
+
+```
+guillaume@ubuntu:~/0x01$ cat 100-find | mongo my_db
+MongoDB shell version v3.6.3
+connecting to: mongodb://127.0.0.1:27017/my_db
+MongoDB server version: 3.6.3
+{ "_id" : ObjectId("5a90731fd4321e1e5a3f53e3"), "name" : "Holberton school" }
+{ "_id" : ObjectId("5a90731fd4321e1e5a3f53e3"), "name" : "Holberton School" }
+{ "_id" : ObjectId("5a90731fd4321e1e5a3f53e3"), "name" : "Holberton-school" }
+bye
+guillaume@ubuntu:~/0x01$
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-backend-storage`
+-   Directory: `0x01-NoSQL`
+-   File: `100-find`
+
+### 14\. Top students
+
+**#advanced**
+
+Write a Python function that returns all students sorted by average score:
+
+-   Prototype: `def top_students(mongo_collection)`:
+-   `mongo_collection` will be the `pymongo` collection object
+-   The top must be ordered
+-   The average score must be part of each item returns with key = `averageScore`
+
+
+```
+guillaume@ubuntu:~/0x01$ cat 101-main.py
+#!/usr/bin/env python3
+""" 101-main """
+from pymongo import MongoClient
+list_all = __import__('8-all').list_all
+insert_school = __import__('9-insert_school').insert_school
+top_students = __import__('101-students').top_students
+
+if __name__ == "__main__":
+    client = MongoClient('mongodb://127.0.0.1:27017')
+    students_collection = client.my_db.students
+
+    j_students = [
+        { 'name': "John", 'topics': [{ 'title': "Algo", 'score': 10.3 },{ 'title': "C", 'score': 6.2 }, { 'title': "Python", 'score': 12.1 }]},
+        { 'name': "Bob", 'topics': [{ 'title': "Algo", 'score': 5.4 },{ 'title': "C", 'score': 4.9 }, { 'title': "Python", 'score': 7.9 }]},
+        { 'name': "Sonia", 'topics': [{ 'title': "Algo", 'score': 14.8 },{ 'title': "C", 'score': 8.8 }, { 'title': "Python", 'score': 15.7 }]},
+        { 'name': "Amy", 'topics': [{ 'title': "Algo", 'score': 9.1 },{ 'title': "C", 'score': 14.2 }, { 'title': "Python", 'score': 4.8 }]},
+        { 'name': "Julia", 'topics': [{ 'title': "Algo", 'score': 10.5 },{ 'title': "C", 'score': 10.2 }, { 'title': "Python", 'score': 10.1 }]}
+    ]
+    for j_student in j_students:
+        insert_school(students_collection, **j_student)
+
+    students = list_all(students_collection)
+    for student in students:
+        print("[{}] {} - {}".format(student.get('_id'), student.get('name'), student.get('topics')))
+
+    top_students = top_students(students_collection)
+    for student in top_students:
+        print("[{}] {} => {}".format(student.get('_id'), student.get('name'), student.get('averageScore')))
+
+guillaume@ubuntu:~/0x01$ 
+guillaume@ubuntu:~/0x01$ ./101-main.py
+[5a90776bd4321e1ec94fc408] John - [{'title': 'Algo', 'score': 10.3}, {'title': 'C', 'score': 6.2}, {'title': 'Python', 'score': 12.1}]
+[5a90776bd4321e1ec94fc409] Bob - [{'title': 'Algo', 'score': 5.4}, {'title': 'C', 'score': 4.9}, {'title': 'Python', 'score': 7.9}]
+[5a90776bd4321e1ec94fc40a] Sonia - [{'title': 'Algo', 'score': 14.8}, {'title': 'C', 'score': 8.8}, {'title': 'Python', 'score': 15.7}]
+[5a90776bd4321e1ec94fc40b] Amy - [{'title': 'Algo', 'score': 9.1}, {'title': 'C', 'score': 14.2}, {'title': 'Python', 'score': 4.8}]
+[5a90776bd4321e1ec94fc40c] Julia - [{'title': 'Algo', 'score': 10.5}, {'title': 'C', 'score': 10.2}, {'title': 'Python', 'score': 10.1}]
+[5a90776bd4321e1ec94fc40a] Sonia => 13.1
+[5a90776bd4321e1ec94fc40c] Julia => 10.266666666666666
+[5a90776bd4321e1ec94fc408] John => 9.533333333333333
+[5a90776bd4321e1ec94fc40b] Amy => 9.366666666666665
+[5a90776bd4321e1ec94fc409] Bob => 6.066666666666667
+guillaume@ubuntu:~/0x01$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-backend-storage`
+-   Directory: `0x01-NoSQL`
+-   File: `101-students.py`
+
+### 15\. Log stats - new version
+
+**#advanced**
+
+Improve `12-log_stats.py` by adding the top 10 of the most present IPs in the collection `nginx` of the database `logs`:
+
+-   The IPs top must be sorted (like the example below)
+
+```
+guillaume@ubuntu:~/0x01$ ./102-log_stats.py 
+94778 logs
+Methods:
+    method GET: 93842
+    method POST: 229
+    method PUT: 0
+    method PATCH: 0
+    method DELETE: 0
+47415 status check
+IPs:
+    172.31.63.67: 15805
+    172.31.2.14: 15805
+    172.31.29.194: 15805
+    69.162.124.230: 529
+    64.124.26.109: 408
+    64.62.224.29: 217
+    34.207.121.61: 183
+    47.88.100.4: 166
+    45.249.84.250: 160
+    216.244.66.228: 150
+guillaume@ubuntu:~/0x01$ 
+```
+
+**Repo:**
+
+-   GitHub repository: `alx-backend-storage`
+-   Directory: `0x01-NoSQL`
+-   File: `102-log_stats.py`
