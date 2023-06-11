@@ -18,16 +18,16 @@ Resources
 
 **Read or watch**:
 
--   [Cache replacement policies - FIFO](https://alx-intranet.hbtn.io/rltoken/fjhr6EvFeF3mWwsPQXUKdQ "Cache replacement policies - FIFO")
--   [Cache replacement policies - LIFO](https://alx-intranet.hbtn.io/rltoken/U44RQjXp8xBtsbNIyhHIyw "Cache replacement policies - LIFO")
--   [Cache replacement policies - LRU](https://alx-intranet.hbtn.io/rltoken/gKerxvR4dnXQYkBX2ujZiQ "Cache replacement policies - LRU")
--   [Cache replacement policies - MRU](https://alx-intranet.hbtn.io/rltoken/Tmk4qEBZ7QTknvbpKabWfQ "Cache replacement policies - MRU")
--   [Cache replacement policies - LFU](https://alx-intranet.hbtn.io/rltoken/8PEJ8L34bxhL2y--BW5zGQ "Cache replacement policies - LFU")
+-   [Cache replacement policies - FIFO](https://en.wikipedia.org/wiki/Cache_replacement_policies#First_In_First_Out_%28FIFO%29 "Cache replacement policies - FIFO")
+-   [Cache replacement policies - LIFO](https://en.wikipedia.org/wiki/Cache_replacement_policies#Last_In_First_Out_%28LIFO%29 "Cache replacement policies - LIFO")
+-   [Cache replacement policies - LRU](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_Recently_Used_%28LRU%29 "Cache replacement policies - LRU")
+-   [Cache replacement policies - MRU](https://en.wikipedia.org/wiki/Cache_replacement_policies#Most_Recently_Used_%28MRU%29 "Cache replacement policies - MRU")
+-   [Cache replacement policies - LFU](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least-Frequently_Used_%28LFU%29 "Cache replacement policies - LFU")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/-gpAdRQTx1Rb-amaz9JZhQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -98,7 +98,6 @@ class BaseCaching():
         """ Get an item by key
         """
         raise NotImplementedError("get must be implemented in your cache class")
-
 ```
 
 Tasks
@@ -166,7 +165,6 @@ D: School
 E: Battery
 Street
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -240,7 +238,6 @@ D: School
 E: Battery
 F: Mission
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -322,7 +319,6 @@ B: World
 E: Battery
 G: San Francisco
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -444,7 +440,6 @@ I: I
 J: J
 K: K
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -566,7 +561,6 @@ D: School
 E: Battery
 K: K
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
@@ -715,7 +709,6 @@ H: H
 I: I
 M: M
 guillaume@ubuntu:~/0x01$
-
 ```
 
 **Repo:**
