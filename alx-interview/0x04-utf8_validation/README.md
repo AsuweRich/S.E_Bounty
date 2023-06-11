@@ -11,8 +11,8 @@ Resources
 
 **Read or watch**:
 
--   [UTF-8](https://alx-intranet.hbtn.io/rltoken/oqFi6P1hNvp9aSuNv---IQ "UTF-8")
--   [Characters, Symbols, and the Unicode Miracle](https://alx-intranet.hbtn.io/rltoken/d--jVK8sBSlhkosu7pFzdw "Characters, Symbols, and the Unicode Miracle")
+-   [UTF-8](https://en.wikipedia.org/wiki/UTF-8 "UTF-8")
+-   [Characters, Symbols, and the Unicode Miracle](https://www.youtube.com/watch?v=MijmeoH9LT4 "Characters, Symbols, and the Unicode Miracle")
 
 Requirements
 ------------
@@ -62,16 +62,13 @@ data = [229, 65, 127, 256]
 print(validUTF8(data))
 
 carrie@ubuntu:~/0x04-utf8_validation$
-
 ```
-
 ```
 carrie@ubuntu:~/0x04-utf8_validation$ ./0-main.py
 True
 True
 False
 carrie@ubuntu:~/0x04-utf8_validation$
-
 ```
 
 **Repo:**
