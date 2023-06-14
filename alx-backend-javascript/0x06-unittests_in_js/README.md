@@ -7,24 +7,24 @@ UnitTests Back-end JavaScript ES6 NodeJS ExpressJS Mocha
 -   Weight: 1
 
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/90f79a666e174e6c4ffc.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220811%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220811T142140Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=35cd57fe1ccd8bb0653dc29d92823db90bc0f56a1e505bcabdca51c51a4f2ac3)
+![image](https://github.com/AsuweRich/alx-backend-javascript/assets/106776383/8797c8a9-aa96-47d1-8feb-1dc95fc605d2)
 
 Resources
 ---------
 
 **Read or watch:**
 
--   [Mocha documentation](https://alx-intranet.hbtn.io/rltoken/Gx5mfX41__cc2hwepcl0aA "Mocha documentation")
--   [Chai](https://alx-intranet.hbtn.io/rltoken/Rs3SrSdr9OxPp-4099A0cg "Chai")
--   [Sinon](https://alx-intranet.hbtn.io/rltoken/5KsW5N9sG3sGWW3z-jkNwA "Sinon")
--   [Express](https://alx-intranet.hbtn.io/rltoken/Jq58SNUh8jcZqKoFcuOQdw "Express")
--   [Request](https://alx-intranet.hbtn.io/rltoken/FcJfzr2jUJSj8Xp3z9L1wg "Request")
--   [How to Test NodeJS Apps using Mocha, Chai and SinonJS](https://alx-intranet.hbtn.io/rltoken/HwB8gViDosy8znk7H9i4Pw "How to Test NodeJS Apps using Mocha, Chai and SinonJS")
+-   [Mocha documentation](https://mochajs.org "Mocha documentation")
+-   [Chai](https://www.chaijs.com/api/ "Chai")
+-   [Sinon](https://sinonjs.org/releases/v7.5.0/ "Sinon")
+-   [Express](https://expressjs.com/en/guide/routing.html "Express")
+-   [Request](https://www.npmjs.com/package/request "Request")
+-   [How to Test NodeJS Apps using Mocha, Chai and SinonJS](https://www.digitalocean.com/community/tutorials/how-to-test-nodejs-apps-using-mocha-chai-and-sinonjs "How to Test NodeJS Apps using Mocha, Chai and SinonJS")
 
 Learning Objectives
 -------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/Ge846tiklKJNUSNh60IR7w "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 -   How to use Mocha to write a test suite
 -   How to use different assertion libraries (Node or Chai)
@@ -92,7 +92,6 @@ mandatory
 > calculateNumber(1.5, 3.7)
 6
 >
-
 ```
 
 **Run test**
@@ -111,7 +110,6 @@ bob@dylan:~$ npm test 0-calcul.test.js
 
   130 passing (35ms)
 bob@dylan:~$
-
 ```
 
 **Repo:**
@@ -163,7 +161,6 @@ mandatory
 0.2
 > calculateNumber('DIVIDE', 1.4, 0)
 'Error'
-
 ```
 
 **Repo:**
@@ -393,7 +390,6 @@ describe('Testing numbers', () => {
     expect(7 === 7).to.be.true;
   });
 });
-
 ```
 
 **Using the file `7-skip.test.js`:**
@@ -445,7 +441,6 @@ In a folder `8-api` located at the root of the project directory, copy this `
     "sinon": "^7.5.0"
   }
 }
-
 ```
 
 **Create a new file `api.js`:**
@@ -468,7 +463,6 @@ Terminal 1
 ```
 bob@dylan:~/8-api$  node api.js
 API available on localhost port 7865
-
 ```
 
 Terminal 2
@@ -490,7 +484,6 @@ bob@dylan:~/8-api$ npm test api.test.js
   23 passing (256ms)
 
 bob@dylan:~/8-api$
-
 ```
 
 **Tips:**
@@ -537,7 +530,6 @@ Terminal 1
 ```
 bob@dylan:~$ node api.js
 API available on localhost port 7865
-
 ```
 
 Terminal 2
@@ -576,7 +568,6 @@ bob@dylan:~$ curl http://localhost:7865/cart/hello -v
 </html>
 * Connection #0 to host localhost left intact
 bob@dylan:~$
-
 ```
 
 **Tips:**
@@ -613,7 +604,6 @@ In a folder `10-api`, reusing the previous project in `9-api` (`package.json`
     paypal: false
   }
 }
-
 ```
 
 -   Add an endpoint `POST /login` that returns the message `Welcome :username` where `:username` is the value of the body variable `userName`.
@@ -630,7 +620,6 @@ Terminal 1
 ```
 bob@dylan:~$ node api.js
 API available on localhost port 7865
-
 ```
 
 Terminal 2
@@ -642,7 +631,6 @@ bob@dylan:~$
 bob@dylan:~$ curl -XPOST http://localhost:7865/login -d '{ "userName": "Betty" }' -H 'Content-Type: application/json' ; echo ""
 Welcome Betty
 bob@dylan:~$
-
 ```
 
 **Tips:**
