@@ -77,9 +77,3 @@ Complete the 9 next tasks, getting to 27 total.
  Done? Help
 
 Ready for a manual review
-
-**Link to your project review**
-
-https://alx-intranet.hbtn.io/corrections/108394/correct
-
-[Cancel and continue to work on the project.](https://alx-intranet.hbtn.io/projects/324#)
