@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pericles001/alx-backend-javascript.git"
+    "url": "git+https://github.com/AsuweRich/alx-backend-javascript.git"
   },
   "keywords": [
     "unittest",
@@ -29,7 +29,7 @@
     "sinon": "^12.0.1"
   },
   "bugs": {
-    "url": "https://github.com/Pericles001/alx-backend-javascript/issues"
+    "url": "https://github.com/AsuweRich/alx-backend-javascript/issues"
   },
-  "homepage": "https://github.com/Pericles001/alx-backend-javascript#readme"
+  "homepage": "https://github.com/AsuweRich/alx-backend-javascript#readme"
 }
